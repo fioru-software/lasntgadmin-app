@@ -2,30 +2,27 @@
 
 ## Local Docker only
 
+Create `.env` file
+
+```
+SITE_URL=localhost:8080
+SITE_TITLE="LASNTG"
+WP_PLUGINS="groups woocommerce advanced-custom-fields user-role-editor"
+WP_THEME="storefront"
+ADMIN_USERNAME=admin
+ADMIN_PASSWORD=secret
+ADMIN_EMAIL=lasntg@example.com
+```
+
 Build images and run WordPress.
 
+
 ```sh
-docker-compose build --build-arg USER_ID=$(id -u)
+# build image. 
+# override Dockerfile ARG's by appending --build-arg USER_ID=1000 to command
+docker-compose build
+# start container
 docker-compose up -d
-# find container name
-docker ps
-CONTAINER_NAME=
-# shell into container
-docker exec -ti -u www-data:www-data $CONTAINER_NAME /bin/bash
-docker cp .htaccess $CONTAINER_NAME:/var/www/html/.htaccess
-# download wordpress
-wp core download 
-# create config file
-wp config create --dbname=wordpress --dbuser=wordpress --dbpass=secret --dbhost=db --force --skip-check
-# install wp
-wp core install --url=localhost:8080 --title="LASNTG Admin" --admin_user=admin --admin_email=admin@example.com --admin_password=secret
-wp plugin install groups woocommerce advanced-custom-fields user-role-editor --activate
-wp theme install storefront --activate
-# set permalinks
-wp rewrite structure --hard '/%postname%/'
-# enable debugging
-wp config set --raw WP_DEBUG true
-wp config set --raw WP_DEBUG_LOG true
 # view debug log
 tail -f /var/www/html/wp-content/debug.log
 ```
@@ -35,7 +32,7 @@ tail -f /var/www/html/wp-content/debug.log
 
 ```sh
 # query the API
-curl -X OPTIONS http://locahostg:8080/wp-json/wp/v2/posts | jq
+curl -X OPTIONS http://locahost:8080/wp-json/wp/v2 | jq
 ```
 
 > I highly recommend https://github.com/stedolan/jq for json formatting on the command line

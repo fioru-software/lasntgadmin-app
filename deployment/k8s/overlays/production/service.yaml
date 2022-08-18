@@ -1,0 +1,6 @@
+- op: replace
+  path: /spec/selector/app
+  value: production-lasntg-admin
+- op: replace
+  path: /metadata/labels/app
+  value: production-lasntg-admin-service

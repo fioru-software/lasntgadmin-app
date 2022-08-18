@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: lasntg-admin-service
+  labels:
+    app: lasntg-admin-service
+spec:
+  selector:
+    app: lasntg-admin
+  ports:
+  - name: http
+    protocol: TCP
+    port: 8080
+    targetPort: 80

@@ -1,0 +1,9 @@
+namePrefix: production-
+
+generatorOptions:
+  disableNameSuffixHash: true
+
+configMapGenerator:
+- name: lasntg-admin-php-config
+  files:
+    - php.ini

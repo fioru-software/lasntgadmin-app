@@ -1,0 +1,84 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lasntg-admin
+  labels:
+    app: lasntg-admin
+spec:
+  replicas: 1
+  revisionHistoryLimit: 5
+  selector:
+    matchLabels:
+      app: lasntg-admin
+  template:
+    metadata:
+      labels:
+        app: lasntg-admin
+    spec:
+      securityContext:
+        fsGroup: 1000
+        #fsGroupChangePolicy: "OnRootMismatch"
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: cloud.google.com/gke-preemptible
+                operator: DoesNotExist
+              - key: cloud.google.com/gke-nodepool
+                operator: In
+                values:
+                - private-pool
+      containers:
+      - name: lasntg-admin
+        image: moodlehq/moodle-php-apache:7.4
+        imagePullPolicy: Always
+        securityContext:
+          allowPrivilegeEscalation: false
+        ports:
+        - containerPort: 8080
+          name: http
+          protocol: TCP
+        livenessProbe:
+          httpGet:
+            path: /wp-json/wp/v2/tags
+            port: http
+          periodSeconds: 10
+          failureThreshold: 12
+          timeoutSeconds: 30
+          initialDelaySeconds: 900
+        startupProbe:
+          httpGet:
+            path: /wp-json/wp/v2/tags
+            port: http
+          failureThreshold: 15
+          periodSeconds: 60
+        resources:
+          limits:
+            cpu: 200m
+            memory: 512Mi
+          requests:
+            cpu: 100m
+            memory: 256Mi
+        volumeMounts: 
+        - name: wp-content
+          mountPath: /var/www/html/wp-content
+        - name: wp-config
+          mountPath: /var/www/html/wp-config.php
+          subPath: wp-config.php
+          readOnly: true
+        - name: php-config
+          mountPath: /usr/local/etc/php/php.ini
+          subPath: php.ini
+          readOnly: true
+      volumes:
+        - name: wp-content
+          persistentVolumeClaim:
+            claimName: lasntg-admin-pvc
+        - name: wp-config
+          secret: 
+            secretName: lasntg-admin-secret
+        - name: php-config
+          configMap:
+            name: lasntg-admin-php-config
+

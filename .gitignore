@@ -1,1 +1,6 @@
 *.swp
+secrets.txt
+deployment/**/wp-config.php
+.vscode
+.idea
+.env
