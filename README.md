@@ -18,7 +18,7 @@ wp core download
 # create config file
 wp config create --dbname=wordpress --dbuser=wordpress --dbpass=secret --dbhost=db --force --skip-check
 # install wp
-wp core install --url=localhost:8080 --title="LASNTG Admin" --admin_user=admin --admin_email=admin@example.com --admin_secret=secret
+wp core install --url=localhost:8080 --title="LASNTG Admin" --admin_user=admin --admin_email=admin@example.com --admin_password=secret
 wp plugin install groups woocommerce advanced-custom-fields user-role-editor --activate
 wp theme install storefront --activate
 ```
