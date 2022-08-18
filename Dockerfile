@@ -1,10 +1,12 @@
 FROM php:7-apache
 
 ARG USER_ID
+ARG WP_VERSION
+ARG WP_LOCALE
 
 RUN a2enmod rewrite
 RUN apt update; \
-    apt install -y default-mysql-client vim
+    apt install -y default-mysql-client vim libzip-dev
 
 RUN docker-php-ext-install mysqli zip
 
