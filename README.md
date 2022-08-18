@@ -11,7 +11,7 @@ docker-compose up -d
 docker ps
 CONTAINER_NAME=
 # copy htaccess
-docker cp htaccess $CONTAINER_NAME:/var/www/html/.htaccess
+docker cp .htaccess $CONTAINER_NAME:/var/www/html/.htaccess
 # shell into container
 docker exec -ti -u www-data:www-data $CONTAINER_NAME /bin/bash
 # download wordpress
