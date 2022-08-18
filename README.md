@@ -10,19 +10,21 @@ docker-compose up -d
 # find container name
 docker ps
 CONTAINER_NAME=
-# copy htaccess
-docker cp .htaccess $CONTAINER_NAME:/var/www/html/.htaccess
 # shell into container
 docker exec -ti -u www-data:www-data $CONTAINER_NAME /bin/bash
+docker cp .htaccess $CONTAINER_NAME:/var/www/html/.htaccess
 # download wordpress
 wp core download 
 # create config file
-wp config create --dbname=$DB_NAME --dbuser=$DB_USER --dbpass=$DB_PASSWORD --dbhost=$DB_HOST --force --skip-check
+wp config create --dbname=wordpress --dbuser=wordpress --dbpass=secret --dbhost=db --force --skip-check
 # install wp
-wp core install --url=staging.wildwork.ie --title= --admin_user= --admin_email=
+wp core install --url=localhost:8080 --title="LASNTG Admin" --admin_user=admin --admin_email=admin@example.com --admin_secret=secret
+wp plugin install groups woocommerce advanced-custom-fields user-role-editor --activate
+wp theme install storefront --activate
 ```
 
-Visit [http://localhost:8080](http://localhost:8080)
+- Visit [localhost:8080](http://localhost:8080)
+- Visit [localhost:8080/wp-admin](http://localhost:/wp-login.php) as log in with username `admin` and password `secret`.
 
 ## Local Docker using Blacknight MySQL db
 
@@ -63,4 +65,7 @@ Prepend the following to `.htaccess`
 ## Links
 
 - [Salt](https://api.wordpress.org/secret-key/1.1/salt)
+- [Advanced Custom Fields](https://www.advancedcustomfields.com/resources)
+- [WooCommerce Developer Resources](https://developer.woocommerce.com/)
+- [WooCommerce Storefront Theme](https://woocommerce.com/documentation/themes/storefront/)
 

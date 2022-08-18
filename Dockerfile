@@ -3,7 +3,7 @@ ARG USER_ID
 
 RUN a2enmod rewrite
 RUN apt update; \
-    apt install default-mysql-client
+    apt install -y default-mysql-client;
 
 RUN docker-php-ext-install mysqli
 
