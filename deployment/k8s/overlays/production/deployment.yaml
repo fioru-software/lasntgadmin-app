@@ -1,31 +1,31 @@
 - op: replace
   path: /metadata/labels/app
-  value: production-lasntg-admin
+  value: production-lasntg
 - op: replace
   path: /spec/selector/matchLabels/app
-  value: production-lasntg-admin
+  value: production-lasntg
 - op: replace
   path: /spec/template/metadata/labels/app
-  value: production-lasntg-admin
+  value: production-lasntg
 - op: replace
   path: /spec/template/spec/containers/0/image
-  value: eu.gcr.io/veri-cluster/lasntg-admin:production
+  value: eu.gcr.io/veri-cluster/lasntg:production
 - op: replace
   path: /spec/template/spec/containers/0/imagePullPolicy
   value: Always
 - op: replace
   path: /metadata/name
-  value: production-lasntg-admin
+  value: production-lasntg
 - op: replace
   path: /spec/template/spec/affinity/nodeAffinity/requiredDuringSchedulingIgnoredDuringExecution/nodeSelectorTerms/0/matchExpressions/1/values/0
   value: public-pool
 - op: replace
   path: /spec/template/spec/volumes/0/persistentVolumeClaim/claimName
-  value: production-lasntg-admin-pvc
+  value: production-lasntg-pvc
 - op: replace
   path: /spec/template/spec/volumes/1/secret/secretName
-  value: production-lasntg-admin-secret
+  value: production-lasntg-secret
 - op: replace
   path: /spec/template/spec/volumes/2/configMap/name
-  value: production-lasntg-admin-php-config
+  value: production-lasntg-php-config
 

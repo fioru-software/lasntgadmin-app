@@ -11,22 +11,22 @@ patchesJson6902:
     target:
       version: v1
       kind: Service
-      name: lasntg-admin-service
+      name: lasntg-service
   - path: deployment.yaml
     target:
       group: apps
       version: v1
       kind: Deployment
-      name: lasntg-admin
+      name: lasntg
   - path: ingress.yaml
     target:
       group: networking.k8s.io
       version: v1
       kind: Ingress
-      name: lasntg-admin-ingress
+      name: lasntg-ingress
   - path: pvc.yaml
     target:
       version: v1
       kind: PersistentVolumeClaim
-      name: lasntg-admin-pvc
+      name: lasntg-pvc
 

@@ -1,28 +1,28 @@
 - op: replace
   path: /metadata/labels/app
-  value: staging-lasntg-admin
+  value: staging-lasntg
 - op: replace
   path: /spec/selector/matchLabels/app
-  value: staging-lasntg-admin
+  value: staging-lasntg
 - op: replace
   path: /spec/template/metadata/labels/app
-  value: staging-lasntg-admin
+  value: staging-lasntg
 - op: replace
   path: /spec/template/spec/containers/0/image
-  value: eu.gcr.io/veri-cluster/lasntg-admin:staging
+  value: eu.gcr.io/veri-cluster/lasntg:staging
 - op: replace
   path: /spec/template/spec/containers/0/imagePullPolicy
   value: Always
 - op: replace
   path: /metadata/name
-  value: staging-lasntg-admin
+  value: staging-lasntg
 - op: replace
   path: /spec/template/spec/volumes/0/persistentVolumeClaim/claimName
-  value: staging-lasntg-admin-pvc
+  value: staging-lasntg-pvc
 - op: replace
   path: /spec/template/spec/volumes/1/secret/secretName
-  value: staging-lasntg-admin-secret
+  value: staging-lasntg-secret
 - op: replace
   path: /spec/template/spec/volumes/2/configMap/name
-  value: staging-lasntg-admin-php-config
+  value: staging-lasntg-php-config
 

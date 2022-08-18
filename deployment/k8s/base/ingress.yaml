@@ -1,22 +1,22 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: lasntg-admin-ingress
+  name: lasntg-ingress
   annotations:
     nginx.ingress.kubernetes.io/auth-url: https://basic-auth.veri.ie/
 spec:
   ingressClassName: nginx
   rules:
-  - host: lasntg-admin.veri.ie
+  - host: lasntgadmin.veri.ie
     http:
       paths:
       - path: /
         pathType: Prefix
         backend:
           service:
-            name: lasntg-admin-service
+            name: lasntg-service
             port:
               number: 8080
   tls:
   - hosts:
-    - lasntg-admin.veri.ie
+    - lasntgadmin.veri.ie

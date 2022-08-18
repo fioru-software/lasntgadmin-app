@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: lasntg-admin-pvc
+  name: lasntg-pvc
 spec:
   accessModes:
     - ReadWriteOnce

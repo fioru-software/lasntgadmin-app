@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: lasntg-admin
+  name: lasntg
   labels:
-    app: lasntg-admin
+    app: lasntg
 spec:
   replicas: 1
   revisionHistoryLimit: 5
   selector:
     matchLabels:
-      app: lasntg-admin
+      app: lasntg
   template:
     metadata:
       labels:
-        app: lasntg-admin
+        app: lasntg
     spec:
       securityContext:
         fsGroup: 1000
@@ -30,7 +30,7 @@ spec:
                 values:
                 - private-pool
       containers:
-      - name: lasntg-admin
+      - name: lasntg
         image: moodlehq/moodle-php-apache:7.4
         imagePullPolicy: Always
         securityContext:
@@ -74,11 +74,11 @@ spec:
       volumes:
         - name: wp-content
           persistentVolumeClaim:
-            claimName: lasntg-admin-pvc
+            claimName: lasntg-pvc
         - name: wp-config
           secret: 
-            secretName: lasntg-admin-secret
+            secretName: lasntg-secret
         - name: php-config
           configMap:
-            name: lasntg-admin-php-config
+            name: lasntg-php-config
 
