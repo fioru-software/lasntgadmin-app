@@ -1,0 +1,66 @@
+# WordPress template repo
+
+## Local Docker only
+
+Build images and run WordPress.
+
+```sh
+docker-compose build --build-arg USER_ID=$(id -u)
+docker-compose up -d
+# find container name
+docker ps
+CONTAINER_NAME=
+# copy htaccess
+docker cp htaccess $CONTAINER_NAME:/var/www/html/.htaccess
+# shell into container
+docker exec -ti -u www-data:www-data $CONTAINER_NAME /bin/bash
+# download wordpress
+wp core download 
+# create config file
+wp config create --dbname=$DB_NAME --dbuser=$DB_USER --dbpass=$DB_PASSWORD --dbhost=$DB_HOST --force --skip-check
+# install wp
+wp core install --url=staging.wildwork.ie --title= --admin_user= --admin_email=
+```
+
+Visit [http://localhost:8080](http://localhost:8080)
+
+## Local Docker using Blacknight MySQL db
+
+To access MySQL databases hosted by Blacknight requires enable access from external hosts via [cp.blacknight.com](http://cp.blacknight.com) using credentials available at [bitwarden.veri.ie](https://bitwarden.veri.ie) > Collections > Developers > blacknight.com
+
+Copy WordPress source files using relevant Blacknight ftp details available on [bitwarden.veri.ie](https://bitwarden.veri.ie) > Developers to `./src` folder.
+
+```sh
+docker-compose build --build-arg USER_ID=$(id -u)
+docker-compose up -d wp
+docker cp htaccess $CONTAINER_NAME:/var/www/html/.htaccess
+docker exec -ti -u www-data:www-data $CONTAINER_NAME /bin/bash
+# confirm db connection
+wp option get siteurl
+# export db
+wp db export --porcelain
+# copy db dump to export folder
+docker cp $CONTAINER_NAME:/var/www/html/$DUMP_FILE export/
+# edit wp-config.php file 
+vim wp-config.php
+# import db into different wordpress install
+wp option get siteurl 
+wp db import $DUMPFILE --quiet
+wp search-replace --url=https://wildwork.ie 'wildwork.ie' 'staging.wildwork.ie' --recurse-objects --network --skip-columns=guid --skip-tables=wp_users
+```
+
+## Deployment
+
+Basic authentication requires absolute path to `.htpasswd` file. 
+
+To view the root path upload `info.php` to host and visit `/info.php`
+
+For staging environment the entire site should be protected by basic auth.
+For production environment the `/wp-login.php` path show be protected by basic auth.
+
+Prepend the following to `.htaccess`
+
+## Links
+
+- [Salt](https://api.wordpress.org/secret-key/1.1/salt)
+
