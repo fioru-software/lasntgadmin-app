@@ -33,6 +33,13 @@ tail -f /var/www/html/wp-content/debug.log
 - Visit [localhost:8080](http://localhost:8080)
 - Visit [localhost:8080/wp-admin](http://localhost:/wp-login.php) as log in with username `admin` and password `secret`.
 
+```sh
+# query the API
+curl -X OPTIONS http://locahostg:8080/wp-json/wp/v2/posts | jq
+```
+
+> I highly recommend https://github.com/stedolan/jq for json formatting on the command line
+
 ## Local Docker using Blacknight MySQL db
 
 To access MySQL databases hosted by Blacknight requires enable access from external hosts via [cp.blacknight.com](http://cp.blacknight.com) using credentials available at [bitwarden.veri.ie](https://bitwarden.veri.ie) > Collections > Developers > blacknight.com
