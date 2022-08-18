@@ -4,9 +4,9 @@ ARG USER_ID
 
 RUN a2enmod rewrite
 RUN apt update; \
-    apt install -y default-mysql-client zip vim
+    apt install -y default-mysql-client vim
 
-RUN docker-php-ext-install mysqli
+RUN docker-php-ext-install mysqli zip
 
 RUN usermod -u $USER_ID www-data; \
     groupmod -g $USER_ID www-data
