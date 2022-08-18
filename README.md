@@ -21,6 +21,13 @@ wp config create --dbname=wordpress --dbuser=wordpress --dbpass=secret --dbhost=
 wp core install --url=localhost:8080 --title="LASNTG Admin" --admin_user=admin --admin_email=admin@example.com --admin_password=secret
 wp plugin install groups woocommerce advanced-custom-fields user-role-editor --activate
 wp theme install storefront --activate
+# set permalinks
+wp rewrite structure --hard '/%postname%/'
+# enable debugging
+wp config set --raw WP_DEBUG true
+wp config set --raw WP_DEBUG_LOG true
+# view debug log
+tail -f /var/www/html/wp-content/debug.log
 ```
 
 - Visit [localhost:8080](http://localhost:8080)
