@@ -53,6 +53,11 @@ spec:
             port: http
           failureThreshold: 15
           periodSeconds: 60
+        envFrom:
+          - configMapRef:
+              name: lasntg-env
+          - secretRef:
+              name: lasntg-secret
         resources:
           limits:
             cpu: 200m
@@ -77,7 +82,7 @@ spec:
             claimName: lasntg-pvc
         - name: wp-config
           secret: 
-            secretName: lasntg-secret
+            secretName: lasntg-config
         - name: php-config
           configMap:
             name: lasntg-php-config

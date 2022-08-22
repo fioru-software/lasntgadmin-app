@@ -64,6 +64,8 @@ wp search-replace --url=https://wildwork.ie 'wildwork.ie' 'staging.wildwork.ie' 
 
 ## Deployment
 
+### Blacknight
+
 Basic authentication requires absolute path to `.htpasswd` file. 
 
 To view the root path upload `info.php` to host and visit `/info.php`
@@ -72,6 +74,17 @@ For staging environment the entire site should be protected by basic auth.
 For production environment the `/wp-login.php` path show be protected by basic auth.
 
 Prepend the following to `.htaccess`
+
+### Gcloud
+
+```sh
+kubectl kustomize deployment/k8s/configmaps/staging/
+kubectl apply -k deployment/k8s/configmaps/staging/
+
+kubectl kustomize deployment/k8s/secrets/staging/
+kubectl apply -k deployment/k8s/secrets/staging/
+```
+
 
 ## Links
 

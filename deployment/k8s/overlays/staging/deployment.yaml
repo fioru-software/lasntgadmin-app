@@ -14,6 +14,9 @@
   path: /spec/template/spec/containers/0/imagePullPolicy
   value: Always
 - op: replace
+  path: /spec/template/spec/containers/0/envFrom/1/secretRef/name
+  value: staging-lasntg-secret
+- op: replace
   path: /metadata/name
   value: staging-lasntg
 - op: replace
@@ -21,7 +24,7 @@
   value: staging-lasntg-pvc
 - op: replace
   path: /spec/template/spec/volumes/1/secret/secretName
-  value: staging-lasntg-secret
+  value: staging-lasntg-config
 - op: replace
   path: /spec/template/spec/volumes/2/configMap/name
   value: staging-lasntg-php-config

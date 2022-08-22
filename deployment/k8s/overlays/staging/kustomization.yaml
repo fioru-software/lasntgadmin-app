@@ -3,6 +3,15 @@ namePrefix: staging-
 generatorOptions:
   disableNameSuffixHash: true
 
+configMapGenerator:
+- name: lasntg-env
+  literals:
+  - ENVIRONMENT=staging
+  - SITE_URL=lasntgadmin-staging.veri.ie
+  - SITE_TITLE=LASNTG
+  - WP_PLUGINS=groups woocommerce advanced-custom-fields user-role-editor
+  - WP_THEME=storefront
+
 bases:
   - ../../base
 
