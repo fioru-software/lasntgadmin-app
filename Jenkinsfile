@@ -55,8 +55,8 @@ pipeline {
                     script {
                         sh 'docker login -u oauth2accesstoken -p $GCLOUD_TOKEN https://eu.gcr.io'
                         sh 'docker build --no-cache --build-arg USER_ID=${USER_ID} --build-arg WP_VERSION=${WP_VERSION} --build-arg WP_LOCALE=${WP_LOCALE} --tag lasntg:${COMMIT_SHA} .'
-                        sh 'docker tag moodle:${COMMIT_SHA} eu.gcr.io/veri-cluster/lasntg:${COMMIT_SHA}'
-                        sh 'docker tag moodle:${COMMIT_SHA} eu.gcr.io/veri-cluster/lasntg:${ENVIRONMENT}'
+                        sh 'docker tag lasntg:${COMMIT_SHA} eu.gcr.io/veri-cluster/lasntg:${COMMIT_SHA}'
+                        sh 'docker tag lasntg:${COMMIT_SHA} eu.gcr.io/veri-cluster/lasntg:${ENVIRONMENT}'
                         sh 'docker push eu.gcr.io/veri-cluster/lasntg:${COMMIT_SHA}'
                         sh 'docker push eu.gcr.io/veri-cluster/lasntg:${ENVIRONMENT}'
                     }
