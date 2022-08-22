@@ -16,7 +16,7 @@ spec:
         app: lasntg
     spec:
       securityContext:
-        fsGroup: 1000
+        fsGroup: 33
         #fsGroupChangePolicy: "OnRootMismatch"
       affinity:
         nodeAffinity:
@@ -37,22 +37,29 @@ spec:
           allowPrivilegeEscalation: false
         ports:
         - containerPort: 8080
-          name: http
-          protocol: TCP
+        readinessProbe:
+          httpGet:
+            path: /wp-login.php
+            port: 80
+          timeoutSeconds: 5
+          periodSeconds: 10
+          failureThreshold: 5
+          initialDelaySeconds: 60
         livenessProbe:
           httpGet:
-            path: /wp-json/wp/v2/tags
-            port: http
+            path: /wp-login.php
+            port: 80
           periodSeconds: 10
-          failureThreshold: 12
-          timeoutSeconds: 30
-          initialDelaySeconds: 900
+          failureThreshold: 5
+          timeoutSeconds: 5
+          initialDelaySeconds: 60
         startupProbe:
           httpGet:
-            path: /wp-json/wp/v2/tags
-            port: http
+            path: /wp-login.php
+            port: 80
           failureThreshold: 15
-          periodSeconds: 60
+          periodSeconds: 10
+          initialDelaySeconds: 60
         envFrom:
           - configMapRef:
               name: lasntg-env
