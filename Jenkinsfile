@@ -28,6 +28,7 @@ pipeline {
         COMMIT_SHA = sh(script: "git log -1 --format=%H", returnStdout:true).trim()
         GCLOUD_KEYFILE = credentials('jenkins-gcloud-keyfile');
         ENVIRONMENT = "${env.BRANCH_NAME == "master" ? "production" : env.BRANCH_NAME}"
+        USER_ID = 33
     }
 
     stages {
