@@ -3,6 +3,15 @@ namePrefix: production-
 generatorOptions:
   disableNameSuffixHash: true
 
+configMapGenerator:
+- name: lasntg-env
+  literals:
+  - ENVIRONMENT=production
+  - SITE_URL=https://lasntgadmin.veri.ie
+  - SITE_TITLE=LASNTG
+  - WP_PLUGINS=groups woocommerce advanced-custom-fields user-role-editor
+  - WP_THEME=twentytwentytwo
+
 bases:
   - ../../base
 

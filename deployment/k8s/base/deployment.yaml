@@ -31,35 +31,40 @@ spec:
                 - private-pool
       containers:
       - name: lasntg
-        image: moodlehq/moodle-php-apache:7.4
+        image: php:7-apache
         imagePullPolicy: Always
         securityContext:
           allowPrivilegeEscalation: false
         ports:
         - containerPort: 8080
         readinessProbe:
-          httpGet:
-            path: /wp-login.php
-            port: 80
-          timeoutSeconds: 5
-          periodSeconds: 10
-          failureThreshold: 5
-          initialDelaySeconds: 60
+          httpGet:    
+            path: /wp-json/wp/v2/tags
+            port: 80    
+            #httpHeaders:
+            #- name: Authorization
+            #  value: Basic <base64-encoded> echo -n xxxx:xxxxx | base64
+            #- name: X-Forwarded-Proto
+            #  value: https
+            #- name: X-Forwarded-Host
+            #  value: lasntgadmin-staging.veri.ie
+            #- name: Host
+            #  value: lasntgadmin-staging.veri.ie
+          periodSeconds: 30
+          timeoutSeconds: 10
         livenessProbe:
           httpGet:
-            path: /wp-login.php
+            path: /wp-json/wp/v2/tags
             port: 80
-          periodSeconds: 10
-          failureThreshold: 5
-          timeoutSeconds: 5
-          initialDelaySeconds: 60
+          periodSeconds: 30
+          timeoutSeconds: 10
         startupProbe:
-          httpGet:
-            path: /wp-login.php
-            port: 80
-          failureThreshold: 15
-          periodSeconds: 10
           initialDelaySeconds: 60
+          httpGet:
+            path: /wp-json/wp/v2/tags
+            port: 80
+          periodSeconds: 30
+          timeoutSeconds: 10
         envFrom:
           - configMapRef:
               name: lasntg-env

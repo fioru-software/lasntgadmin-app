@@ -6,9 +6,9 @@ Create `.env` file
 
 ```
 SITE_URL=localhost:8080
-SITE_TITLE="LASNTG"
-WP_PLUGINS="groups woocommerce advanced-custom-fields user-role-editor"
-WP_THEME="storefront"
+SITE_TITLE=LASNTG
+WP_PLUGINS=groups woocommerce advanced-custom-fields user-role-editor
+WP_THEME=twentytwentytwo
 ADMIN_USERNAME=admin
 ADMIN_PASSWORD=secret
 ADMIN_EMAIL=lasntg@example.com
