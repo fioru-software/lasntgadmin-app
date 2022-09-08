@@ -14,7 +14,7 @@ services:
     environment:
       - SITE_URL=localhost:8080
       - SITE_TITLE=LASNTG
-      - WP_PLUGINS=groups woocommerce advanced-custom-fields user-role-editor
+      - WP_PLUGINS=groups woocommerce mailchimp-for-woocommerce advanced-custom-fields user-role-editor
       - WP_THEME=storefront
       - ADMIN_EMAIL=lasntg@example.com
       - ADMIN_USERNAME=admin
