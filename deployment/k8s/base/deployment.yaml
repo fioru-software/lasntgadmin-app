@@ -39,32 +39,23 @@ spec:
         - containerPort: 8080
         readinessProbe:
           httpGet:    
-            path: /wp-json/wp/v2/tags
-            port: 80    
-            #httpHeaders:
-            #- name: Authorization
-            #  value: Basic <base64-encoded> echo -n xxxx:xxxxx | base64
-            #- name: X-Forwarded-Proto
-            #  value: https
-            #- name: X-Forwarded-Host
-            #  value: lasntgadmin-staging.veri.ie
-            #- name: Host
-            #  value: lasntgadmin-staging.veri.ie
-          periodSeconds: 30
-          timeoutSeconds: 10
+            path: /
+            port: 80
+          periodSeconds: 60
+          timeoutSeconds: 30
         livenessProbe:
           httpGet:
-            path: /wp-json/wp/v2/tags
+            path: /
             port: 80
-          periodSeconds: 30
-          timeoutSeconds: 10
+          periodSeconds: 60
+          timeoutSeconds: 30
         startupProbe:
-          initialDelaySeconds: 60
+          #initialDelaySeconds: 60
           httpGet:
-            path: /wp-json/wp/v2/tags
+            path: /
             port: 80
-          periodSeconds: 30
-          timeoutSeconds: 10
+          periodSeconds: 60
+          timeoutSeconds: 30
         envFrom:
           - configMapRef:
               name: lasntg-env
@@ -73,10 +64,10 @@ spec:
         resources:
           limits:
             cpu: 200m
-            memory: 512Mi
+            memory: 1024M
           requests:
             cpu: 100m
-            memory: 256Mi
+            memory: 512M
         volumeMounts: 
         - name: wp-content
           mountPath: /var/www/html/wp-content

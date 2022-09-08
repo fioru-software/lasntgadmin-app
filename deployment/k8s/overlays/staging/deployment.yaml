@@ -28,4 +28,30 @@
 - op: replace
   path: /spec/template/spec/volumes/2/configMap/name
   value: staging-lasntg-php-config
-
+- op: add
+  path: /spec/template/spec/containers/0/readinessProbe/httpGet/httpHeaders
+  value:
+    - name: X-Forwarded-Proto
+      value: https
+    - name: X-Forwarded-Host
+      value: lasntgadmin-staging.veri.ie
+    - name: Host
+      value: lasntgadmin-staging.veri.ie
+- op: add
+  path: /spec/template/spec/containers/0/livenessProbe/httpGet/httpHeaders
+  value:
+    - name: X-Forwarded-Proto
+      value: https
+    - name: X-Forwarded-Host
+      value: lasntgadmin-staging.veri.ie
+    - name: Host
+      value: lasntgadmin-staging.veri.ie
+- op: add
+  path: /spec/template/spec/containers/0/startupProbe/httpGet/httpHeaders
+  value:
+    - name: X-Forwarded-Proto
+      value: https
+    - name: X-Forwarded-Host
+      value: lasntgadmin-staging.veri.ie
+    - name: Host
+      value: lasntgadmin-staging.veri.ie

@@ -6,7 +6,7 @@ ARG WP_LOCALE
 
 RUN a2enmod rewrite
 RUN apt update; \
-    apt install -y default-mysql-client vim libzip-dev
+    apt install -y default-mysql-client vim libzip-dev unzip
 
 RUN docker-php-ext-install mysqli zip
 
@@ -15,6 +15,7 @@ RUN usermod -u $USER_ID www-data; \
 
 RUN chown -R www-data:www-data /var/www
 RUN curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar && chmod +x wp-cli.phar && mv wp-cli.phar /usr/local/bin/wp
+
 
 RUN curl -sfL $(curl -s https://api.github.com/repos/powerman/dockerize/releases/latest | grep -i /dockerize-$(uname -s)-$(uname -m)\" | cut -d\" -f4) | install /dev/stdin /usr/local/bin/dockerize
 
@@ -27,6 +28,10 @@ USER www-data
 WORKDIR /var/www/html
 
 RUN wp core download --skip-content --version=$WP_VERSION --locale=$WP_LOCALE --path=/var/www/html
+
+# payment gateway
+RUN curl --output /tmp/convergewoocommerce.zip -O https://developer.elavon.com/media/r/cc2f0b41-2a33-11ed-9cf8-069152d030f7/4f363335-b97b-4160-a14a-e1481afcec50/convergewoocommerce-1.1.3.zip
+RUN unzip /tmp/convergewoocommerce.zip -d /var/www/html/wp-content/plugins/
 
 USER root
 

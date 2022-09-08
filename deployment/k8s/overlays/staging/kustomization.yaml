@@ -9,7 +9,7 @@ configMapGenerator:
   - ENVIRONMENT=staging
   - SITE_URL=https://lasntgadmin-staging.veri.ie
   - SITE_TITLE=LASNTG
-  - WP_PLUGINS=groups woocommerce mailchimp-for-woocommerce advanced-custom-fields user-role-editor
+  - WP_PLUGINS=groups woocommerce convergewoocommerce advanced-custom-fields user-role-editor
   - WP_THEME=storefront
 
 bases:

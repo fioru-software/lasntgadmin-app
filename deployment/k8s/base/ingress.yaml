@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: lasntg-ingress
   annotations:
-    nginx.ingress.kubernetes.io/auth-url: https://basic-auth.veri.ie/
+    #nginx.ingress.kubernetes.io/auth-url: https://basic-auth.veri.ie/
 spec:
   ingressClassName: nginx
   rules:
