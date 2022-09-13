@@ -8,7 +8,7 @@ Create `.env` file
 SITE_URL=localhost:8080
 SITE_TITLE=LASNTG
 WP_PLUGINS=groups woocommerce advanced-custom-fields user-role-editor
-WP_THEME=twentytwentytwo
+WP_THEME=storefront
 ADMIN_USERNAME=admin
 ADMIN_PASSWORD=secret
 ADMIN_EMAIL=lasntg@example.com
@@ -85,6 +85,12 @@ kubectl kustomize deployment/k8s/secrets/staging/
 kubectl apply -k deployment/k8s/secrets/staging/
 ```
 
+```sh
+# watch pod
+kubectl get pods -o wide -l app=staging-lasntg --watch
+# watch pod events
+kubectl get event --field-selector involvedObject.name=staging-lasntg-7788ffdbb7-nkn87 --watch
+```
 
 ## Links
 
