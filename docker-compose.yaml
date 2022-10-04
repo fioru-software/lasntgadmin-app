@@ -9,6 +9,7 @@ services:
         - USER_ID=1000
         - WP_LOCALE=en_GB
         - WP_VERSION=latest
+        - ELAVON_CONVERGE_WOO_PLUGIN_URL=https://developer.elavon.com/media/r/2392fdfd-3532-11ed-9cf8-069152d030f7/ef45118a-06bd-4f2c-b071-b7430d3e16f8/convergewoocommerce-1.1.3.zip
     env_file:
       - .env
     environment:

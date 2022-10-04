@@ -3,6 +3,7 @@ FROM php:7-apache
 ARG USER_ID
 ARG WP_VERSION
 ARG WP_LOCALE
+ARG ELAVON_CONVERGE_WOO_PLUGIN_URL
 
 RUN a2enmod rewrite
 RUN apt update; \
@@ -32,7 +33,7 @@ RUN wp core download --skip-content --version=$WP_VERSION --locale=$WP_LOCALE --
     mkdir -p /var/www/html/wp-content/plugins /var/www/html/wp-content/themes
 
 # payment gateway
-RUN curl --output /tmp/convergewoocommerce.zip -O https://developer.elavon.com/media/r/cc2f0b41-2a33-11ed-9cf8-069152d030f7/4f363335-b97b-4160-a14a-e1481afcec50/convergewoocommerce-1.1.3.zip; \
+RUN curl --output /tmp/convergewoocommerce.zip -O $ELAVON_CONVERGE_WOO_PLUGIN_URL; \
     unzip /tmp/convergewoocommerce.zip -d /var/www/html/wp-content/plugins/
 
 USER root
