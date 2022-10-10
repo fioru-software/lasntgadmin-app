@@ -13,7 +13,6 @@ pipeline {
     parameters {
         string(name: 'WP_VERSION', defaultValue: 'latest', description: 'WordPress version')
         string(name: 'WP_LOCALE', defaultValue: 'en_GB', description: 'WordPress locale')
-        string(name: 'ELAVON_CONVERGE_WOO_PLUGIN_URL', defaultValue: 'https://developer.elavon.com/media/r/2392fdfd-3532-11ed-9cf8-069152d030f7/ef45118a-06bd-4f2c-b071-b7430d3e16f8/convergewoocommerce-1.1.3.zip', description: "Converge plugin download url")
         gitParameter(name: "BRANCH_NAME", type: "PT_BRANCH", defaultValue: "staging", branchFilter: "origin/(master|staging)")
         booleanParam(name: 'DEPLOY', defaultValue: false, description: "Deploy To Kubernetes")
     }
@@ -55,7 +54,7 @@ pipeline {
                 container('docker') {
                     script {
                         sh 'docker login -u oauth2accesstoken -p $GCLOUD_TOKEN https://eu.gcr.io'
-                        sh 'docker build --no-cache --build-arg USER_ID=${USER_ID} --build-arg WP_VERSION=${WP_VERSION} --build-arg WP_LOCALE=${WP_LOCALE} --build-arg ELAVON_CONVERGE_WOO_PLUGIN_URL=${ELAVON_CONVERGE_WOO_PLUGIN_URL} --tag lasntg:${COMMIT_SHA} .'
+                        sh 'docker build --no-cache --build-arg USER_ID=${USER_ID} --build-arg WP_VERSION=${WP_VERSION} --build-arg WP_LOCALE=${WP_LOCALE} --tag lasntg:${COMMIT_SHA} .'
                         sh 'docker tag lasntg:${COMMIT_SHA} eu.gcr.io/veri-cluster/lasntg:${COMMIT_SHA}'
                         sh 'docker tag lasntg:${COMMIT_SHA} eu.gcr.io/veri-cluster/lasntg:${ENVIRONMENT}'
                         sh 'docker push eu.gcr.io/veri-cluster/lasntg:${COMMIT_SHA}'
