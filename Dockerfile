@@ -35,6 +35,9 @@ RUN wp core download --skip-content --version=$WP_VERSION --locale=$WP_LOCALE --
 COPY --chown=www-data:www-data convergewoocommerce-1.1.3.zip /tmp/convergewoocommerce.zip
 RUN unzip /tmp/convergewoocommerce.zip -d /var/www/html/wp-content/plugins/
 
+# default groups
+COPY --chown=www-data:www-data export/groups.sql /tmp/groups.sql
+
 USER root
 
 CMD ["sh", "/usr/local/bin/run.sh"]

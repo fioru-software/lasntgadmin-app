@@ -2,6 +2,8 @@
 
 ## Local Docker only
 
+### Run WordPress
+
 Create `.env` file
 
 ```
@@ -15,7 +17,6 @@ ADMIN_EMAIL=lasntg@example.com
 ```
 
 Build images and run WordPress.
-
 
 ```sh
 # build image. 
@@ -36,6 +37,7 @@ curl -X OPTIONS http://locahost:8080/wp-json/wp/v2 | jq
 ```
 
 > I highly recommend https://github.com/stedolan/jq for json formatting on the command line
+
 
 ## Local Docker using Blacknight MySQL db
 
