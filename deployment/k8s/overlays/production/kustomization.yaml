@@ -9,8 +9,8 @@ configMapGenerator:
   - ENVIRONMENT=production
   - SITE_URL=https://lasntgadmin.veri.ie
   - SITE_TITLE=LASNTG
-  - WP_PLUGINS=groups woocommerce advanced-custom-fields user-role-editor
-  - WP_THEME=twentytwentytwo
+  - WP_PLUGINS=groups woocommerce advanced-custom-fields user-role-editor convergewoocommerce wp-mail-smtp
+  - WP_THEMES=storefront
 
 bases:
   - ../../base
