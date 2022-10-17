@@ -27,6 +27,7 @@ pipeline {
     environment {
         COMMIT_SHA = sh(script: "git log -1 --format=%H", returnStdout:true).trim()
         GCLOUD_KEYFILE = credentials('jenkins-gcloud-keyfile');
+        GITHUB_TOKEN = credentials('jenkins-github-personal-access-token')
         ENVIRONMENT = "${env.BRANCH_NAME == "master" ? "production" : env.BRANCH_NAME}"
         USER_ID = 33
     }
@@ -54,11 +55,11 @@ pipeline {
                 container('docker') {
                     script {
                         sh 'docker login -u oauth2accesstoken -p $GCLOUD_TOKEN https://eu.gcr.io'
-                        sh 'docker build --no-cache --build-arg USER_ID=${USER_ID} --build-arg WP_VERSION=${WP_VERSION} --build-arg WP_LOCALE=${WP_LOCALE} --tag lasntg:${COMMIT_SHA} .'
-                        sh 'docker tag lasntg:${COMMIT_SHA} eu.gcr.io/veri-cluster/lasntg:${COMMIT_SHA}'
-                        sh 'docker tag lasntg:${COMMIT_SHA} eu.gcr.io/veri-cluster/lasntg:${ENVIRONMENT}'
-                        sh 'docker push eu.gcr.io/veri-cluster/lasntg:${COMMIT_SHA}'
-                        sh 'docker push eu.gcr.io/veri-cluster/lasntg:${ENVIRONMENT}'
+                        sh 'docker build --no-cache --build-arg GITHUB_TOKEN=${GITHUB_TOKEN} --build-arg USER_ID=${USER_ID} --build-arg WP_VERSION=${WP_VERSION} --build-arg WP_LOCALE=${WP_LOCALE} --tag lasntgadmin:${COMMIT_SHA} .'
+                        sh 'docker tag lasntgadmin:${COMMIT_SHA} eu.gcr.io/veri-cluster/lasntgadmin:${COMMIT_SHA}'
+                        sh 'docker tag lasntgadmin:${COMMIT_SHA} eu.gcr.io/veri-cluster/lasntgadmin:${ENVIRONMENT}'
+                        sh 'docker push eu.gcr.io/veri-cluster/lasntgadmin:${COMMIT_SHA}'
+                        sh 'docker push eu.gcr.io/veri-cluster/lasntgadmin:${ENVIRONMENT}'
                     }
                 }
             }
@@ -79,7 +80,7 @@ pipeline {
                 container('cloud-sdk') {
                     script {
                         sh "kubectl --token=$GCLOUD_TOKEN apply -k deployment/k8s/overlays/${ENVIRONMENT}"
-                        sh "kubectl --token=$GCLOUD_TOKEN rollout restart deployment ${ENVIRONMENT}-lasntg"
+                        sh "kubectl --token=$GCLOUD_TOKEN rollout restart deployment ${ENVIRONMENT}-lasntgadmin"
                     }
                 }
             }

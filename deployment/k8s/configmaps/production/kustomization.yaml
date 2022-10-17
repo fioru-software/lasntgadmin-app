@@ -4,6 +4,6 @@ generatorOptions:
   disableNameSuffixHash: true
 
 configMapGenerator:
-- name: lasntg-php-config
+- name: lasntgadmin-php-config
   files:
     - php.ini

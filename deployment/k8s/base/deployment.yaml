@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: lasntg
+  name: lasntgadmin
   labels:
-    app: lasntg
+    app: lasntgadmin
 spec:
   replicas: 1
   revisionHistoryLimit: 5
   selector:
     matchLabels:
-      app: lasntg
+      app: lasntgadmin
   template:
     metadata:
       labels:
-        app: lasntg
+        app: lasntgadmin
     spec:
       securityContext:
         fsGroup: 33
@@ -30,7 +30,7 @@ spec:
                 values:
                 - private-pool
       containers:
-      - name: lasntg
+      - name: lasntgadmin
         image: php:7-apache
         imagePullPolicy: Always
         securityContext:
@@ -58,9 +58,9 @@ spec:
           timeoutSeconds: 30
         envFrom:
           - configMapRef:
-              name: lasntg-env
+              name: lasntgadmin-env
           - secretRef:
-              name: lasntg-secret
+              name: lasntgadmin-secret
         resources:
           limits:
             cpu: 200m
@@ -82,11 +82,11 @@ spec:
       volumes:
         - name: wp-content
           persistentVolumeClaim:
-            claimName: lasntg-pvc
+            claimName: lasntgadmin-pvc
         - name: wp-config
           secret: 
-            secretName: lasntg-config
+            secretName: lasntgadmin-config
         - name: php-config
           configMap:
-            name: lasntg-php-config
+            name: lasntgadmin-php-config
 

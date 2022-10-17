@@ -4,7 +4,7 @@ generatorOptions:
   disableNameSuffixHash: true
 
 configMapGenerator:
-- name: lasntg-env
+- name: lasntgadmin-env
   literals:
   - ENVIRONMENT=production
   - SITE_URL=https://lasntgadmin.veri.ie
@@ -20,22 +20,22 @@ patchesJson6902:
     target:
       version: v1
       kind: Service
-      name: lasntg-service
+      name: lasntgadmin-service
   - path: deployment.yaml
     target:
       group: apps
       version: v1
       kind: Deployment
-      name: lasntg
+      name: lasntgadmin
   - path: ingress.yaml
     target:
       group: networking.k8s.io
       version: v1
       kind: Ingress
-      name: lasntg-ingress
+      name: lasntgadmin-ingress
   - path: pvc.yaml
     target:
       version: v1
       kind: PersistentVolumeClaim
-      name: lasntg-pvc
+      name: lasntgadmin-pvc
 

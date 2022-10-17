@@ -2,12 +2,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: lasntg-service
+  name: lasntgadmin-service
   labels:
-    app: lasntg-service
+    app: lasntgadmin-service
 spec:
   selector:
-    app: lasntg
+    app: lasntgadmin
   ports:
   - name: http
     protocol: TCP
