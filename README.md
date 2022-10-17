@@ -1,4 +1,6 @@
-# WordPress template repo
+# LASNTG Admin 
+
+A custom WordPress and WooCommerce website.
 
 ## Local Docker only
 
@@ -16,15 +18,15 @@ ADMIN_PASSWORD=secret
 ADMIN_EMAIL=lasntg@example.com
 ```
 
-Build images and run WordPress.
+_NB:_ Create your [GITHUB_TOKEN](https://github.com/settings/tokens/new?scopes=repo,read:packages&description=Install%20packages) so you can install composer packages from our private Github repos.
 
-Create the [GITHUB_TOKEN](https://github.com/settings/tokens/new?scopes=repo,read:packages&description=Install%20packages)
+Build images and run WordPress.
 
 ```sh
 # NB add your GITHB_TOKEN 
 docker-compose build --build-arg USER_ID=$(id -u) --build-arg GITHUB_TOKEN=
 # start container
-docker-compose up -d
+docker-compose up -d wordpress
 # view debug log
 tail -f /var/www/html/wp-content/debug.log
 ```
@@ -38,6 +40,14 @@ curl -X OPTIONS http://locahost:8080/wp-json/wp/v2 | jq
 ```
 
 > I highly recommend https://github.com/stedolan/jq for json formatting on the command line
+
+To access the running container
+
+```sh
+docker exec -ti -w /var/www/html -u www-data:www-data lasntgadmin-app_wordpress_1 bash
+ls -l wp-content/plugins
+ls -l wp-content/themes
+```
 
 ## Deployment
 
