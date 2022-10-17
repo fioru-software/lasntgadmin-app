@@ -4,3 +4,4 @@ deployment/**/wp-config.php
 .vscode
 .idea
 .env
+vendor

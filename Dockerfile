@@ -3,6 +3,7 @@ FROM php:7-apache
 ARG USER_ID
 ARG WP_VERSION
 ARG WP_LOCALE
+ARG GITHUB_TOKEN
 
 RUN a2enmod rewrite
 RUN apt update; \
@@ -24,7 +25,7 @@ RUN chown -R www-data:www-data /var/www; \
 COPY --from=composer:2 /usr/bin/composer /usr/local/bin/composer
 
 COPY etc/php/php.ini /usr/local/etc/php/php.ini
-COPY --chown=www-data:www-data config/.htaccess config/wp-config.php /var/www/html/
+COPY --chown=www-data:www-data composer.json composer.lock config/.htaccess config/wp-config.php /var/www/html/
 COPY scripts/* /usr/local/bin/
 RUN chmod +x /usr/local/bin/*
 
@@ -34,12 +35,15 @@ WORKDIR /var/www/html
 RUN wp core download --skip-content --version=$WP_VERSION --locale=$WP_LOCALE --path=/var/www/html; \
     mkdir -p /var/www/html/wp-content/plugins /var/www/html/wp-content/themes
 
-# payment gateway
-COPY --chown=www-data:www-data convergewoocommerce-1.1.3.zip /tmp/convergewoocommerce.zip
-RUN unzip /tmp/convergewoocommerce.zip -d /var/www/html/wp-content/plugins/
+USER www-data
+RUN composer config --auth github-oauth.github.com ${GITHUB_TOKEN};\
+    composer config --no-plugins allow-plugins.composer/installers true;\
+    composer install --no-cache --no-dev --optimize-autoloader
 
-# default groups
-COPY --chown=www-data:www-data exports/groups.sql /tmp/groups.sql
+# plugins
+RUN mkdir /tmp/plugins
+COPY --chown=www-data:www-data plugins/* /tmp/plugins/
+RUN for plugin in /tmp/plugins/*.zip; do unzip $plugin -d /var/www/html/wp-content/plugins/; done;
 
 USER root
 

@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
 
-  wp:
+  wordpress:
     build: 
       context: .
       args: 
@@ -18,10 +18,10 @@ services:
     ports:
       - "8080:80"
     volumes:
+      - .:/usr/local/src
       - /var/www/html
-      - /var/www/moodledata
-      #- ../lasntgadmin-theme:/var/www/html/wp-content/themes/lasntgadmin-theme
-      #- ../lasntgadmin-plugin:/var/www/html/wp-content/plugins/lasntgadmin-plugin_template
+      - ../lasntgadmin-theme:/var/www/html/wp-content/themes/lasntgadmin-theme
+      - ../lasntgadmin-plugin_template:/var/www/html/wp-content/plugins/lasntgadmin-plugin_template
 
   db:
     #cpuset: "0"
