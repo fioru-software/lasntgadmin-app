@@ -20,6 +20,9 @@ RUN chown -R www-data:www-data /var/www; \
     curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar && chmod +x wp-cli.phar && mv wp-cli.phar /usr/local/bin/wp; \
     curl -sfL $(curl -s https://api.github.com/repos/powerman/dockerize/releases/latest | grep -i /dockerize-$(uname -s)-$(uname -m)\" | cut -d\" -f4) | install /dev/stdin /usr/local/bin/dockerize
 
+# install composer
+COPY --from=composer:2 /usr/bin/composer /usr/local/bin/composer
+
 COPY etc/php/php.ini /usr/local/etc/php/php.ini
 COPY --chown=www-data:www-data config/.htaccess config/wp-config.php /var/www/html/
 COPY scripts/* /usr/local/bin/
@@ -36,7 +39,7 @@ COPY --chown=www-data:www-data convergewoocommerce-1.1.3.zip /tmp/convergewoocom
 RUN unzip /tmp/convergewoocommerce.zip -d /var/www/html/wp-content/plugins/
 
 # default groups
-COPY --chown=www-data:www-data export/groups.sql /tmp/groups.sql
+COPY --chown=www-data:www-data exports/groups.sql /tmp/groups.sql
 
 USER root
 

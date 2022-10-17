@@ -9,7 +9,7 @@ Create `.env` file
 ```
 SITE_URL=localhost:8080
 SITE_TITLE=LASNTG
-WP_PLUGINS=groups woocommerce advanced-custom-fields user-role-editor convergewoocommerce
+WP_PLUGINS=groups woocommerce advanced-custom-fields user-role-editor convergewoocommerce wp-mail-smtp
 WP_THEME=storefront
 ADMIN_USERNAME=admin
 ADMIN_PASSWORD=secret

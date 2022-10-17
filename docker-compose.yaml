@@ -17,6 +17,11 @@ services:
       - db
     ports:
       - "8080:80"
+    volumes:
+      - /var/www/html
+      - /var/www/moodledata
+      #- ../lasntgadmin-theme:/var/www/html/wp-content/themes/lasntgadmin-theme
+      #- ../lasntgadmin-plugin:/var/www/html/wp-content/plugins/lasntgadmin-plugin_template
 
   db:
     #cpuset: "0"
