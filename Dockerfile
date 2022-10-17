@@ -26,6 +26,7 @@ COPY --from=composer:2 /usr/bin/composer /usr/local/bin/composer
 
 COPY etc/php/php.ini /usr/local/etc/php/php.ini
 COPY --chown=www-data:www-data composer.json composer.lock config/.htaccess config/wp-config.php /var/www/html/
+COPY exports /usr/local/src/
 COPY scripts/* /usr/local/bin/
 RUN chmod +x /usr/local/bin/*
 
