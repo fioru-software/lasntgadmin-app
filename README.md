@@ -84,4 +84,3 @@ kubectl get event --field-selector involvedObject.name=staging-lasntg-7788ffdbb7
 - [Advanced Custom Fields](https://www.advancedcustomfields.com/resources)
 - [WooCommerce Developer Resources](https://developer.woocommerce.com/)
 - [WooCommerce Storefront Theme](https://woocommerce.com/documentation/themes/storefront/)
-
