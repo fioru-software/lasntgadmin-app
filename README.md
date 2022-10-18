@@ -34,6 +34,15 @@ tail -f /var/www/html/wp-content/debug.log
 - Visit [localhost:8080](http://localhost:8080)
 - Visit [localhost:8080/wp-admin](http://localhost:/wp-login.php) as log in with username `admin` and password `secret`.
 
+If you need to rebuild the Docker image and would like to retain your database, do the following:
+
+```sh
+docker-compose stop
+docker rm lasntgadmin-app_wordpress_1
+docker-compose build --build-arg GITHUB_TOKEN= wordpress
+docker-compose up -d wordpress
+```
+
 ```sh
 # query the API
 curl -X OPTIONS http://locahost:8080/wp-json/wp/v2 | jq
