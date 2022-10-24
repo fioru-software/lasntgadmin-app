@@ -17,7 +17,8 @@ spec:
     spec:
       securityContext:
         fsGroup: 33
-        #fsGroupChangePolicy: "OnRootMismatch"
+        runAsGroup: 33
+        fsGroupChangePolicy: "OnRootMismatch"
       affinity:
         nodeAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:
@@ -71,6 +72,7 @@ spec:
         volumeMounts: 
         - name: wp-content
           mountPath: /var/www/html/wp-content
+          readOnly: false
         - name: wp-config
           mountPath: /var/www/html/wp-config.php
           subPath: wp-config.php
