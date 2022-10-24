@@ -60,6 +60,10 @@ ls -l wp-content/themes
 
 ## Deployment
 
+### Adding your plugin
+
+Rebuild the Docker image
+
 ### Gcloud
 
 ```sh

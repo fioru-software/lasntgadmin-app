@@ -5,3 +5,4 @@ deployment/**/wp-config.php
 .idea
 .env
 vendor
+wp-content
