@@ -11,6 +11,7 @@ configMapGenerator:
   - SITE_TITLE=LASNTG
   - WP_PLUGINS=groups woocommerce advanced-custom-fields user-role-editor wp-mail-smtp convergewoocommerce lasntgadmin-grant-funded-payment-gateway
   - WP_THEMES=storefront
+  - COMPOSER_AUTOLOAD_FILEPATH=/var/www/html/vendor/autoload.php
 
 bases:
   - ../../base
