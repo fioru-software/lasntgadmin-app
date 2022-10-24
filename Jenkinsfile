@@ -81,6 +81,7 @@ pipeline {
                     script {
                         sh "kubectl --token=$GCLOUD_TOKEN apply -k deployment/k8s/overlays/${ENVIRONMENT}"
                         sh "kubectl --token=$GCLOUD_TOKEN rollout restart deployment ${ENVIRONMENT}-lasntgadmin"
+                        sh "kubectl --token=$GCLOUD_TOKEN rollout status deployment ${ENVIRONMENT}-lasntgadmin"
                     }
                 }
             }
