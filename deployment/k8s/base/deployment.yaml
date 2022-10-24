@@ -17,8 +17,8 @@ spec:
     spec:
       securityContext:
         fsGroup: 33
-        runAsGroup: 33
-        fsGroupChangePolicy: "OnRootMismatch"
+        #runAsGroup: 33
+        #fsGroupChangePolicy: "OnRootMismatch"
       affinity:
         nodeAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:

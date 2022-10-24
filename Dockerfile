@@ -37,9 +37,10 @@ RUN wp core download --skip-content --version=$WP_VERSION --locale=$WP_LOCALE --
     mkdir -p /var/www/html/wp-content/plugins /var/www/html/wp-content/themes
 
 USER www-data
-RUN composer config --auth github-oauth.github.com ${GITHUB_TOKEN};\
-    composer config --no-plugins allow-plugins.composer/installers true;\
-    composer update --no-cache --no-dev --optimize-autoloader
+RUN composer config --auth github-oauth.github.com ${GITHUB_TOKEN}; \
+    composer config --no-plugins allow-plugins.composer/installers true; \
+    composer update --no-cache --no-dev --optimize-autoloader; \
+    composer install --ignore-platform-reqs
 
 # plugins
 RUN mkdir /tmp/plugins
