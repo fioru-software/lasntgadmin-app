@@ -72,42 +72,47 @@ LOCK TABLES `wp_groups_group` WRITE;
 /*!40000 ALTER TABLE `wp_groups_group` DISABLE KEYS */;
 INSERT INTO `wp_groups_group` VALUES 
 (1,NULL,0,'2022-10-10 13:49:11','Registered',NULL),
--- Ballincollig Training Centre
-(2,NULL,1,'2022-10-10 13:53:48','Cork City',NULL),
-(3,NULL,1,'2022-10-10 13:55:53','Cork County Council',NULL),
-(4,NULL,1,'2022-10-10 13:59:33','Kerry County Council',NULL),
--- Ballycoolin Training Centre
-(5,NULL,1,'2022-10-10 14:15:59','Dublin City Council',NULL),
-(6,NULL,1,'2022-10-10 14:15:59','Dun Laoghaire County Council',NULL),
-(7,NULL,1,'2022-10-10 14:15:59','Fingal County Council',NULL),
-(8,NULL,1,'2022-10-10 14:15:59','Kildare County Council',NULL),
-(9,NULL,1,'2022-10-10 14:15:59','Louth County Council',NULL),
-(10,NULL,1,'2022-10-10 14:15:59','Meath County Council',NULL),
-(11,NULL,1,'2022-10-10 14:15:59','South Dublin County Council',NULL),
-(12,NULL,1,'2022-10-10 14:15:59','Westmeath County Council',NULL),
-(13,NULL,1,'2022-10-10 14:15:59','Wicklow County Council',NULL),
--- Castlebar Training Centre
-(14,NULL,1,'2022-10-10 14:15:59','Galway City',NULL),
-(15,NULL,1,'2022-10-10 14:15:59','Galway County',NULL),
-(16,NULL,1,'2022-10-10 14:15:59','Leitrim County Council',NULL),
-(17,NULL,1,'2022-10-10 14:15:59','Longford County Council',NULL),
-(18,NULL,1,'2022-10-10 14:15:59','Mayo County Council',NULL),
-(19,NULL,1,'2022-10-10 14:15:59','Roscommon County Council',NULL),
--- Roscrea Training Centre
-(20,NULL,1,'2022-10-10 14:15:59','Carlow County Council',NULL),
-(21,NULL,1,'2022-10-10 14:15:59','Clare County Council',NULL),
-(22,NULL,1,'2022-10-10 14:15:59','Kilkenny County Council',NULL),
-(23,NULL,1,'2022-10-10 14:15:59','Laois County Council',NULL),
-(24,NULL,1,'2022-10-10 14:15:59','Limerick City & County Council',NULL),
-(25,NULL,1,'2022-10-10 14:15:59','Offaly County Council',NULL),
-(26,NULL,1,'2022-10-10 14:15:59','Tipperary County Council',NULL),
-(27,NULL,1,'2022-10-10 14:15:59','Waterford City & County Council',NULL),
-(28,NULL,1,'2022-10-10 14:15:59','Wexford County Council',NULL),
--- Stranorlar Training Centre
-(29,NULL,1,'2022-10-10 14:15:59','Cavan County Council',NULL),
-(30,NULL,1,'2022-10-10 14:15:59','Donegal County Council',NULL),
-(31,NULL,1,'2022-10-10 14:15:59','Monaghan County Council',NULL),
-(32,NULL,1,'2022-10-10 14:15:59','Sligo County Council',NULL);
+
+(2,NULL,1,'2022-10-14 13:18:36','Ballincollig Training Centre',NULL),
+(3,2,1,'2022-10-10 13:53:48','Cork City',''),
+(4,2,1,'2022-10-10 13:55:53','Cork County Council',''),
+(5,2,1,'2022-10-10 13:59:33','Kerry County Council',''),
+
+(6,NULL,1,'2022-10-14 13:21:39','Ballycoolin Training Centre',NULL),
+(7,6,1,'2022-10-10 14:15:59','Dublin City Council',NULL),
+(8,6,1,'2022-10-10 14:15:59','Dun Laoghaire County Council',NULL),
+(9,6,1,'2022-10-10 14:15:59','Fingal County Council',NULL),
+(10,6,1,'2022-10-10 14:15:59','Kildare County Council',NULL),
+(11,6,1,'2022-10-10 14:15:59','Louth County Council',NULL),
+(12,6,1,'2022-10-10 14:15:59','Meath County Council',NULL),
+(13,6,1,'2022-10-10 14:15:59','South Dublin County Council',NULL),
+(14,6,1,'2022-10-10 14:15:59','Westmeath County Council',NULL),
+(15,6,1,'2022-10-10 14:15:59','Wicklow County Council',NULL),
+
+(16,NULL,1,'2022-10-14 13:22:00','Castlebar Training Centre',NULL),
+(17,16,1,'2022-10-10 14:15:59','Galway City',NULL),
+(18,16,1,'2022-10-10 14:15:59','Galway County',NULL),
+(19,16,1,'2022-10-10 14:15:59','Leitrim County Council',NULL),
+(20,16,1,'2022-10-10 14:15:59','Longford County Council',NULL),
+(21,16,1,'2022-10-10 14:15:59','Mayo County Council',NULL),
+(22,16,1,'2022-10-10 14:15:59','Roscommon County Council',NULL),
+
+(23,NULL,1,'2022-10-14 13:22:23','Roscrea Training Centre',NULL),
+(24,23,1,'2022-10-10 14:15:59','Carlow County Council',NULL),
+(25,23,1,'2022-10-10 14:15:59','Clare County Council',NULL),
+(26,23,1,'2022-10-10 14:15:59','Kilkenny County Council',NULL),
+(27,23,1,'2022-10-10 14:15:59','Laois County Council',NULL),
+(28,23,1,'2022-10-10 14:15:59','Limerick City & County Council',NULL),
+(29,23,1,'2022-10-10 14:15:59','Offaly County Council',NULL),
+(30,23,1,'2022-10-10 14:15:59','Tipperary County Council',NULL),
+(31,23,1,'2022-10-10 14:15:59','Waterford City & County Council',NULL),
+(32,23,1,'2022-10-10 14:15:59','Wexford County Council',NULL),
+
+(33,NULL,1,'2022-10-14 13:22:40','Stranorlar Training Centre',NULL),
+(34,33,1,'2022-10-10 14:15:59','Cavan County Council',NULL),
+(35,33,1,'2022-10-10 14:15:59','Donegal County Council',NULL),
+(36,33,1,'2022-10-10 14:15:59','Monaghan County Council',NULL),
+(37,33,1,'2022-10-10 14:15:59','Sligo County Council',NULL);
 
 /*!40000 ALTER TABLE `wp_groups_group` ENABLE KEYS */;
 UNLOCK TABLES;
