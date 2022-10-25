@@ -38,8 +38,7 @@ RUN wp core download --skip-content --version=$WP_VERSION --locale=$WP_LOCALE --
 
 USER www-data
 RUN composer config --auth github-oauth.github.com ${GITHUB_TOKEN}; \
-    composer config --no-plugins allow-plugins.composer/installers true; \
-    composer install --no-cache --no-dev --optimize-autoloader
+    composer config --no-plugins allow-plugins.composer/installers true
 
 # plugins
 RUN mkdir /tmp/plugins
