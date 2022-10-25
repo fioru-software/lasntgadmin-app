@@ -7,7 +7,6 @@ while read -r parent_name; do
 
     parent_slug=$(echo "$parent_name" | tr '[:upper:]' '[:lower:]')
     parent_id=$(runuser -s /bin/sh -c "wp term get product_cat '$parent_slug' --by=slug --field=id" www-data)
-    echo "parent id $parent_id exists\n"
 
     if [ -z $parent_id ]; then
 
