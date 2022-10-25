@@ -64,6 +64,8 @@ To update composer.lock
 docker run -ti --rm -u www-data:www-data -v $(pwd):/var/www/html -w /var/www/html lasntgadmin-app_wordpress composer update --no-dev
 ```
 
+Now rebuild image and recreate container
+
 ## Deployment
 
 ### Gcloud
