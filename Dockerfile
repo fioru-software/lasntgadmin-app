@@ -7,7 +7,7 @@ ARG GITHUB_TOKEN
 
 RUN a2enmod rewrite
 RUN apt update; \
-    apt install -y default-mysql-client vim libzip-dev unzip libpng-dev libmagickwand-dev libicu-dev
+    apt install -y default-mysql-client vim libzip-dev unzip libpng-dev libmagickwand-dev libicu-dev 
 
 RUN pecl install --configureoptions='with-imagick="autodetect"' imagick; \
     docker-php-ext-enable imagick
@@ -39,13 +39,12 @@ RUN wp core download --skip-content --version=$WP_VERSION --locale=$WP_LOCALE --
 USER www-data
 RUN composer config --auth github-oauth.github.com ${GITHUB_TOKEN}; \
     composer config --no-plugins allow-plugins.composer/installers true; \
-    composer update --no-cache --no-dev --optimize-autoloader; \
-    composer install --ignore-platform-reqs
+    composer install --no-cache --no-dev --optimize-autoloader
 
 # plugins
 RUN mkdir /tmp/plugins
 COPY --chown=www-data:www-data plugins/* /tmp/plugins/
-RUN for plugin in /tmp/plugins/*.zip; do unzip $plugin -d /var/www/html/wp-content/plugins/; done;
+RUN for plugin in /tmp/plugins/*.zip; do unzip -q $plugin -d /var/www/html/wp-content/plugins/; done;
 
 USER root
 

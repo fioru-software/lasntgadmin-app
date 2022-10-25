@@ -58,6 +58,12 @@ ls -l wp-content/plugins
 ls -l wp-content/themes
 ```
 
+To update composer.lock
+
+```sh
+docker run -ti --rm -u www-data:www-data -v $(pwd):/var/www/html -w /var/www/html lasntgadmin-app_wordpress composer update --no-dev
+```
+
 ## Deployment
 
 ### Gcloud
