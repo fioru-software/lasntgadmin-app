@@ -107,8 +107,10 @@ INSERT INTO `wp_groups_group` VALUES
 (29,NULL,1,'2022-10-10 14:15:59','Cavan County Council',NULL),
 (30,NULL,1,'2022-10-10 14:15:59','Donegal County Council',NULL),
 (31,NULL,1,'2022-10-10 14:15:59','Monaghan County Council',NULL),
-(32,NULL,1,'2022-10-10 14:15:59','Sligo County Council',NULL);
-
+(32,NULL,1,'2022-10-10 14:15:59','Sligo County Council',NULL),
+-- Website
+(33,NULL,1,'2022-10-10 14:15:59','Website',NULL);
+-- Utilities 
 /*!40000 ALTER TABLE `wp_groups_group` ENABLE KEYS */;
 UNLOCK TABLES;
 
