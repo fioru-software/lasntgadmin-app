@@ -58,13 +58,32 @@ ls -l wp-content/plugins
 ls -l wp-content/themes
 ```
 
-To update composer.lock
+### Adding custom plugins and themes
+
+Edit `composer.json` and add the repo source to the `repositories` property.
+
+```json
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "git@github.com:fioru-software/lasntgadmin-attendees.git"
+        }
+    ]
+}
+```
+
+Require the package
+
+```sh
+docker run -ti --rm -u www-data:www-data -v $(pwd):/var/www/html -w /var/www/html lasntgadmin-app_wordpress composer require fioru/lasntgadmin-attendees
+```
+
+Update the `composer.lock` file
 
 ```sh
 docker run -ti --rm -u www-data:www-data -v $(pwd):/var/www/html -w /var/www/html lasntgadmin-app_wordpress composer update --no-dev
 ```
-
-Now rebuild image and recreate container
 
 ## Deployment
 

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f536a39e012fbb665a63dabe806ede76",
+    "content-hash": "0043be69d9e3b4e8af5265fc7ad7657d",
     "packages": [
         {
             "name": "composer/installers",
@@ -150,6 +150,68 @@
                 }
             ],
             "time": "2022-08-20T06:45:11+00:00"
+        },
+        {
+            "name": "fioru/lasntgadmin-attendees",
+            "version": "0.1.2",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:fioru-software/lasntgadmin-attendees.git",
+                "reference": "613a7981fdee26a9f927a0d98073a38f2e85c138"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-attendees/zipball/613a7981fdee26a9f927a0d98073a38f2e85c138",
+                "reference": "613a7981fdee26a9f927a0d98073a38f2e85c138",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~2.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
+                "enlightn/security-checker": "dev-main",
+                "fakerphp/faker": "^1.19",
+                "mockery/mockery": "^1.5",
+                "overtrue/phplint": "^3.0",
+                "phpcompatibility/php-compatibility": "^9.3",
+                "phpcompatibility/phpcompatibility-wp": "*",
+                "squizlabs/php_codesniffer": "^3.7",
+                "wp-coding-standards/wpcs": "dev-develop",
+                "yoast/phpunit-polyfills": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "extra": {
+                "installer-name": "lasntgadmin-attendees"
+            },
+            "scripts": {
+                "test": [
+                    "phpunit --verbose --configuration phpunit.xml.dist --prepend vendor/autoload.php --testdox --colors=always"
+                ],
+                "lint": [
+                    "phplint ./ --exclude=vendor"
+                ],
+                "check": [
+                    "phpcs"
+                ],
+                "fix": [
+                    "phpcbf"
+                ],
+                "secure": [
+                    "security-checker security:check composer.lock"
+                ],
+                "all": [
+                    "@lint",
+                    "@check",
+                    "@test",
+                    "@secure"
+                ]
+            },
+            "support": {
+                "source": "https://github.com/fioru-software/lasntgadmin-attendees/tree/0.1.2",
+                "issues": "https://github.com/fioru-software/lasntgadmin-attendees/issues"
+            },
+            "time": "2022-11-01T13:03:15+00:00"
         },
         {
             "name": "fioru/lasntgadmin-grant-funded-payment-gateway",
