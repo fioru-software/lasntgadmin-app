@@ -7,6 +7,10 @@
         {
             "type": "vcs",
             "url":  "git@github.com:fioru-software/lasntgadmin-grant-funded-payment-gateway.git"
+        },
+        {
+            "type": "vcs",
+            "url":  "git@github.com:fioru-software/lasntgadmin-attendees.git"
         }
     ],
     "config": {
