@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0043be69d9e3b4e8af5265fc7ad7657d",
+    "content-hash": "8fd22166da66789fd289d829d38936bc",
     "packages": [
         {
             "name": "composer/installers",
@@ -215,16 +215,16 @@
         },
         {
             "name": "fioru/lasntgadmin-grant-funded-payment-gateway",
-            "version": "0.2.3",
+            "version": "0.3.0",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-grant-funded-payment-gateway.git",
-                "reference": "02d9e924ce1f7c63252dc7960f01555cbbd6d5fb"
+                "reference": "90aa5c2d872394b8bcd51d13ce0b8117231e39c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-grant-funded-payment-gateway/zipball/02d9e924ce1f7c63252dc7960f01555cbbd6d5fb",
-                "reference": "02d9e924ce1f7c63252dc7960f01555cbbd6d5fb",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-grant-funded-payment-gateway/zipball/90aa5c2d872394b8bcd51d13ce0b8117231e39c9",
+                "reference": "90aa5c2d872394b8bcd51d13ce0b8117231e39c9",
                 "shasum": ""
             },
             "require": {
@@ -251,6 +251,11 @@
                     "Lasntg\\Admin\\PaymentGateway\\GrantFunded\\": "lib"
                 }
             },
+            "autoload-dev": {
+                "psr-4": {
+                    "Lasntg\\Admin\\Test\\": "tests/"
+                }
+            },
             "scripts": {
                 "test": [
                     "phpunit --verbose --configuration phpunit.xml.dist --prepend vendor/autoload.php --testdox --colors=always"
@@ -275,10 +280,10 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-grant-funded-payment-gateway/tree/0.2.3",
+                "source": "https://github.com/fioru-software/lasntgadmin-grant-funded-payment-gateway/tree/0.3.0",
                 "issues": "https://github.com/fioru-software/lasntgadmin-grant-funded-payment-gateway/issues"
             },
-            "time": "2022-10-25T14:45:44+00:00"
+            "time": "2022-11-02T17:45:39+00:00"
         }
     ],
     "packages-dev": [],
