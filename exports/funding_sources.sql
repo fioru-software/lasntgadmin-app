@@ -1,0 +1,5 @@
+
+LOCK TABLES `wp_options` WRITE;
+INSERT INTO `wp_options` (option_name, option_value, autoload) VALUES 
+('lasntgadmin_grant_funded_payment_gateway/funding-sources', 'a:6:{i:0;O:8:"stdClass":3:{s:2:"id";s:36:"6472d943-7890-4993-93c3-3a8cf4af653a";s:4:"name";s:10:"Road Grant";s:4:"slug";s:10:"road-grant";}i:1;O:8:"stdClass":3:{s:2:"id";s:36:"8cc4d801-c28e-4532-8c3d-f6386004b6e9";s:4:"name";s:11:"Water Grant";s:4:"slug";s:11:"water-grant";}i:2;O:8:"stdClass":3:{s:2:"id";s:36:"dbf92f00-5914-4acf-a2ec-55b3909684d2";s:4:"name";s:33:"Environmental Grant DHPLG (water)";s:4:"slug";s:31:"environmental-grant-dhplg-water";}i:3;O:8:"stdClass":3:{s:2:"id";s:36:"50a960f6-4587-4f68-9c32-c38497436582";s:4:"name";s:33:"Environmental Grant DCCAE (waste)";s:4:"slug";s:31:"environmental-grant-dccae-waste";}i:4;O:8:"stdClass":3:{s:2:"id";s:36:"56656467-172d-432f-b1db-ee895264abec";s:4:"name";s:35:"Environmental Grant DHPLG (housing)";s:4:"slug";s:33:"environmental-grant-dhplg-housing";}i:5;O:8:"stdClass":3:{s:2:"id";s:36:"43a53352-bba4-4e65-bbf5-f480e500d454";s:4:"name";s:23:"Environmental Grant DOT";s:4:"slug";s:23:"environmental-grant-dot";}}', 'no');
+UNLOCK TABLES;
