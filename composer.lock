@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "400f3f305ddcec64c3e56d2cecb85857",
+    "content-hash": "0c507cb1a0b7714ae0d6ce9f1a7fd0fc",
     "packages": [
         {
             "name": "composer/installers",
@@ -215,16 +215,16 @@
         },
         {
             "name": "fioru/lasntgadmin-grant-funded-payment-gateway",
-            "version": "0.4.0",
+            "version": "0.4.1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-grant-funded-payment-gateway.git",
-                "reference": "dc58f758d0e087ffddef11a66298f217b0ed7f45"
+                "reference": "4c2a2e28a3207364315d0a402a992c7cdcdf9f3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-grant-funded-payment-gateway/zipball/dc58f758d0e087ffddef11a66298f217b0ed7f45",
-                "reference": "dc58f758d0e087ffddef11a66298f217b0ed7f45",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-grant-funded-payment-gateway/zipball/4c2a2e28a3207364315d0a402a992c7cdcdf9f3e",
+                "reference": "4c2a2e28a3207364315d0a402a992c7cdcdf9f3e",
                 "shasum": ""
             },
             "require": {
@@ -280,10 +280,10 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-grant-funded-payment-gateway/tree/0.4.0",
+                "source": "https://github.com/fioru-software/lasntgadmin-grant-funded-payment-gateway/tree/0.4.1",
                 "issues": "https://github.com/fioru-software/lasntgadmin-grant-funded-payment-gateway/issues"
             },
-            "time": "2022-11-09T10:38:03+00:00"
+            "time": "2022-11-10T13:44:26+00:00"
         }
     ],
     "packages-dev": [],
