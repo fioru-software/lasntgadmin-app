@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0459e1541258b6d55789658962bbe765",
+    "content-hash": "7e1c13d6531d89d098aec129cdc8adcb",
     "packages": [
         {
             "name": "composer/installers",
@@ -153,16 +153,16 @@
         },
         {
             "name": "fioru/lasntgadmin-attendees",
-            "version": "0.1.2",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-attendees.git",
-                "reference": "613a7981fdee26a9f927a0d98073a38f2e85c138"
+                "reference": "4dd5d36c1c56a45fc2871700010caa77bbe52228"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-attendees/zipball/613a7981fdee26a9f927a0d98073a38f2e85c138",
-                "reference": "613a7981fdee26a9f927a0d98073a38f2e85c138",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-attendees/zipball/4dd5d36c1c56a45fc2871700010caa77bbe52228",
+                "reference": "4dd5d36c1c56a45fc2871700010caa77bbe52228",
                 "shasum": ""
             },
             "require": {
@@ -183,6 +183,16 @@
             "type": "wordpress-plugin",
             "extra": {
                 "installer-name": "lasntgadmin-attendees"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Lasntg\\Admin\\Attendees\\": "lib"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Lasntg\\Admin\\Test\\": "tests/"
+                }
             },
             "scripts": {
                 "test": [
@@ -208,10 +218,10 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-attendees/tree/0.1.2",
+                "source": "https://github.com/fioru-software/lasntgadmin-attendees/tree/1.0.0",
                 "issues": "https://github.com/fioru-software/lasntgadmin-attendees/issues"
             },
-            "time": "2022-11-01T13:03:15+00:00"
+            "time": "2022-11-18T15:00:01+00:00"
         },
         {
             "name": "fioru/lasntgadmin-grant-funded-payment-gateway",
