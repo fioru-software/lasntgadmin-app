@@ -51,7 +51,7 @@ spec:
           periodSeconds: 60
           timeoutSeconds: 30
         startupProbe:
-          #initialDelaySeconds: 60
+          initialDelaySeconds: 60
           httpGet:
             path: /
             port: 80
