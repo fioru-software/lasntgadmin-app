@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "919124c3084642e6c9fc985e285ff653",
+    "content-hash": "1ca37e92c1c956eacf3b1cb2e99f57a8",
     "packages": [
         {
             "name": "composer/installers",
@@ -297,16 +297,16 @@
         },
         {
             "name": "fioru/lasntgadmin-quotas",
-            "version": "0.0.1",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-quotas.git",
-                "reference": "7734c1789eb485cfa40587f36e347c086b3fcb48"
+                "reference": "b7072ff1979dae111103bbc06fb60af0f807b27c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-quotas/zipball/7734c1789eb485cfa40587f36e347c086b3fcb48",
-                "reference": "7734c1789eb485cfa40587f36e347c086b3fcb48",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-quotas/zipball/b7072ff1979dae111103bbc06fb60af0f807b27c",
+                "reference": "b7072ff1979dae111103bbc06fb60af0f807b27c",
                 "shasum": ""
             },
             "require": {
@@ -362,10 +362,10 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-quotas/tree/0.0.1",
+                "source": "https://github.com/fioru-software/lasntgadmin-quotas/tree/1.0.1",
                 "issues": "https://github.com/fioru-software/lasntgadmin-quotas/issues"
             },
-            "time": "2022-11-21T16:03:59+00:00"
+            "time": "2022-11-22T16:41:32+00:00"
         }
     ],
     "packages-dev": [],
