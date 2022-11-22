@@ -64,10 +64,10 @@ spec:
               name: lasntgadmin-secret
         resources:
           limits:
-            cpu: 200m
+            cpu: 500m
             memory: 1024M
           requests:
-            cpu: 100m
+            cpu: 200m
             memory: 512M
         volumeMounts: 
         - name: wp-content
