@@ -14,7 +14,7 @@
         },
         {
             "type": "vcs",
-            "url":  "git@github.com:fioru-software/lasntgadmin-quotas.git"
+            "url":  "git@github.com:fioru-software/lasntgadmin-products.git"
         }
     ],
     "config": {
@@ -25,6 +25,6 @@
     "require": {
         "fioru/lasntgadmin-grant-funded-payment-gateway": "^1.0.0",
         "fioru/lasntgadmin-attendees": "^1.0.0",
-        "fioru/lasntgadmin-quotas": "^1.0.1"
+        "fioru/lasntgadmin-products": "^3.0"
     }
 }

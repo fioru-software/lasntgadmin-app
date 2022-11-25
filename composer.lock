@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1ca37e92c1c956eacf3b1cb2e99f57a8",
+    "content-hash": "12e35296eeb5efe802f77657bf9cad12",
     "packages": [
         {
             "name": "composer/installers",
@@ -225,16 +225,16 @@
         },
         {
             "name": "fioru/lasntgadmin-grant-funded-payment-gateway",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-grant-funded-payment-gateway.git",
-                "reference": "6fd3328f5ebb1f8f683fe045562b3feb0a15cc53"
+                "reference": "f9f7a1d415f90633271c85954a6f2aec36e29b38"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-grant-funded-payment-gateway/zipball/6fd3328f5ebb1f8f683fe045562b3feb0a15cc53",
-                "reference": "6fd3328f5ebb1f8f683fe045562b3feb0a15cc53",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-grant-funded-payment-gateway/zipball/f9f7a1d415f90633271c85954a6f2aec36e29b38",
+                "reference": "f9f7a1d415f90633271c85954a6f2aec36e29b38",
                 "shasum": ""
             },
             "require": {
@@ -290,23 +290,23 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-grant-funded-payment-gateway/tree/1.0.1",
+                "source": "https://github.com/fioru-software/lasntgadmin-grant-funded-payment-gateway/tree/1.0.2",
                 "issues": "https://github.com/fioru-software/lasntgadmin-grant-funded-payment-gateway/issues"
             },
-            "time": "2022-11-21T10:45:36+00:00"
+            "time": "2022-11-23T12:37:44+00:00"
         },
         {
-            "name": "fioru/lasntgadmin-quotas",
-            "version": "1.0.1",
+            "name": "fioru/lasntgadmin-products",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
-                "url": "git@github.com:fioru-software/lasntgadmin-quotas.git",
-                "reference": "b7072ff1979dae111103bbc06fb60af0f807b27c"
+                "url": "git@github.com:fioru-software/lasntgadmin-products.git",
+                "reference": "933cc8e16e30bd2636738bfc3baf7713dd1a6427"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-quotas/zipball/b7072ff1979dae111103bbc06fb60af0f807b27c",
-                "reference": "b7072ff1979dae111103bbc06fb60af0f807b27c",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-products/zipball/933cc8e16e30bd2636738bfc3baf7713dd1a6427",
+                "reference": "933cc8e16e30bd2636738bfc3baf7713dd1a6427",
                 "shasum": ""
             },
             "require": {
@@ -326,11 +326,11 @@
             },
             "type": "wordpress-plugin",
             "extra": {
-                "installer-name": "lasntgadmin-quotas"
+                "installer-name": "lasntgadmin-products"
             },
             "autoload": {
                 "psr-4": {
-                    "Lasntg\\Admin\\Quotas\\": "lib"
+                    "Lasntg\\Admin\\Products\\": "lib"
                 }
             },
             "autoload-dev": {
@@ -362,10 +362,10 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-quotas/tree/1.0.1",
-                "issues": "https://github.com/fioru-software/lasntgadmin-quotas/issues"
+                "source": "https://github.com/fioru-software/lasntgadmin-products/tree/3.0.0",
+                "issues": "https://github.com/fioru-software/lasntgadmin-products/issues"
             },
-            "time": "2022-11-22T16:41:32+00:00"
+            "time": "2022-11-25T13:57:42+00:00"
         }
     ],
     "packages-dev": [],
