@@ -10,6 +10,10 @@
         },
         {
             "type": "vcs",
+            "url":  "git@github.com:fioru-software/lasntgadmin-groups.git"
+        },
+        {
+            "type": "vcs",
             "url":  "git@github.com:fioru-software/lasntgadmin-attendees.git"
         },
         {
@@ -23,7 +27,7 @@
         }
     },
     "require": {
-        "fioru/lasntgadmin-grant-funded-payment-gateway": "^1.0.0",
+        "fioru/lasntgadmin-grant-funded-payment-gateway": "^1.0.4",
         "fioru/lasntgadmin-attendees": "^1.0.0",
         "fioru/lasntgadmin-products": "^3.0"
     }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "12e35296eeb5efe802f77657bf9cad12",
+    "content-hash": "838cea2747576cbc36dddc57911d9b6f",
     "packages": [
         {
             "name": "composer/installers",
@@ -225,20 +225,21 @@
         },
         {
             "name": "fioru/lasntgadmin-grant-funded-payment-gateway",
-            "version": "1.0.2",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-grant-funded-payment-gateway.git",
-                "reference": "f9f7a1d415f90633271c85954a6f2aec36e29b38"
+                "reference": "cd9e609fe68be790649ed2e5b150e13373361952"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-grant-funded-payment-gateway/zipball/f9f7a1d415f90633271c85954a6f2aec36e29b38",
-                "reference": "f9f7a1d415f90633271c85954a6f2aec36e29b38",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-grant-funded-payment-gateway/zipball/cd9e609fe68be790649ed2e5b150e13373361952",
+                "reference": "cd9e609fe68be790649ed2e5b150e13373361952",
                 "shasum": ""
             },
             "require": {
-                "composer/installers": "~2.0"
+                "composer/installers": "~2.0",
+                "fioru/lasntgadmin-groups": "^0.0.1"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
@@ -290,10 +291,82 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-grant-funded-payment-gateway/tree/1.0.2",
+                "source": "https://github.com/fioru-software/lasntgadmin-grant-funded-payment-gateway/tree/1.0.4",
                 "issues": "https://github.com/fioru-software/lasntgadmin-grant-funded-payment-gateway/issues"
             },
-            "time": "2022-11-23T12:37:44+00:00"
+            "time": "2022-11-28T16:54:07+00:00"
+        },
+        {
+            "name": "fioru/lasntgadmin-groups",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:fioru-software/lasntgadmin-groups.git",
+                "reference": "d6d91605337b645c83985ce09f1b19b5778c13b8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-groups/zipball/d6d91605337b645c83985ce09f1b19b5778c13b8",
+                "reference": "d6d91605337b645c83985ce09f1b19b5778c13b8",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~2.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
+                "enlightn/security-checker": "dev-main",
+                "fakerphp/faker": "^1.19",
+                "mockery/mockery": "^1.5",
+                "overtrue/phplint": "^3.0",
+                "phpcompatibility/php-compatibility": "^9.3",
+                "phpcompatibility/phpcompatibility-wp": "*",
+                "squizlabs/php_codesniffer": "^3.7",
+                "wp-coding-standards/wpcs": "dev-develop",
+                "yoast/phpunit-polyfills": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "extra": {
+                "installer-name": "lasntgadmin-groups"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Lasntg\\Admin\\Group\\": "lib"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Lasntg\\Admin\\Test\\": "tests/"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "phpunit --verbose --configuration phpunit.xml.dist --prepend vendor/autoload.php --testdox --colors=always"
+                ],
+                "lint": [
+                    "phplint ./ --exclude=vendor"
+                ],
+                "check": [
+                    "phpcs -ns"
+                ],
+                "fix": [
+                    "phpcbf"
+                ],
+                "secure": [
+                    "security-checker security:check composer.lock"
+                ],
+                "all": [
+                    "@lint",
+                    "@check",
+                    "@test",
+                    "@secure"
+                ]
+            },
+            "support": {
+                "source": "https://github.com/fioru-software/lasntgadmin-groups/tree/0.0.1",
+                "issues": "https://github.com/fioru-software/lasntgadmin-groups/issues"
+            },
+            "time": "2022-11-28T16:02:26+00:00"
         },
         {
             "name": "fioru/lasntgadmin-products",
