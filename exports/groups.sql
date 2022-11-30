@@ -87,7 +87,7 @@ INSERT INTO `wp_groups_group` VALUES
 -- Private Client
 (33,NULL,NULL,1,'2022-10-10 14:15:59','Private Client',NULL);
 
-/*!40000 ALTER TABLE `wp_groups_group` ENABLE KEYS */;
+/*!40000 ALTER TABLE `wp_groups_group` ENABLE KEYS */;  
 UNLOCK TABLES;
 
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

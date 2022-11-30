@@ -27,8 +27,13 @@
         }
     },
     "require": {
+<<<<<<< HEAD
         "fioru/lasntgadmin-grant-funded-payment-gateway": "^1.0.4",
         "fioru/lasntgadmin-attendees": "^1.0.0",
+=======
+        "fioru/lasntgadmin-grant-funded-payment-gateway": "^1.0.0",
+        "fioru/lasntgadmin-attendees": "^2.0.0",
+>>>>>>> cf276dd (attendees v2.0.4)
         "fioru/lasntgadmin-products": "^3.0"
     }
 }
