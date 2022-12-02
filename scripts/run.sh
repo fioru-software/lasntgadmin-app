@@ -5,6 +5,7 @@ $dir/install.sh # install wp
 $dir/groups.sh # create groups
 $dir/funding_sources.sh # create funding sources for grant funded payment gateway
 $dir/roles.sh # create user roles
+$dir/caps.sh # create user roles
 $dir/composer_install.sh
 $dir/plugins.sh # install plugins
 $dir/product_cat.sh #create product categories
