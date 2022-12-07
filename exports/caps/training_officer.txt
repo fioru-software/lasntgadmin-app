@@ -1,1 +1,2 @@
+view_admin_dashboard
 read_product
