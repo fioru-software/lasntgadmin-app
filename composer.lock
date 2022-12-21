@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c172703571c82cb98529336a47de11ce",
+    "content-hash": "d673e32f856afb729e4f3c00571ea7ea",
     "packages": [
         {
             "name": "composer/installers",
@@ -298,16 +298,16 @@
         },
         {
             "name": "fioru/lasntgadmin-groups",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-groups.git",
-                "reference": "61078348af17283bebe4a470fae9bcd261793138"
+                "reference": "cdc43b8269d89b500d668d94dddd9556f621956a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-groups/zipball/61078348af17283bebe4a470fae9bcd261793138",
-                "reference": "61078348af17283bebe4a470fae9bcd261793138",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-groups/zipball/cdc43b8269d89b500d668d94dddd9556f621956a",
+                "reference": "cdc43b8269d89b500d668d94dddd9556f621956a",
                 "shasum": ""
             },
             "require": {
@@ -363,10 +363,10 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-groups/tree/1.0.1",
+                "source": "https://github.com/fioru-software/lasntgadmin-groups/tree/1.0.2",
                 "issues": "https://github.com/fioru-software/lasntgadmin-groups/issues"
             },
-            "time": "2022-12-02T16:38:14+00:00"
+            "time": "2022-12-21T11:14:06+00:00"
         },
         {
             "name": "fioru/lasntgadmin-products",
@@ -440,6 +440,78 @@
                 "issues": "https://github.com/fioru-software/lasntgadmin-products/issues"
             },
             "time": "2022-12-20T13:52:34+00:00"
+        },
+        {
+            "name": "fioru/lasntgadmin-users",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:fioru-software/lasntgadmin-users.git",
+                "reference": "a95b1a50a79c272ff32d818ea6ecaa5e9696e146"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-users/zipball/a95b1a50a79c272ff32d818ea6ecaa5e9696e146",
+                "reference": "a95b1a50a79c272ff32d818ea6ecaa5e9696e146",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~2.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
+                "enlightn/security-checker": "dev-main",
+                "fakerphp/faker": "^1.19",
+                "mockery/mockery": "^1.5",
+                "overtrue/phplint": "^3.0",
+                "phpcompatibility/php-compatibility": "^9.3",
+                "phpcompatibility/phpcompatibility-wp": "*",
+                "squizlabs/php_codesniffer": "^3.7",
+                "wp-coding-standards/wpcs": "dev-develop",
+                "yoast/phpunit-polyfills": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "extra": {
+                "installer-name": "lasntgadmin-users"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Lasntg\\Admin\\": "lib"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Lasntg\\Admin\\Test\\": "tests/"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "phpunit --verbose --configuration phpunit.xml.dist --prepend vendor/autoload.php --testdox --colors=always"
+                ],
+                "lint": [
+                    "phplint ./ --exclude=vendor"
+                ],
+                "check": [
+                    "phpcs -ns"
+                ],
+                "fix": [
+                    "phpcbf"
+                ],
+                "secure": [
+                    "security-checker security:check composer.lock"
+                ],
+                "all": [
+                    "@lint",
+                    "@check",
+                    "@test",
+                    "@secure"
+                ]
+            },
+            "support": {
+                "source": "https://github.com/fioru-software/lasntgadmin-users/tree/2.0.1",
+                "issues": "https://github.com/fioru-software/lasntgadmin-users/issues"
+            },
+            "time": "2022-12-21T11:06:50+00:00"
         }
     ],
     "packages-dev": [],
