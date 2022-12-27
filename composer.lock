@@ -443,20 +443,21 @@
         },
         {
             "name": "fioru/lasntgadmin-users",
-            "version": "2.0.1",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-users.git",
-                "reference": "a95b1a50a79c272ff32d818ea6ecaa5e9696e146"
+                "reference": "09097e1180c79b76a294bfb7f27face597f79327"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-users/zipball/a95b1a50a79c272ff32d818ea6ecaa5e9696e146",
-                "reference": "a95b1a50a79c272ff32d818ea6ecaa5e9696e146",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-users/zipball/09097e1180c79b76a294bfb7f27face597f79327",
+                "reference": "09097e1180c79b76a294bfb7f27face597f79327",
                 "shasum": ""
             },
             "require": {
-                "composer/installers": "~2.0"
+                "composer/installers": "~2.0",
+                "fioru/lasntgadmin-groups": "^1.0.5"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
@@ -476,7 +477,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "Lasntg\\Admin\\": "lib"
+                    "Lasntg\\Admin\\Users\\": "lib"
                 }
             },
             "autoload-dev": {
@@ -508,10 +509,10 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-users/tree/2.0.1",
+                "source": "https://github.com/fioru-software/lasntgadmin-users/tree/3.0.0",
                 "issues": "https://github.com/fioru-software/lasntgadmin-users/issues"
             },
-            "time": "2022-12-21T11:06:50+00:00"
+            "time": "2022-12-27T12:48:42+00:00"
         }
     ],
     "packages-dev": [],
