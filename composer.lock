@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cd2b85912aa2331c434c5f958e27d620",
+    "content-hash": "3fb7954fd6042782fffc21c5e3eb0fcd",
     "packages": [
         {
             "name": "composer/installers",
@@ -367,6 +367,82 @@
                 "issues": "https://github.com/fioru-software/lasntgadmin-groups/issues"
             },
             "time": "2023-01-03T14:11:05+00:00"
+        },
+        {
+            "name": "fioru/lasntgadmin-orders",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:fioru-software/lasntgadmin-orders.git",
+                "reference": "56d19fa794be78f36759e070f6e040ec29b07287"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-orders/zipball/56d19fa794be78f36759e070f6e040ec29b07287",
+                "reference": "56d19fa794be78f36759e070f6e040ec29b07287",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~2.0",
+                "fioru/lasntgadmin-attendees": "^3.1.0",
+                "fioru/lasntgadmin-grant-funded-payment-gateway": "^1.0.7",
+                "fioru/lasntgadmin-groups": "^1.0.6",
+                "fioru/lasntgadmin-products": "^5.0.4"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
+                "enlightn/security-checker": "dev-main",
+                "fakerphp/faker": "^1.19",
+                "mockery/mockery": "^1.5",
+                "overtrue/phplint": "^3.0",
+                "phpcompatibility/php-compatibility": "^9.3",
+                "phpcompatibility/phpcompatibility-wp": "*",
+                "squizlabs/php_codesniffer": "^3.7",
+                "wp-coding-standards/wpcs": "dev-develop",
+                "yoast/phpunit-polyfills": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "extra": {
+                "installer-name": "lasntgadmin-orders"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Lasntg\\Admin\\Orders\\": "lib"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Lasntg\\Admin\\Test\\": "tests/"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "phpunit --verbose --configuration phpunit.xml.dist --prepend vendor/autoload.php --testdox --colors=always"
+                ],
+                "lint": [
+                    "phplint ./ --exclude=vendor"
+                ],
+                "check": [
+                    "phpcs -ns"
+                ],
+                "fix": [
+                    "phpcbf"
+                ],
+                "secure": [
+                    "security-checker security:check composer.lock"
+                ],
+                "all": [
+                    "@lint",
+                    "@check",
+                    "@test",
+                    "@secure"
+                ]
+            },
+            "support": {
+                "source": "https://github.com/fioru-software/lasntgadmin-orders/tree/1.0.0",
+                "issues": "https://github.com/fioru-software/lasntgadmin-orders/issues"
+            },
+            "time": "2023-01-05T15:07:00+00:00"
         },
         {
             "name": "fioru/lasntgadmin-products",
