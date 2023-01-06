@@ -38,7 +38,7 @@
         "fioru/lasntgadmin-grant-funded-payment-gateway": "^1.0.8",
         "fioru/lasntgadmin-attendees": "^3.1.0",
         "fioru/lasntgadmin-products": "^5.0.5",
-        "fioru/lasntgadmin-users": "^3.0",
+        "fioru/lasntgadmin-users": "^3.0.2",
         "fioru/lasntgadmin-orders": "^1.0"
     }
 }
