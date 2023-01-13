@@ -12,5 +12,6 @@ $dir/product_cat.sh #create product categories
 $dir/themes.sh # install themes
 
 if [ $# -eq 0 ]; then
+    service cron start
     apache2-foreground
 fi
