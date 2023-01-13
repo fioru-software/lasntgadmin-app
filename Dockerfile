@@ -48,7 +48,7 @@ RUN for plugin in /tmp/plugins/*.zip; do unzip -q $plugin -d /var/www/html/wp-co
 USER root
 
 # cron
-RUN echo '* * * * * /bin/bash /usr/local/src/scripts/cron.sh > /var/log/apache2/cron.log 2>&1' > /etc/cron.d/wordpress;\
+RUN echo '* * * * * /bin/bash /usr/local/bin/cron.sh > /var/log/apache2/cron.log 2>&1' > /etc/cron.d/wordpress;\
     crontab -u www-data /etc/cron.d/wordpress
 
 CMD ["sh", "/usr/local/bin/run.sh"]
