@@ -85,7 +85,7 @@ INSERT INTO `wp_groups_group` VALUES
 (32,25,NULL,1,'2022-10-10 14:15:59','Sligo County Council',NULL),
 
 -- Private Client
-(33,NULL,NULL,1,'2022-10-10 14:15:59','Private Client',NULL);
+(33,999,NULL,1,'2022-10-10 14:15:59','Private Client',NULL);
 
 /*!40000 ALTER TABLE `wp_groups_group` ENABLE KEYS */;  
 UNLOCK TABLES;
