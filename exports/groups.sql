@@ -35,7 +35,8 @@ CREATE TABLE `wp_groups_group` (
   `name` varchar(100) COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `description` longtext COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
   PRIMARY KEY (`group_id`),
-  UNIQUE KEY `group_n` (`name`)
+  UNIQUE KEY `group_name` (`name`),
+  UNIQUE KEY `group_local_authority_id` (`local_authority_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=69 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -87,7 +88,7 @@ INSERT INTO `wp_groups_group` VALUES
 -- Private Client
 (33,999,NULL,1,'2022-10-10 14:15:59','Private Client',NULL);
 
-/*!40000 ALTER TABLE `wp_groups_group` ENABLE KEYS */;  
+/*!40000 ALTER TABLE `wp_groups_group` ENABLE KEYS */;
 UNLOCK TABLES;
 
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
