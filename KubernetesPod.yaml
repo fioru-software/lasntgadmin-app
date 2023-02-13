@@ -11,6 +11,8 @@ spec:
         value: europe-west1
       - name: CLOUDSDK_CONTAINER_CLUSTER
         value: belgium-01
+      - name: CLOUDSDK_COMPUTE_ZONE
+        value: europe-west1-d
     command:
       - sleep
     args: 
