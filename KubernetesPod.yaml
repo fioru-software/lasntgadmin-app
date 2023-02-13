@@ -5,10 +5,8 @@ spec:
   containers:
   - name: cloud-sdk
     image: gcr.io/google.com/cloudsdktool/cloud-sdk
-    imagePullPolicy: IfNotPresent
+    imagePullPolicy: Always
     env:
-      - name: CLOUDSDK_COMPUTE_REGION
-        value: europe-west1
       - name: CLOUDSDK_CONTAINER_CLUSTER
         value: belgium-01
       - name: CLOUDSDK_COMPUTE_ZONE
