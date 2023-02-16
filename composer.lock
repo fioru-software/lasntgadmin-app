@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "27dc78797d3a728f0d3b47a4139245bd",
+    "content-hash": "0ee5eb5a54b1ee2e5eb33b1b3814fc66",
     "packages": [
         {
             "name": "composer/installers",
@@ -153,20 +153,22 @@
         },
         {
             "name": "fioru/lasntgadmin-attendees",
-            "version": "3.1.6",
+            "version": "3.2.0-rc1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-attendees.git",
-                "reference": "cb5388e8e993cb2c9779a1442f381e58037ba4a6"
+                "reference": "ad9acc77ba21c48c2721fb84902fd707e65d92d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-attendees/zipball/cb5388e8e993cb2c9779a1442f381e58037ba4a6",
-                "reference": "cb5388e8e993cb2c9779a1442f381e58037ba4a6",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-attendees/zipball/ad9acc77ba21c48c2721fb84902fd707e65d92d9",
+                "reference": "ad9acc77ba21c48c2721fb84902fd707e65d92d9",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "~2.0",
+                "fioru/lasntgadmin-groups": "^1.1.0",
+                "fioru/lasntgadmin-orders": "^1.2.0",
                 "symfony/uid": "^5.4"
             },
             "require-dev": {
@@ -219,10 +221,10 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-attendees/tree/3.1.6",
+                "source": "https://github.com/fioru-software/lasntgadmin-attendees/tree/3.2.0-rc1",
                 "issues": "https://github.com/fioru-software/lasntgadmin-attendees/issues"
             },
-            "time": "2023-01-27T14:49:30+00:00"
+            "time": "2023-02-15T16:00:31+00:00"
         },
         {
             "name": "fioru/lasntgadmin-grant-funded-payment-gateway",
@@ -371,16 +373,16 @@
         },
         {
             "name": "fioru/lasntgadmin-orders",
-            "version": "1.1.1",
+            "version": "1.2.0-rc1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-orders.git",
-                "reference": "3465ca91b6d6d1b1512bd895c006d11e25313ec9"
+                "reference": "779ace9bab5fd875e3c220418f7e79bdf4226157"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-orders/zipball/3465ca91b6d6d1b1512bd895c006d11e25313ec9",
-                "reference": "3465ca91b6d6d1b1512bd895c006d11e25313ec9",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-orders/zipball/779ace9bab5fd875e3c220418f7e79bdf4226157",
+                "reference": "779ace9bab5fd875e3c220418f7e79bdf4226157",
                 "shasum": ""
             },
             "require": {
@@ -440,10 +442,10 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-orders/tree/1.1.1",
+                "source": "https://github.com/fioru-software/lasntgadmin-orders/tree/1.2.0-rc1",
                 "issues": "https://github.com/fioru-software/lasntgadmin-orders/issues"
             },
-            "time": "2023-02-07T09:59:10+00:00"
+            "time": "2023-02-15T15:12:10+00:00"
         },
         {
             "name": "fioru/lasntgadmin-products",
@@ -830,10 +832,10 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "fioru/lasntgadmin-grant-funded-payment-gateway": 0,
-        "fioru/lasntgadmin-attendees": 0,
+        "fioru/lasntgadmin-attendees": 5,
         "fioru/lasntgadmin-products": 0,
         "fioru/lasntgadmin-users": 0,
-        "fioru/lasntgadmin-orders": 0,
+        "fioru/lasntgadmin-orders": 5,
         "fioru/lasntgadmin-subscriptions": 0
     },
     "prefer-stable": false,
