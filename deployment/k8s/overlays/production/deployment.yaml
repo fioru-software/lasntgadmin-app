@@ -19,13 +19,50 @@
 - op: replace
   path: /spec/template/spec/affinity/nodeAffinity/requiredDuringSchedulingIgnoredDuringExecution/nodeSelectorTerms/0/matchExpressions/1/values/0
   value: public-pool
+- op: add 
+  path: /spec/template/spec/affinity/nodeAffinity/requiredDuringSchedulingIgnoredDuringExecution/nodeSelectorTerms/0/matchExpressions/2
+  value: 
+    key: topology.kubernetes.io/zone
+    operator: In
+    values: 
+      -  europe-west1-d
 - op: replace
   path: /spec/template/spec/volumes/0/persistentVolumeClaim/claimName
   value: production-lasntgadmin-pvc
 - op: replace
   path: /spec/template/spec/volumes/1/secret/secretName
-  value: production-lasntgadmin-secret
+  value: production-lasntgadmin-wp-config
 - op: replace
-  path: /spec/template/spec/volumes/2/configMap/name
+  path: /spec/template/spec/volumes/2/secret/secretName
+  value: production-lasntgadmin-db-config
+- op: replace
+  path: /spec/template/spec/volumes/3/configMap/name
   value: production-lasntgadmin-php-config
+- op: add
+  path: /spec/template/spec/containers/0/readinessProbe/httpGet/httpHeaders
+  value:
+    - name: X-Forwarded-Proto
+      value: https
+    - name: X-Forwarded-Host
+      value: lasntgadmin.veri.ie
+    - name: Host
+      value: lasntgadmin.veri.ie
+- op: add
+  path: /spec/template/spec/containers/0/livenessProbe/httpGet/httpHeaders
+  value:
+    - name: X-Forwarded-Proto
+      value: https
+    - name: X-Forwarded-Host
+      value: lasntgadmin.veri.ie
+    - name: Host
+      value: lasntgadmin.veri.ie
+- op: add
+  path: /spec/template/spec/containers/0/startupProbe/httpGet/httpHeaders
+  value:
+    - name: X-Forwarded-Proto
+      value: https
+    - name: X-Forwarded-Host
+      value: lasntgadmin.veri.ie
+    - name: Host
+      value: lasntgadmin.veri.ie
 

@@ -77,6 +77,10 @@ spec:
           mountPath: /var/www/html/wp-config.php
           subPath: wp-config.php
           readOnly: true
+        - name: db-config
+          mountPath: /var/www/html/db-config.php
+          subPath: db-config.php
+          readOnly: true
         - name: php-config
           mountPath: /usr/local/etc/php/php.ini
           subPath: php.ini
@@ -87,7 +91,10 @@ spec:
             claimName: lasntgadmin-pvc
         - name: wp-config
           secret: 
-            secretName: lasntgadmin-config
+            secretName: lasntgadmin-wp-config
+        - name: db-config
+          secret: 
+            secretName: lasntgadmin-db-config
         - name: php-config
           configMap:
             name: lasntgadmin-php-config

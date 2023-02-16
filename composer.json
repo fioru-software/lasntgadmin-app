@@ -39,11 +39,11 @@
         }
     },
     "require": {
-        "fioru/lasntgadmin-grant-funded-payment-gateway": "^1.0.11",
-        "fioru/lasntgadmin-attendees": "^3.1.6",
-        "fioru/lasntgadmin-products": "^5.2.3",
-        "fioru/lasntgadmin-users": "^3.0.4",
-        "fioru/lasntgadmin-orders": "^1.1.0",
-        "fioru/lasntgadmin-subscriptions": "^1.2.0"
+        "fioru/lasntgadmin-grant-funded-payment-gateway": "^1.0.11@stable",
+        "fioru/lasntgadmin-attendees": "^3.2.0@rc",
+        "fioru/lasntgadmin-products": "^5.2.3@stable",
+        "fioru/lasntgadmin-users": "^3.0.4@stable",
+        "fioru/lasntgadmin-orders": "^1.2.0@rc",
+        "fioru/lasntgadmin-subscriptions": "^1.2.0@stable"
     }
 }

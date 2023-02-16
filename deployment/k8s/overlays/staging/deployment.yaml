@@ -24,9 +24,12 @@
   value: staging-lasntgadmin-pvc
 - op: replace
   path: /spec/template/spec/volumes/1/secret/secretName
-  value: staging-lasntgadmin-config
+  value: staging-lasntgadmin-wp-config
 - op: replace
-  path: /spec/template/spec/volumes/2/configMap/name
+  path: /spec/template/spec/volumes/2/secret/secretName
+  value: staging-lasntgadmin-db-config
+- op: replace
+  path: /spec/template/spec/volumes/3/configMap/name
   value: staging-lasntgadmin-php-config
 - op: add
   path: /spec/template/spec/containers/0/readinessProbe/httpGet/httpHeaders

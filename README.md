@@ -76,7 +76,12 @@ Edit `composer.json` and add the repo source to the `repositories` property.
 Require the package
 
 ```sh
-docker run -ti --rm -u www-data:www-data -v $(pwd):/var/www/html -w /var/www/html lasntgadmin-app_wordpress composer require fioru/lasntgadmin-attendees
+# staging env
+docker run -ti --rm -u www-data:www-data -v $(pwd):/var/www/html -w /var/www/html lasntgadmin-app_wordpress composer require fioru/lasntgadmin-example=^1.0.0@rc
+
+#production env
+docker run -ti --rm -u www-data:www-data -v $(pwd):/var/www/html -w /var/www/html lasntgadmin-app_wordpress composer require fioru/lasntgadmin-example=^1.0.0@stable
+
 ```
 
 Update the `composer.lock` file
