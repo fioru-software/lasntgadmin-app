@@ -12,5 +12,5 @@ spec:
     namespace: default
     name: staging-lasntgadmin-pvc
   gcePersistentDisk:
-    pdName: gke-belgium-01-f6266c1-pvc-a970268d-8b56-4a79-91ef-6a643befd318
+    pdName: pvc-77ee25b1-a5cf-4e9e-aeec-f7d7ef885ba8
     fsType: ext4
