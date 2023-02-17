@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: lasntgadmin-pv
+spec:
+  storageClassName: "standard"
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteOnce
+  claimRef:
+    namespace: default
+    name: production-lasntgadmin-pvc
+  gcePersistentDisk:
+    pdName: pv-7c64efb0-9aa2-42ee-a71a-f31a08dba123
+    fsType: ext4
