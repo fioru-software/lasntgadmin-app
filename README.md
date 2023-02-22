@@ -1,7 +1,5 @@
 # LASNTG Admin 
 
-A custom WordPress and WooCommerce website.
-
 ## Deployment
 
 ### When adding custom plugins and themes to the app for first time.
