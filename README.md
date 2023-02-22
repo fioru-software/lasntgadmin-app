@@ -1,6 +1,4 @@
-# LASNTG Admin 
-
-A custom WordPress and WooCommerce website.
+# LASNTG Admin
 
 ## Deployment
 
@@ -21,59 +19,61 @@ Edit `composer.json` and add the repo source to the `repositories` property.
 
 Require the package
 
-```sh
-# staging env
-docker run -ti --rm -u www-data:www-data -v $(pwd):/var/www/html -w /var/www/html lasntgadmin-app_wordpress composer require fioru/lasntgadmin-example=^1.0.0@rc
+Staging environment.
 
-#production env
+```sh
+# checkout staging branch
+git checkout staging
+# require rc or stable package release
+docker run -ti --rm -u www-data:www-data -v $(pwd):/var/www/html -w /var/www/html lasntgadmin-app_wordpress composer require fioru/lasntgadmin-example=^1.0.0@rc
+# update the composer.lock file
+docker run -ti --rm -u www-data:www-data -v $(pwd):/var/www/html -w /var/www/html lasntgadmin-app_wordpress composer update --no-dev
+git add -A .
+git commit -m ''
+git push
+```
+
+Production environment.
+
+```sh
+# checkout master branch
+git checkout master
+# require stable package release
 docker run -ti --rm -u www-data:www-data -v $(pwd):/var/www/html -w /var/www/html lasntgadmin-app_wordpress composer require fioru/lasntgadmin-example=^1.0.0@stable
+# update the composer.lock file
+docker run -ti --rm -u www-data:www-data -v $(pwd):/var/www/html -w /var/www/html lasntgadmin-app_wordpress composer update --no-dev
+git add -A .
+git commit -m ''
+git push
 ```
 
 ### When updating existing plugins and themes.
 
 Update the `composer.lock` file
 
-```sh
-docker run -ti --rm -u www-data:www-data -v $(pwd):/var/www/html -w /var/www/html lasntgadmin-app_wordpress composer update --no-dev
-```
-
-### When deploying to staging
+Staging environment.
 
 ```sh
-# goto staging branch
+# checkout staging branch
 git checkout staging
-# update staging branch
-git pull
-# create new feature branch based on staging
-git checkout -b cm-feature
-# push feature branch to github
-git push -u origin cm-feature
+# update the composer.lock file
+docker run -ti --rm -u www-data:www-data -v $(pwd):/var/www/html -w /var/www/html lasntgadmin-app_wordpress composer update --no-dev
+git add -A .
+git commit -m ''
+git push
 ```
 
-- Create pull request (PR)
-- Merge via Github
-- Deploy staging branch via [Jenkins](https://jenkins.veri.ie)
-- Test your changes
-
-### When deploying to production
+Production environment.
 
 ```sh
-# goto master branch
-git checkout master
-# update master branch
-git pull
-# goto existing feature branch based on staging
-git checkout cm-feature
-# rebase feature branch on master 
-git rebase -i master
-# force push feature branch to github
-git push -uf cm-feature
+# checkout staging branch
+git checkout staging
+# update the composer.lock file
+docker run -ti --rm -u www-data:www-data -v $(pwd):/var/www/html -w /var/www/html lasntgadmin-app_wordpress composer update --no-dev
+git add -A .
+git commit -m ''
+git push
 ```
-
-- Create pull request (PR)
-- Merge via Github
-- Deploy production branch via [Jenkins](https://jenkins.veri.ie)
-- Test your changes
 
 ## Local Docker only
 
@@ -94,7 +94,7 @@ _NB:_ Create your [GITHUB_TOKEN](https://github.com/settings/tokens/new?scopes=r
 Build images and run WordPress.
 
 ```sh
-# NB add your GITHB_TOKEN 
+# NB add your GITHB_TOKEN
 docker-compose build --build-arg USER_ID=$(id -u) --build-arg GITHUB_TOKEN=
 # start container
 docker-compose up -d wordpress
