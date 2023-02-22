@@ -2,9 +2,80 @@
 
 A custom WordPress and WooCommerce website.
 
-## Local Docker only
+## Deployment
 
-### Run WordPress
+### When adding custom plugins and themes to the app for first time.
+
+Edit `composer.json` and add the repo source to the `repositories` property.
+
+```json
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "git@github.com:fioru-software/lasntgadmin-attendees.git"
+        }
+    ]
+}
+```
+
+Require the package
+
+```sh
+# staging env
+docker run -ti --rm -u www-data:www-data -v $(pwd):/var/www/html -w /var/www/html lasntgadmin-app_wordpress composer require fioru/lasntgadmin-example=^1.0.0@rc
+
+#production env
+docker run -ti --rm -u www-data:www-data -v $(pwd):/var/www/html -w /var/www/html lasntgadmin-app_wordpress composer require fioru/lasntgadmin-example=^1.0.0@stable
+```
+
+### When updating existing plugins and themes.
+
+Update the `composer.lock` file
+
+```sh
+docker run -ti --rm -u www-data:www-data -v $(pwd):/var/www/html -w /var/www/html lasntgadmin-app_wordpress composer update --no-dev
+```
+
+### When deploying to staging
+
+```sh
+# goto staging branch
+git checkout staging
+# update staging branch
+git pull
+# create new feature branch based on staging
+git checkout -b cm-feature
+# push feature branch to github
+git push -u origin cm-feature
+```
+
+- Create pull request (PR)
+- Merge via Github
+- Deploy staging branch via [Jenkins](https://jenkins.veri.ie)
+- Test your changes
+
+### When deploying to production
+
+```sh
+# goto master branch
+git checkout master
+# update master branch
+git pull
+# goto existing feature branch based on staging
+git checkout cm-feature
+# rebase feature branch on master 
+git rebase -i master
+# force push feature branch to github
+git push -uf cm-feature
+```
+
+- Create pull request (PR)
+- Merge via Github
+- Deploy production branch via [Jenkins](https://jenkins.veri.ie)
+- Test your changes
+
+## Local Docker only
 
 Create `.env` file
 
@@ -58,41 +129,7 @@ ls -l wp-content/plugins
 ls -l wp-content/themes
 ```
 
-### Adding custom plugins and themes
-
-Edit `composer.json` and add the repo source to the `repositories` property.
-
-```json
-{
-    "repositories": [
-        {
-            "type": "vcs",
-            "url":  "git@github.com:fioru-software/lasntgadmin-attendees.git"
-        }
-    ]
-}
-```
-
-Require the package
-
-```sh
-# staging env
-docker run -ti --rm -u www-data:www-data -v $(pwd):/var/www/html -w /var/www/html lasntgadmin-app_wordpress composer require fioru/lasntgadmin-example=^1.0.0@rc
-
-#production env
-docker run -ti --rm -u www-data:www-data -v $(pwd):/var/www/html -w /var/www/html lasntgadmin-app_wordpress composer require fioru/lasntgadmin-example=^1.0.0@stable
-
-```
-
-Update the `composer.lock` file
-
-```sh
-docker run -ti --rm -u www-data:www-data -v $(pwd):/var/www/html -w /var/www/html lasntgadmin-app_wordpress composer update --no-dev
-```
-
-## Deployment
-
-### Gcloud
+### Kustomize
 
 ```sh
 kubectl kustomize deployment/k8s/configmaps/staging/
