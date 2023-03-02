@@ -40,10 +40,10 @@
     },
     "require": {
         "fioru/lasntgadmin-grant-funded-payment-gateway": "^1.0.11@stable",
-        "fioru/lasntgadmin-attendees": "^3.2.0@rc",
+        "fioru/lasntgadmin-attendees": "^3.2.1@stable",
         "fioru/lasntgadmin-products": "^5.2.3@stable",
         "fioru/lasntgadmin-users": "^3.0.4@stable",
-        "fioru/lasntgadmin-orders": "^1.2.0@rc",
+        "fioru/lasntgadmin-orders": "^1.2.0@stable",
         "fioru/lasntgadmin-subscriptions": "^1.2.0@stable"
     }
 }
