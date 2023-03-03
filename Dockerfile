@@ -44,7 +44,7 @@ RUN composer config --auth github-oauth.github.com ${GITHUB_TOKEN}; \
 # plugins
 RUN mkdir /tmp/plugins
 COPY --chown=www-data:www-data plugins/* /tmp/plugins/
-RUN for plugin in /tmp/plugins/*.zip; do unzip -q $plugin -d /var/www/html/wp-content/plugins/; done;
+RUN for plugin in /tmp/plugins/*.zip; do unzip -uq $plugin -d /var/www/html/wp-content/plugins/; done;
 
 USER root
 
