@@ -522,16 +522,16 @@
         },
         {
             "name": "fioru/lasntgadmin-subscriptions",
-            "version": "2.0.0-rc2",
+            "version": "2.0.0-rc3",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-subscriptions.git",
-                "reference": "af0b78aa795f4bed9f4d5b41ea49ff4871e021fb"
+                "reference": "9fe15d99590c484f4a322538e13675dde68dc364"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-subscriptions/zipball/af0b78aa795f4bed9f4d5b41ea49ff4871e021fb",
-                "reference": "af0b78aa795f4bed9f4d5b41ea49ff4871e021fb",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-subscriptions/zipball/9fe15d99590c484f4a322538e13675dde68dc364",
+                "reference": "9fe15d99590c484f4a322538e13675dde68dc364",
                 "shasum": ""
             },
             "require": {
@@ -592,10 +592,10 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-subscriptions/tree/2.0.0-rc2",
+                "source": "https://github.com/fioru-software/lasntgadmin-subscriptions/tree/2.0.0-rc3",
                 "issues": "https://github.com/fioru-software/lasntgadmin-subscriptions/issues"
             },
-            "time": "2023-03-10T08:21:53+00:00"
+            "time": "2023-03-14T14:28:10+00:00"
         },
         {
             "name": "fioru/lasntgadmin-users",
