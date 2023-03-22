@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "de9ea99897f6b361d5cd3f8b2981d068",
+    "content-hash": "e46dfb33fa1fdcdaea078c35f14e65d1",
     "packages": [
         {
             "name": "composer/installers",
@@ -522,16 +522,16 @@
         },
         {
             "name": "fioru/lasntgadmin-subscriptions",
-            "version": "2.0.0-rc6",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-subscriptions.git",
-                "reference": "94b955f1456f4d4dd34ab2dd7cf9a307ffaa5b14"
+                "reference": "8e97559ad41727f2a4bca27436e5c945171133df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-subscriptions/zipball/94b955f1456f4d4dd34ab2dd7cf9a307ffaa5b14",
-                "reference": "94b955f1456f4d4dd34ab2dd7cf9a307ffaa5b14",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-subscriptions/zipball/8e97559ad41727f2a4bca27436e5c945171133df",
+                "reference": "8e97559ad41727f2a4bca27436e5c945171133df",
                 "shasum": ""
             },
             "require": {
@@ -593,10 +593,10 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-subscriptions/tree/2.0.0-rc6",
+                "source": "https://github.com/fioru-software/lasntgadmin-subscriptions/tree/2.0.1",
                 "issues": "https://github.com/fioru-software/lasntgadmin-subscriptions/issues"
             },
-            "time": "2023-03-20T13:42:31+00:00"
+            "time": "2023-03-20T14:23:54+00:00"
         },
         {
             "name": "fioru/lasntgadmin-users",
