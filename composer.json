@@ -44,6 +44,6 @@
         "fioru/lasntgadmin-products": "^5.4.0@rc",
         "fioru/lasntgadmin-users": "^3.0.4@rc",
         "fioru/lasntgadmin-orders": "^1.3.0@rc",
-        "fioru/lasntgadmin-subscriptions": "^2.0.1@rc"
+        "fioru/lasntgadmin-subscriptions": "^2.1.0@rc"
     }
 }
