@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5107fb93c66cc354f769c985ad15f978",
+    "content-hash": "0440930e707628fe8d78bd9ec0a417c0",
     "packages": [
         {
             "name": "composer/installers",
@@ -604,16 +604,16 @@
         },
         {
             "name": "fioru/lasntgadmin-users",
-            "version": "3.0.4",
+            "version": "3.1.0-rc1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-users.git",
-                "reference": "6634c80feb6f640d55ea50f6f32a4dfa9d32c454"
+                "reference": "162a62e0cb408c9dc18856fdf51495de25b09f1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-users/zipball/6634c80feb6f640d55ea50f6f32a4dfa9d32c454",
-                "reference": "6634c80feb6f640d55ea50f6f32a4dfa9d32c454",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-users/zipball/162a62e0cb408c9dc18856fdf51495de25b09f1b",
+                "reference": "162a62e0cb408c9dc18856fdf51495de25b09f1b",
                 "shasum": ""
             },
             "require": {
@@ -670,10 +670,10 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-users/tree/3.0.4",
+                "source": "https://github.com/fioru-software/lasntgadmin-users/tree/3.1.0-rc1",
                 "issues": "https://github.com/fioru-software/lasntgadmin-users/issues"
             },
-            "time": "2023-01-06T14:09:11+00:00"
+            "time": "2023-04-03T14:39:15+00:00"
         },
         {
             "name": "symfony/polyfill-uuid",
