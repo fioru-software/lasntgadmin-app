@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "90d34ef8aa0070640d1e210391a28d0c",
+    "content-hash": "63f31dd189dddff0798474c76d0068b8",
     "packages": [
         {
             "name": "composer/installers",
@@ -374,16 +374,16 @@
         },
         {
             "name": "fioru/lasntgadmin-orders",
-            "version": "1.5.5",
+            "version": "1.5.6-rc1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-orders.git",
-                "reference": "48c1a947f4782d1c2f4fb19d8f05c8b4de14498b"
+                "reference": "93675cdee1b3f99ebed98762c91109be1b28aea7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-orders/zipball/48c1a947f4782d1c2f4fb19d8f05c8b4de14498b",
-                "reference": "48c1a947f4782d1c2f4fb19d8f05c8b4de14498b",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-orders/zipball/93675cdee1b3f99ebed98762c91109be1b28aea7",
+                "reference": "93675cdee1b3f99ebed98762c91109be1b28aea7",
                 "shasum": ""
             },
             "require": {
@@ -391,7 +391,9 @@
                 "fioru/lasntgadmin-attendees": "^3.1.0",
                 "fioru/lasntgadmin-grant-funded-payment-gateway": "^1.0.7",
                 "fioru/lasntgadmin-groups": "^1.1",
-                "fioru/lasntgadmin-products": "^5.4.0"
+                "fioru/lasntgadmin-products": "^5.4.2",
+                "fioru/lasntgadmin-subscriptions": "^2.1.2",
+                "fioru/lasntgadmin-users": "^3.2.0"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
@@ -443,10 +445,10 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-orders/tree/1.5.5",
+                "source": "https://github.com/fioru-software/lasntgadmin-orders/tree/1.5.6-rc1",
                 "issues": "https://github.com/fioru-software/lasntgadmin-orders/issues"
             },
-            "time": "2023-04-07T11:40:13+00:00"
+            "time": "2023-04-11T14:12:39+00:00"
         },
         {
             "name": "fioru/lasntgadmin-products",
