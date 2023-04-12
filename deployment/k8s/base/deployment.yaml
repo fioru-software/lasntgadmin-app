@@ -87,6 +87,10 @@ spec:
           mountPath: /usr/local/etc/php/php.ini
           subPath: php.ini
           readOnly: true
+        - name: apache-config
+          mountPath: /etc/apache2/sites-available/000-default.conf
+          subPath: php.ini
+          readOnly: true
       volumes:
         - name: wp-content
           persistentVolumeClaim:
@@ -100,4 +104,7 @@ spec:
         - name: php-config
           configMap:
             name: lasntgadmin-php-config
+        - name: apache-config
+          configMap:
+            name: lasntgadmin-apache-config
 
