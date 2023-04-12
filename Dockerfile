@@ -8,12 +8,12 @@ ARG COMPOSER_MINIMUM_STABILITY
 
 RUN a2enmod rewrite
 RUN apt update; \
-    apt install -y default-mysql-client vim libzip-dev unzip libpng-dev libmagickwand-dev libicu-dev cron
+    apt install -y default-mysql-client vim libzip-dev unzip libpng-dev libmagickwand-dev libicu-dev cron php-soap
 
 RUN pecl install --configureoptions='with-imagick="autodetect"' imagick; \
     docker-php-ext-enable imagick
 
-RUN docker-php-ext-install mysqli zip gd intl exif
+RUN docker-php-ext-install mysqli zip gd intl exif opcache
 
 RUN usermod -u $USER_ID www-data; \
     groupmod -g $USER_ID www-data
