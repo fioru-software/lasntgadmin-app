@@ -34,6 +34,9 @@
 - op: replace
   path: /spec/template/spec/volumes/3/configMap/name
   value: staging-lasntgadmin-php-config
+- op: replace
+  path: /spec/template/spec/volumes/4/configMap/name
+  value: staging-lasntgadmin-apache-config
 - op: add
   path: /spec/template/spec/containers/0/readinessProbe/httpGet/httpHeaders
   value:
