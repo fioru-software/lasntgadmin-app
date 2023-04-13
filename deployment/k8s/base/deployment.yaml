@@ -89,7 +89,7 @@ spec:
           readOnly: true
         - name: apache-config
           mountPath: /etc/apache2/sites-available/000-default.conf
-          subPath: php.ini
+          subPath: 000-default.conf
           readOnly: true
       volumes:
         - name: wp-content
