@@ -452,16 +452,16 @@
         },
         {
             "name": "fioru/lasntgadmin-products",
-            "version": "5.5.2-rc2",
+            "version": "5.5.3",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-products.git",
-                "reference": "a0064339dc2e6e704bda85eb00cf070a3d9bee55"
+                "reference": "909a5da93270a4dfacd5e172a30e9cc00c7234f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-products/zipball/a0064339dc2e6e704bda85eb00cf070a3d9bee55",
-                "reference": "a0064339dc2e6e704bda85eb00cf070a3d9bee55",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-products/zipball/909a5da93270a4dfacd5e172a30e9cc00c7234f5",
+                "reference": "909a5da93270a4dfacd5e172a30e9cc00c7234f5",
                 "shasum": ""
             },
             "require": {
@@ -522,10 +522,10 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-products/tree/5.5.2-rc2",
+                "source": "https://github.com/fioru-software/lasntgadmin-products/tree/5.5.3",
                 "issues": "https://github.com/fioru-software/lasntgadmin-products/issues"
             },
-            "time": "2023-04-13T07:48:55+00:00"
+            "time": "2023-04-13T09:45:56+00:00"
         },
         {
             "name": "fioru/lasntgadmin-subscriptions",
