@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "64a5e788e20c530c11018a84955a8389",
+    "content-hash": "4751f50f3bf6ec31e54c3467ec397781",
     "packages": [
         {
             "name": "composer/installers",
@@ -452,16 +452,16 @@
         },
         {
             "name": "fioru/lasntgadmin-products",
-            "version": "5.5.4-rc4",
+            "version": "5.5.5",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-products.git",
-                "reference": "f4397cdc564ce15371754fd61fedc68531ce4714"
+                "reference": "da9e7aa548b2aaa3060a723197b0647bc7571bdd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-products/zipball/f4397cdc564ce15371754fd61fedc68531ce4714",
-                "reference": "f4397cdc564ce15371754fd61fedc68531ce4714",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-products/zipball/da9e7aa548b2aaa3060a723197b0647bc7571bdd",
+                "reference": "da9e7aa548b2aaa3060a723197b0647bc7571bdd",
                 "shasum": ""
             },
             "require": {
@@ -522,10 +522,10 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-products/tree/5.5.4-rc4",
+                "source": "https://github.com/fioru-software/lasntgadmin-products/tree/5.5.5",
                 "issues": "https://github.com/fioru-software/lasntgadmin-products/issues"
             },
-            "time": "2023-04-17T13:08:54+00:00"
+            "time": "2023-04-18T10:37:05+00:00"
         },
         {
             "name": "fioru/lasntgadmin-subscriptions",
