@@ -78,11 +78,14 @@ INSERT INTO `wp_groups_group` VALUES
 (31,23,1,'2022-10-10 14:15:59','Waterford City & County Council',NULL),
 (32,23,1,'2022-10-10 14:15:59','Wexford County Council',NULL),
 
-(33,NULL,1,'2022-10-14 13:22:40','Stranorlar Training Centre',NULL),
-(34,33,1,'2022-10-10 14:15:59','Cavan County Council',NULL),
-(35,33,1,'2022-10-10 14:15:59','Donegal County Council',NULL),
-(36,33,1,'2022-10-10 14:15:59','Monaghan County Council',NULL),
-(37,33,1,'2022-10-10 14:15:59','Sligo County Council',NULL);
+(34,NULL,1,'2022-10-14 13:22:40','Stranorlar Training Centre',NULL),
+(35,34,1,'2022-10-10 14:15:59','Cavan County Council',NULL),
+(36,34,1,'2022-10-10 14:15:59','Donegal County Council',NULL),
+(37,34,1,'2022-10-10 14:15:59','Monaghan County Council',NULL),
+(38,34,1,'2022-10-10 14:15:59','Sligo County Council',NULL),
+
+(39,NULL,1,'2022-10-14 13:22:40','Private Client Training Centre',NULL),
+(33,39,1,'2022-10-10 14:15:59','Private Client',NULL);
 
 /*!40000 ALTER TABLE `wp_groups_group` ENABLE KEYS */;
 UNLOCK TABLES;
