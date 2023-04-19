@@ -52,7 +52,7 @@ INSERT INTO `wp_groups_group` VALUES
 -- Ballincollig Training Centre
 (2,4,34,1,'2022-10-10 13:53:48','Cork City',NULL),
 (3,5,34,1,'2022-10-10 13:55:53','Cork County Council',NULL),
-(3,12,34,1,'2022-10-10 13:59:33','Kerry County Council',NULL),
+(4,12,34,1,'2022-10-10 13:59:33','Kerry County Council',NULL),
 
 -- Ballycoolin Training Centre
 (5,7,35,1,'2022-10-10 14:15:59','Dublin City Council',NULL),
