@@ -10,3 +10,11 @@ configMapGenerator:
 - name: lasntgadmin-apache-config
   files:
     - 000-default.conf
+- name: lasntgadmin-env
+  literals:
+  - ENVIRONMENT=staging
+  - SITE_URL=https://lasntgadmin-staging.veri.ie
+  - SITE_TITLE=LASNTG
+  - WP_PLUGINS=woocommerce advanced-custom-fields user-role-editor smtp-mailing-queue wp-2fa hyperdb global-payments-woocommerce openid-connect-server
+  - WP_THEMES=storefront
+  - COMPOSER_AUTOLOAD_FILEPATH=/var/www/html/vendor/autoload.php
