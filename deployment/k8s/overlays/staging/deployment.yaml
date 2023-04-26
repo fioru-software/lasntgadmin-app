@@ -17,6 +17,9 @@
   path: /spec/template/spec/containers/0/imagePullPolicy
   value: Always
 - op: replace
+  path: /spec/template/spec/containers/0/envFrom/0/configMapRef/name
+  value: staging-lasntgadmin-env
+- op: replace
   path: /spec/template/spec/containers/0/envFrom/1/secretRef/name
   value: staging-lasntgadmin-secret
 - op: replace
