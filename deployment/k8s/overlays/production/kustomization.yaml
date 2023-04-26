@@ -3,16 +3,6 @@ namePrefix: production-
 generatorOptions:
   disableNameSuffixHash: true
 
-configMapGenerator:
-- name: lasntgadmin-env
-  literals:
-  - ENVIRONMENT=production
-  - SITE_URL=https://lasntgadmin.veri.ie
-  - SITE_TITLE=LASNTG
-  - WP_PLUGINS=groups woocommerce advanced-custom-fields user-role-editor smtp-mailing-queue wp-2fa hyperdb global-payments-woocommerce openid-connect-server
-  - WP_THEMES=storefront
-  - COMPOSER_AUTOLOAD_FILEPATH=/var/www/html/vendor/autoload.php
-
 bases:
   - ../../base
 
