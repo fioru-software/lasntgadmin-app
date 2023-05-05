@@ -31,6 +31,10 @@
         {
             "type": "vcs",
             "url":  "git@github.com:fioru-software/lasntgadmin-subscriptions.git"
+        },
+        {
+            "type": "vcs",
+            "url":  "git@github.com:fioru-software/lasntgadmin-translate.git"
         }
     ],
     "config": {
@@ -45,6 +49,7 @@
         "fioru/lasntgadmin-products": "^5.4.2@stable",
         "fioru/lasntgadmin-users": "^3.2.0@stable",
         "fioru/lasntgadmin-orders": "^1.2.0@stable",
-        "fioru/lasntgadmin-subscriptions": "^2.1.2@stable"
+        "fioru/lasntgadmin-subscriptions": "^2.1.2@stable",
+        "fioru/lasntgadmin-translate": "^1.1.0@stable"
     }
 }

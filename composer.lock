@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "be8f68466cc2039cee87776063c42337",
+    "content-hash": "700e434d29bd96218dbcbd754f043b33",
     "packages": [
         {
             "name": "composer/installers",
@@ -606,6 +606,84 @@
             "time": "2023-04-04T13:01:59+00:00"
         },
         {
+            "name": "fioru/lasntgadmin-translate",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:fioru-software/lasntgadmin-translate.git",
+                "reference": "390c23182a1617676a0d58c2783be48d3159d003"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-translate/zipball/390c23182a1617676a0d58c2783be48d3159d003",
+                "reference": "390c23182a1617676a0d58c2783be48d3159d003",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~2.0",
+                "fioru/lasntgadmin-attendees": "^3.1.0",
+                "fioru/lasntgadmin-grant-funded-payment-gateway": "^1.0.7",
+                "fioru/lasntgadmin-groups": "^1.1",
+                "fioru/lasntgadmin-products": "^5.4.2",
+                "fioru/lasntgadmin-subscriptions": "^2.1.2",
+                "fioru/lasntgadmin-users": "^3.2.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
+                "enlightn/security-checker": "dev-main",
+                "fakerphp/faker": "^1.19",
+                "mockery/mockery": "^1.5",
+                "overtrue/phplint": "^3.0",
+                "phpcompatibility/php-compatibility": "^9.3",
+                "phpcompatibility/phpcompatibility-wp": "*",
+                "squizlabs/php_codesniffer": "^3.7",
+                "wp-coding-standards/wpcs": "dev-develop",
+                "yoast/phpunit-polyfills": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "extra": {
+                "installer-name": "lasntgadmin-translate"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Lasntg\\Admin\\Translate\\": "lib"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Lasntg\\Admin\\Test\\": "tests/"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "phpunit --verbose --configuration phpunit.xml.dist --prepend vendor/autoload.php --testdox --colors=always"
+                ],
+                "lint": [
+                    "phplint ./ --exclude=vendor"
+                ],
+                "check": [
+                    "phpcs -ns"
+                ],
+                "fix": [
+                    "phpcbf"
+                ],
+                "secure": [
+                    "security-checker security:check composer.lock"
+                ],
+                "all": [
+                    "@lint",
+                    "@check",
+                    "@test",
+                    "@secure"
+                ]
+            },
+            "support": {
+                "source": "https://github.com/fioru-software/lasntgadmin-translate/tree/1.1.0",
+                "issues": "https://github.com/fioru-software/lasntgadmin-translate/issues"
+            },
+            "time": "2023-05-05T10:15:44+00:00"
+        },
+        {
             "name": "fioru/lasntgadmin-users",
             "version": "3.3.1",
             "source": {
@@ -845,7 +923,8 @@
         "fioru/lasntgadmin-products": 0,
         "fioru/lasntgadmin-users": 0,
         "fioru/lasntgadmin-orders": 0,
-        "fioru/lasntgadmin-subscriptions": 0
+        "fioru/lasntgadmin-subscriptions": 0,
+        "fioru/lasntgadmin-translate": 0
     },
     "prefer-stable": false,
     "prefer-lowest": false,
