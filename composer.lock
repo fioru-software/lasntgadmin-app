@@ -302,16 +302,16 @@
         },
         {
             "name": "fioru/lasntgadmin-groups",
-            "version": "1.4.0",
+            "version": "1.4.1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-groups.git",
-                "reference": "58e7e64cfab728405028575be8b0c33407e027ff"
+                "reference": "d7ed1825baaaa6e36a91f5e809693ea4446d6b79"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-groups/zipball/58e7e64cfab728405028575be8b0c33407e027ff",
-                "reference": "58e7e64cfab728405028575be8b0c33407e027ff",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-groups/zipball/d7ed1825baaaa6e36a91f5e809693ea4446d6b79",
+                "reference": "d7ed1825baaaa6e36a91f5e809693ea4446d6b79",
                 "shasum": ""
             },
             "require": {
@@ -367,10 +367,10 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-groups/tree/1.4.0",
+                "source": "https://github.com/fioru-software/lasntgadmin-groups/tree/1.4.1",
                 "issues": "https://github.com/fioru-software/lasntgadmin-groups/issues"
             },
-            "time": "2023-04-26T14:07:42+00:00"
+            "time": "2023-05-10T10:18:01+00:00"
         },
         {
             "name": "fioru/lasntgadmin-orders",
@@ -452,16 +452,16 @@
         },
         {
             "name": "fioru/lasntgadmin-products",
-            "version": "5.8.0",
+            "version": "5.8.3",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-products.git",
-                "reference": "f8900b944279fba3948f7392c5fca6d7093da20b"
+                "reference": "54cfa90040096d044ce5b8e421df6b10b0dd1543"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-products/zipball/f8900b944279fba3948f7392c5fca6d7093da20b",
-                "reference": "f8900b944279fba3948f7392c5fca6d7093da20b",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-products/zipball/54cfa90040096d044ce5b8e421df6b10b0dd1543",
+                "reference": "54cfa90040096d044ce5b8e421df6b10b0dd1543",
                 "shasum": ""
             },
             "require": {
@@ -522,10 +522,10 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-products/tree/5.8.0",
+                "source": "https://github.com/fioru-software/lasntgadmin-products/tree/5.8.3",
                 "issues": "https://github.com/fioru-software/lasntgadmin-products/issues"
             },
-            "time": "2023-05-09T13:44:41+00:00"
+            "time": "2023-05-10T10:19:06+00:00"
         },
         {
             "name": "fioru/lasntgadmin-subscriptions",
@@ -607,16 +607,16 @@
         },
         {
             "name": "fioru/lasntgadmin-translate",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-translate.git",
-                "reference": "cd5a26c51b81d5a649c00f5ad420028fd3bbfab9"
+                "reference": "da1952869d65475fcedeb83fd2730b68d0a911f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-translate/zipball/cd5a26c51b81d5a649c00f5ad420028fd3bbfab9",
-                "reference": "cd5a26c51b81d5a649c00f5ad420028fd3bbfab9",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-translate/zipball/da1952869d65475fcedeb83fd2730b68d0a911f5",
+                "reference": "da1952869d65475fcedeb83fd2730b68d0a911f5",
                 "shasum": ""
             },
             "require": {
@@ -624,7 +624,7 @@
                 "fioru/lasntgadmin-attendees": "^3.1.0",
                 "fioru/lasntgadmin-grant-funded-payment-gateway": "^1.0.7",
                 "fioru/lasntgadmin-groups": "^1.1",
-                "fioru/lasntgadmin-products": "^5.4.2",
+                "fioru/lasntgadmin-products": "^5.8.0",
                 "fioru/lasntgadmin-subscriptions": "^2.1.2",
                 "fioru/lasntgadmin-users": "^3.2.0"
             },
@@ -678,23 +678,23 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-translate/tree/1.1.1",
+                "source": "https://github.com/fioru-software/lasntgadmin-translate/tree/1.1.2",
                 "issues": "https://github.com/fioru-software/lasntgadmin-translate/issues"
             },
-            "time": "2023-05-09T13:47:56+00:00"
+            "time": "2023-05-10T09:20:39+00:00"
         },
         {
             "name": "fioru/lasntgadmin-users",
-            "version": "3.3.1",
+            "version": "3.3.2",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-users.git",
-                "reference": "32ea36f9713f2bfa3c2d926888369388e34cb4c1"
+                "reference": "7e7b20875e555bcc7d3f2a8a276bce32a4c3dcf6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-users/zipball/32ea36f9713f2bfa3c2d926888369388e34cb4c1",
-                "reference": "32ea36f9713f2bfa3c2d926888369388e34cb4c1",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-users/zipball/7e7b20875e555bcc7d3f2a8a276bce32a4c3dcf6",
+                "reference": "7e7b20875e555bcc7d3f2a8a276bce32a4c3dcf6",
                 "shasum": ""
             },
             "require": {
@@ -751,10 +751,10 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-users/tree/3.3.1",
+                "source": "https://github.com/fioru-software/lasntgadmin-users/tree/3.3.2",
                 "issues": "https://github.com/fioru-software/lasntgadmin-users/issues"
             },
-            "time": "2023-04-26T08:00:44+00:00"
+            "time": "2023-05-10T09:32:34+00:00"
         },
         {
             "name": "symfony/polyfill-uuid",
