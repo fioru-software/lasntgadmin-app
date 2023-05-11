@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "7097daf15143f9e4f250329fe344f045",
+=======
+    "content-hash": "f132a83c78fc20d96a1a021cd9c8ae8c",
+>>>>>>> bd2a836 (updated attendees)
     "packages": [
         {
             "name": "composer/installers",
@@ -153,16 +157,16 @@
         },
         {
             "name": "fioru/lasntgadmin-attendees",
-            "version": "3.5.1",
+            "version": "3.5.2-rc1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-attendees.git",
-                "reference": "9dc1d587e80e15d081c43218261f7314b2daa5d6"
+                "reference": "9f79d6bf5ad76d8c4af96211e9918d2333398e16"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-attendees/zipball/9dc1d587e80e15d081c43218261f7314b2daa5d6",
-                "reference": "9dc1d587e80e15d081c43218261f7314b2daa5d6",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-attendees/zipball/9f79d6bf5ad76d8c4af96211e9918d2333398e16",
+                "reference": "9f79d6bf5ad76d8c4af96211e9918d2333398e16",
                 "shasum": ""
             },
             "require": {
@@ -222,10 +226,88 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-attendees/tree/3.5.1",
+                "source": "https://github.com/fioru-software/lasntgadmin-attendees/tree/3.5.2-rc1",
                 "issues": "https://github.com/fioru-software/lasntgadmin-attendees/issues"
             },
-            "time": "2023-04-19T07:46:47+00:00"
+            "time": "2023-05-11T13:05:10+00:00"
+        },
+        {
+            "name": "fioru/lasntgadmin-dashboard",
+            "version": "1.0.0-rc1",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:fioru-software/lasntgadmin-dashboard.git",
+                "reference": "5041a86b0e1cd92362cb5a86e0becf9d3baad570"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-dashboard/zipball/5041a86b0e1cd92362cb5a86e0becf9d3baad570",
+                "reference": "5041a86b0e1cd92362cb5a86e0becf9d3baad570",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~2.0",
+                "fioru/lasntgadmin-attendees": "^3.1.0",
+                "fioru/lasntgadmin-grant-funded-payment-gateway": "^1.4",
+                "fioru/lasntgadmin-groups": "^1.5",
+                "fioru/lasntgadmin-products": "^5.4.2",
+                "fioru/lasntgadmin-subscriptions": "^2.1.2",
+                "fioru/lasntgadmin-users": "^3.2.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
+                "enlightn/security-checker": "dev-main",
+                "fakerphp/faker": "^1.19",
+                "mockery/mockery": "^1.5",
+                "overtrue/phplint": "^3.0",
+                "phpcompatibility/php-compatibility": "^9.3",
+                "phpcompatibility/phpcompatibility-wp": "*",
+                "squizlabs/php_codesniffer": "^3.7",
+                "wp-coding-standards/wpcs": "dev-develop",
+                "yoast/phpunit-polyfills": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "extra": {
+                "installer-name": "lasntgadmin-dashboard"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Lasntg\\Admin\\Dashboard\\": "lib"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Lasntg\\Admin\\Test\\": "tests/"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "phpunit --verbose --configuration phpunit.xml.dist --prepend vendor/autoload.php --testdox --colors=always"
+                ],
+                "lint": [
+                    "phplint ./ --exclude=vendor"
+                ],
+                "check": [
+                    "phpcs -ns"
+                ],
+                "fix": [
+                    "phpcbf"
+                ],
+                "secure": [
+                    "security-checker security:check composer.lock"
+                ],
+                "all": [
+                    "@lint",
+                    "@check",
+                    "@test",
+                    "@secure"
+                ]
+            },
+            "support": {
+                "source": "https://github.com/fioru-software/lasntgadmin-dashboard/tree/1.0.0-rc1",
+                "issues": "https://github.com/fioru-software/lasntgadmin-dashboard/issues"
+            },
+            "time": "2023-05-11T11:22:04+00:00"
         },
         {
             "name": "fioru/lasntgadmin-grant-funded-payment-gateway",
@@ -917,6 +999,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+<<<<<<< HEAD
         "fioru/lasntgadmin-grant-funded-payment-gateway": 0,
         "fioru/lasntgadmin-attendees": 0,
         "fioru/lasntgadmin-groups": 0,
@@ -925,6 +1008,17 @@
         "fioru/lasntgadmin-orders": 0,
         "fioru/lasntgadmin-subscriptions": 0,
         "fioru/lasntgadmin-translate": 0
+=======
+        "fioru/lasntgadmin-grant-funded-payment-gateway": 5,
+        "fioru/lasntgadmin-attendees": 5,
+        "fioru/lasntgadmin-groups": 5,
+        "fioru/lasntgadmin-products": 5,
+        "fioru/lasntgadmin-users": 5,
+        "fioru/lasntgadmin-orders": 5,
+        "fioru/lasntgadmin-subscriptions": 5,
+        "fioru/lasntgadmin-translate": 5,
+        "fioru/lasntgadmin-dashboard": 5
+>>>>>>> bd2a836 (updated attendees)
     },
     "prefer-stable": false,
     "prefer-lowest": false,
