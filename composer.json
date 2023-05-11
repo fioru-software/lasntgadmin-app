@@ -6,6 +6,10 @@
     "repositories": [
         {
             "type": "vcs",
+            "url":  "git@github.com:fioru-software/lasntgadmin-dashboard.git"
+        },
+        {
+            "type": "vcs",
             "url":  "git@github.com:fioru-software/lasntgadmin-grant-funded-payment-gateway.git"
         },
         {
@@ -50,6 +54,7 @@
         "fioru/lasntgadmin-users": "^3.3.0@rc",
         "fioru/lasntgadmin-orders": "^1.2.0@rc",
         "fioru/lasntgadmin-subscriptions": "^2.1.2@rc",
-        "fioru/lasntgadmin-translate": "^1.1.0@rc"
+        "fioru/lasntgadmin-translate": "^1.1.0@rc",
+        "fioru/lasntgadmin-dashboard": "^1.0.0@rc"
     }
 }
