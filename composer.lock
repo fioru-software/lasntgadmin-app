@@ -291,16 +291,16 @@
         },
         {
             "name": "fioru/lasntgadmin-dashboard",
-            "version": "1.0.5",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-dashboard.git",
-                "reference": "b8a2494e56bd588b53124f7c1d66eb39c901c4ba"
+                "reference": "86f0a367c12d36566736dfdf6465c2771c57cffa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-dashboard/zipball/b8a2494e56bd588b53124f7c1d66eb39c901c4ba",
-                "reference": "b8a2494e56bd588b53124f7c1d66eb39c901c4ba",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-dashboard/zipball/86f0a367c12d36566736dfdf6465c2771c57cffa",
+                "reference": "86f0a367c12d36566736dfdf6465c2771c57cffa",
                 "shasum": ""
             },
             "require": {
@@ -362,10 +362,10 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-dashboard/tree/1.0.5",
+                "source": "https://github.com/fioru-software/lasntgadmin-dashboard/tree/1.0.6",
                 "issues": "https://github.com/fioru-software/lasntgadmin-dashboard/issues"
             },
-            "time": "2023-06-08T13:50:39+00:00"
+            "time": "2023-06-09T07:20:52+00:00"
         },
         {
             "name": "fioru/lasntgadmin-grant-funded-payment-gateway",
