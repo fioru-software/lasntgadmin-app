@@ -669,16 +669,16 @@
         },
         {
             "name": "fioru/lasntgadmin-subscriptions",
-            "version": "2.1.10-rc1",
+            "version": "2.1.10-rc2",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-subscriptions.git",
-                "reference": "8ec6c09fd841c78badbacea3ead1696e00792577"
+                "reference": "923ae719ca742e5e8d92594f46193d9839d02984"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-subscriptions/zipball/8ec6c09fd841c78badbacea3ead1696e00792577",
-                "reference": "8ec6c09fd841c78badbacea3ead1696e00792577",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-subscriptions/zipball/923ae719ca742e5e8d92594f46193d9839d02984",
+                "reference": "923ae719ca742e5e8d92594f46193d9839d02984",
                 "shasum": ""
             },
             "require": {
@@ -740,10 +740,10 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-subscriptions/tree/2.1.10-rc1",
+                "source": "https://github.com/fioru-software/lasntgadmin-subscriptions/tree/2.1.10-rc2",
                 "issues": "https://github.com/fioru-software/lasntgadmin-subscriptions/issues"
             },
-            "time": "2023-07-04T12:18:07+00:00"
+            "time": "2023-07-04T14:56:51+00:00"
         },
         {
             "name": "fioru/lasntgadmin-translate",
