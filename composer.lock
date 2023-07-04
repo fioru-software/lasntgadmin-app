@@ -214,16 +214,16 @@
         },
         {
             "name": "fioru/lasntgadmin-attendees",
-            "version": "3.7.5",
+            "version": "3.7.6",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-attendees.git",
-                "reference": "8c971b6a5280961c9af0aa5cdb87f3f30b4f52ce"
+                "reference": "bab8b8ec4dab46b77949fafd24da76997b1a4519"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-attendees/zipball/8c971b6a5280961c9af0aa5cdb87f3f30b4f52ce",
-                "reference": "8c971b6a5280961c9af0aa5cdb87f3f30b4f52ce",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-attendees/zipball/bab8b8ec4dab46b77949fafd24da76997b1a4519",
+                "reference": "bab8b8ec4dab46b77949fafd24da76997b1a4519",
                 "shasum": ""
             },
             "require": {
@@ -284,10 +284,10 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-attendees/tree/3.7.5",
+                "source": "https://github.com/fioru-software/lasntgadmin-attendees/tree/3.7.6",
                 "issues": "https://github.com/fioru-software/lasntgadmin-attendees/issues"
             },
-            "time": "2023-07-04T08:15:55+00:00"
+            "time": "2023-07-04T10:37:46+00:00"
         },
         {
             "name": "fioru/lasntgadmin-dashboard",
