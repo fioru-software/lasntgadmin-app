@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1350a762e59942df68dd1dbd95d0404e",
+    "content-hash": "771515302ddedeeeaddade3857f3e8ac",
     "packages": [
         {
             "name": "composer/installers",
@@ -744,6 +744,78 @@
                 "issues": "https://github.com/fioru-software/lasntgadmin-subscriptions/issues"
             },
             "time": "2023-07-18T09:33:22+00:00"
+        },
+        {
+            "name": "fioru/lasntgadmin-theme",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:fioru-software/lasntgadmin-theme.git",
+                "reference": "f0036d459b745d649b20ffdb4c7dd5fa107c8dc1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-theme/zipball/f0036d459b745d649b20ffdb4c7dd5fa107c8dc1",
+                "reference": "f0036d459b745d649b20ffdb4c7dd5fa107c8dc1",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~2.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
+                "enlightn/security-checker": "dev-main",
+                "fakerphp/faker": "^1.19",
+                "mockery/mockery": "^1.5",
+                "overtrue/phplint": "^3.0",
+                "phpcompatibility/php-compatibility": "^9.3",
+                "phpcompatibility/phpcompatibility-wp": "*",
+                "squizlabs/php_codesniffer": "^3.7",
+                "wp-coding-standards/wpcs": "dev-develop",
+                "yoast/phpunit-polyfills": "^1.0"
+            },
+            "type": "wordpress-theme",
+            "extra": {
+                "installer-name": "lasntgadmin-theme"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Lasntg\\Admin\\Theme\\": "lib"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Lasntg\\Admin\\Test\\": "tests/"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "phpunit --verbose --configuration phpunit.xml.dist --prepend vendor/autoload.php --testdox --colors=always"
+                ],
+                "lint": [
+                    "phplint ./ --exclude=vendor"
+                ],
+                "check": [
+                    "phpcs -ns"
+                ],
+                "fix": [
+                    "phpcbf"
+                ],
+                "secure": [
+                    "security-checker security:check composer.lock"
+                ],
+                "all": [
+                    "@lint",
+                    "@check",
+                    "@test",
+                    "@secure"
+                ]
+            },
+            "support": {
+                "source": "https://github.com/fioru-software/lasntgadmin-theme/tree/1.0.0",
+                "issues": "https://github.com/fioru-software/lasntgadmin-theme/issues"
+            },
+            "time": "2023-07-25T09:41:10+00:00"
         },
         {
             "name": "fioru/lasntgadmin-translate",
@@ -1714,7 +1786,8 @@
         "fioru/lasntgadmin-orders": 0,
         "fioru/lasntgadmin-subscriptions": 0,
         "fioru/lasntgadmin-translate": 0,
-        "fioru/lasntgadmin-dashboard": 0
+        "fioru/lasntgadmin-dashboard": 0,
+        "fioru/lasntgadmin-theme": 0
     },
     "prefer-stable": false,
     "prefer-lowest": false,
