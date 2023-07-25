@@ -84,6 +84,7 @@ SITE_URL=localhost:8080
 SITE_TITLE=LASNTG
 WP_PLUGINS=groups woocommerce advanced-custom-fields user-role-editor convergewoocommerce wp-mail-smtp
 WP_THEMES=storefront
+WP_THEME=lasntgadmin-theme
 ADMIN_USERNAME=admin
 ADMIN_PASSWORD=secret
 ADMIN_EMAIL=lasntg@example.com
