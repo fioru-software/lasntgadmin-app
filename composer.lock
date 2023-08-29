@@ -442,16 +442,16 @@
         },
         {
             "name": "fioru/lasntgadmin-groups",
-            "version": "1.5.6",
+            "version": "1.5.7",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-groups.git",
-                "reference": "37a37b8f2873a7a4eae9828b163e2c7104e4b888"
+                "reference": "d001c59c65e85c12401496d9c480b31f5ac42c0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-groups/zipball/37a37b8f2873a7a4eae9828b163e2c7104e4b888",
-                "reference": "37a37b8f2873a7a4eae9828b163e2c7104e4b888",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-groups/zipball/d001c59c65e85c12401496d9c480b31f5ac42c0e",
+                "reference": "d001c59c65e85c12401496d9c480b31f5ac42c0e",
                 "shasum": ""
             },
             "require": {
@@ -507,23 +507,23 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-groups/tree/1.5.6",
+                "source": "https://github.com/fioru-software/lasntgadmin-groups/tree/1.5.7",
                 "issues": "https://github.com/fioru-software/lasntgadmin-groups/issues"
             },
-            "time": "2023-08-14T14:42:39+00:00"
+            "time": "2023-08-29T16:27:23+00:00"
         },
         {
             "name": "fioru/lasntgadmin-orders",
-            "version": "1.7.16",
+            "version": "1.7.17",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-orders.git",
-                "reference": "75775e3713d13c275b9ac09605c668ba272e6e58"
+                "reference": "9e4343442448f55dcaa0ce48449e2bb623a49028"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-orders/zipball/75775e3713d13c275b9ac09605c668ba272e6e58",
-                "reference": "75775e3713d13c275b9ac09605c668ba272e6e58",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-orders/zipball/9e4343442448f55dcaa0ce48449e2bb623a49028",
+                "reference": "9e4343442448f55dcaa0ce48449e2bb623a49028",
                 "shasum": ""
             },
             "require": {
@@ -587,23 +587,23 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-orders/tree/1.7.16",
+                "source": "https://github.com/fioru-software/lasntgadmin-orders/tree/1.7.17",
                 "issues": "https://github.com/fioru-software/lasntgadmin-orders/issues"
             },
-            "time": "2023-08-22T09:05:39+00:00"
+            "time": "2023-08-24T14:21:51+00:00"
         },
         {
             "name": "fioru/lasntgadmin-products",
-            "version": "5.11.0",
+            "version": "5.11.3",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-products.git",
-                "reference": "54c06e57a1fe32c92673e7cff114b27368507876"
+                "reference": "78b9b37df724c799a7671f29a1cd5c583c22f45b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-products/zipball/54c06e57a1fe32c92673e7cff114b27368507876",
-                "reference": "54c06e57a1fe32c92673e7cff114b27368507876",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-products/zipball/78b9b37df724c799a7671f29a1cd5c583c22f45b",
+                "reference": "78b9b37df724c799a7671f29a1cd5c583c22f45b",
                 "shasum": ""
             },
             "require": {
@@ -664,10 +664,10 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-products/tree/5.11.0",
+                "source": "https://github.com/fioru-software/lasntgadmin-products/tree/5.11.3",
                 "issues": "https://github.com/fioru-software/lasntgadmin-products/issues"
             },
-            "time": "2023-08-22T08:59:48+00:00"
+            "time": "2023-08-29T16:27:51+00:00"
         },
         {
             "name": "fioru/lasntgadmin-subscriptions",
@@ -901,20 +901,21 @@
         },
         {
             "name": "fioru/lasntgadmin-users",
-            "version": "3.3.7",
+            "version": "3.3.8",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-users.git",
-                "reference": "2a8b10edf75c1d4fdc3752d49e11bcbd6caef588"
+                "reference": "79667bfb087d073cf40fcb5a5d9da4ebee227b3a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-users/zipball/2a8b10edf75c1d4fdc3752d49e11bcbd6caef588",
-                "reference": "2a8b10edf75c1d4fdc3752d49e11bcbd6caef588",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-users/zipball/79667bfb087d073cf40fcb5a5d9da4ebee227b3a",
+                "reference": "79667bfb087d073cf40fcb5a5d9da4ebee227b3a",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "~2.0",
+                "fioru/lasntgadmin-attendees": "^3.7.10",
                 "fioru/lasntgadmin-groups": "^1.3.0"
             },
             "require-dev": {
@@ -967,10 +968,10 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-users/tree/3.3.7",
+                "source": "https://github.com/fioru-software/lasntgadmin-users/tree/3.3.8",
                 "issues": "https://github.com/fioru-software/lasntgadmin-users/issues"
             },
-            "time": "2023-06-10T08:12:15+00:00"
+            "time": "2023-08-29T13:45:05+00:00"
         },
         {
             "name": "maennchen/zipstream-php",
@@ -1538,16 +1539,16 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.27.0",
+            "version": "v1.28.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "8ad114f6b39e2c98a8b0e3bd907732c207c2b534"
+                "reference": "42292d99c55abe617799667f454222c54c60e229"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/8ad114f6b39e2c98a8b0e3bd907732c207c2b534",
-                "reference": "8ad114f6b39e2c98a8b0e3bd907732c207c2b534",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/42292d99c55abe617799667f454222c54c60e229",
+                "reference": "42292d99c55abe617799667f454222c54c60e229",
                 "shasum": ""
             },
             "require": {
@@ -1562,7 +1563,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "1.27-dev"
+                    "dev-main": "1.28-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -1601,7 +1602,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.27.0"
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.28.0"
             },
             "funding": [
                 {
@@ -1617,20 +1618,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-11-03T14:55:06+00:00"
+            "time": "2023-07-28T09:04:16+00:00"
         },
         {
             "name": "symfony/polyfill-uuid",
-            "version": "v1.27.0",
+            "version": "v1.28.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-uuid.git",
-                "reference": "f3cf1a645c2734236ed1e2e671e273eeb3586166"
+                "reference": "9c44518a5aff8da565c8a55dbe85d2769e6f630e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-uuid/zipball/f3cf1a645c2734236ed1e2e671e273eeb3586166",
-                "reference": "f3cf1a645c2734236ed1e2e671e273eeb3586166",
+                "url": "https://api.github.com/repos/symfony/polyfill-uuid/zipball/9c44518a5aff8da565c8a55dbe85d2769e6f630e",
+                "reference": "9c44518a5aff8da565c8a55dbe85d2769e6f630e",
                 "shasum": ""
             },
             "require": {
@@ -1645,7 +1646,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "1.27-dev"
+                    "dev-main": "1.28-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -1683,7 +1684,7 @@
                 "uuid"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-uuid/tree/v1.27.0"
+                "source": "https://github.com/symfony/polyfill-uuid/tree/v1.28.0"
             },
             "funding": [
                 {
@@ -1699,7 +1700,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-11-03T14:55:06+00:00"
+            "time": "2023-01-26T09:26:14+00:00"
         },
         {
             "name": "symfony/uid",
