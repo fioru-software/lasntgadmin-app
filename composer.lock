@@ -214,16 +214,16 @@
         },
         {
             "name": "fioru/lasntgadmin-attendees",
-            "version": "3.7.16",
+            "version": "3.7.18",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-attendees.git",
-                "reference": "87adc3906d83c7b7e4c47d18f8ce408270b7271e"
+                "reference": "70947a53d5ab3797defb43f4d6c16c3003f01396"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-attendees/zipball/87adc3906d83c7b7e4c47d18f8ce408270b7271e",
-                "reference": "87adc3906d83c7b7e4c47d18f8ce408270b7271e",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-attendees/zipball/70947a53d5ab3797defb43f4d6c16c3003f01396",
+                "reference": "70947a53d5ab3797defb43f4d6c16c3003f01396",
                 "shasum": ""
             },
             "require": {
@@ -284,10 +284,10 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-attendees/tree/3.7.16",
+                "source": "https://github.com/fioru-software/lasntgadmin-attendees/tree/3.7.18",
                 "issues": "https://github.com/fioru-software/lasntgadmin-attendees/issues"
             },
-            "time": "2023-09-21T11:24:32+00:00"
+            "time": "2023-09-25T11:05:21+00:00"
         },
         {
             "name": "fioru/lasntgadmin-dashboard",
@@ -595,16 +595,16 @@
         },
         {
             "name": "fioru/lasntgadmin-products",
-            "version": "5.11.9",
+            "version": "5.11.10",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-products.git",
-                "reference": "2ed7dbca2e90fe00d34c41b84abb8efe8dda4922"
+                "reference": "beab4195d30be0076e2d02916ca86fdbc80790b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-products/zipball/2ed7dbca2e90fe00d34c41b84abb8efe8dda4922",
-                "reference": "2ed7dbca2e90fe00d34c41b84abb8efe8dda4922",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-products/zipball/beab4195d30be0076e2d02916ca86fdbc80790b5",
+                "reference": "beab4195d30be0076e2d02916ca86fdbc80790b5",
                 "shasum": ""
             },
             "require": {
@@ -665,10 +665,10 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-products/tree/5.11.9",
+                "source": "https://github.com/fioru-software/lasntgadmin-products/tree/5.11.10",
                 "issues": "https://github.com/fioru-software/lasntgadmin-products/issues"
             },
-            "time": "2023-09-20T15:30:33+00:00"
+            "time": "2023-09-25T11:03:06+00:00"
         },
         {
             "name": "fioru/lasntgadmin-subscriptions",
@@ -1329,16 +1329,16 @@
         },
         {
             "name": "psr/http-client",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-client.git",
-                "reference": "0955afe48220520692d2d09f7ab7e0f93ffd6a31"
+                "reference": "bb5906edc1c324c9a05aa0873d40117941e5fa90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-client/zipball/0955afe48220520692d2d09f7ab7e0f93ffd6a31",
-                "reference": "0955afe48220520692d2d09f7ab7e0f93ffd6a31",
+                "url": "https://api.github.com/repos/php-fig/http-client/zipball/bb5906edc1c324c9a05aa0873d40117941e5fa90",
+                "reference": "bb5906edc1c324c9a05aa0873d40117941e5fa90",
                 "shasum": ""
             },
             "require": {
@@ -1375,9 +1375,9 @@
                 "psr-18"
             ],
             "support": {
-                "source": "https://github.com/php-fig/http-client/tree/1.0.2"
+                "source": "https://github.com/php-fig/http-client"
             },
-            "time": "2023-04-10T20:12:12+00:00"
+            "time": "2023-09-23T14:17:50+00:00"
         },
         {
             "name": "psr/http-factory",
