@@ -1,5 +1,9 @@
 # LASNTG Admin 
 
+## Card Payments
+
+Use [these test card details](https://developer.globalpay.com/resources/test-card-numbers) when paying by card on staging.
+
 ## Deployment
 
 ### When adding custom plugins and themes to the app for first time.
