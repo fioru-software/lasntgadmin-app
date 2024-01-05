@@ -1,65 +1,74 @@
 {
-    "name": "fioru/lasntgadmin-app",
-    "description": "WordPress WooCommerce app",
-    "license": "proprietary",
-    "version": "0.1.0",
-    "repositories": [
-        {
-            "type": "vcs",
-            "url":  "git@github.com:fioru-software/lasntgadmin-dashboard.git"
-        },
-        {
-            "type": "vcs",
-            "url":  "git@github.com:fioru-software/lasntgadmin-grant-funded-payment-gateway.git"
-        },
-        {
-            "type": "vcs",
-            "url":  "git@github.com:fioru-software/lasntgadmin-groups.git"
-        },
-        {
-            "type": "vcs",
-            "url":  "git@github.com:fioru-software/lasntgadmin-attendees.git"
-        },
-        {
-            "type": "vcs",
-            "url":  "git@github.com:fioru-software/lasntgadmin-products.git"
-        },
-        {
-            "type": "vcs",
-            "url":  "git@github.com:fioru-software/lasntgadmin-users.git"
-        },
-        {
-            "type": "vcs",
-            "url":  "git@github.com:fioru-software/lasntgadmin-orders.git"
-        },
-        {
-            "type": "vcs",
-            "url":  "git@github.com:fioru-software/lasntgadmin-subscriptions.git"
-        },
-        {
-            "type": "vcs",
-            "url":  "git@github.com:fioru-software/lasntgadmin-translate.git"
-        },
-        {
-            "type": "vcs",
-            "url":  "git@github.com:fioru-software/lasntgadmin-theme.git"
-        }
-    ],
-    "config": {
-        "allow-plugins": {
-            "composer/installers": true
-        }
-    },
-    "require": {
-        "fioru/lasntgadmin-grant-funded-payment-gateway": "^1.0.11@stable",
-        "fioru/lasntgadmin-attendees": "^3.2.1@stable",
-        "fioru/lasntgadmin-groups": "^1.5.0@stable",
-        "fioru/lasntgadmin-products": "^5.9.4@stable",
-        "fioru/lasntgadmin-users": "^3.3.0@stable",
-        "fioru/lasntgadmin-orders": "^1.2.0@stable",
-        "fioru/lasntgadmin-subscriptions": "^2.1.2@stable",
-        "fioru/lasntgadmin-translate": "^1.1.0@stable",
-        "fioru/lasntgadmin-dashboard": "^1.0.0@stable",
-        "fioru/lasntgadmin-theme": "^1.0.0@stable"
-    }
+	"name": "fioru/lasntgadmin-app",
+	"description": "WordPress WooCommerce app",
+	"license": "proprietary",
+	"version": "0.1.0",
+	"repositories": [
+		{
+			"type": "vcs",
+			"url":	"git@github.com:fioru-software/lasntgadmin-itthinx-groups.git"
+		},
+		{
+			"type": "vcs",
+			"url":	"git@github.com:fioru-software/lasntgadmin-purchase-order-payment-gateway"
+		},
+		{
+			"type": "vcs",
+			"url":	"git@github.com:fioru-software/lasntgadmin-dashboard.git"
+		},
+		{
+			"type": "vcs",
+			"url":	"git@github.com:fioru-software/lasntgadmin-grant-funded-payment-gateway.git"
+		},
+		{
+			"type": "vcs",
+			"url":	"git@github.com:fioru-software/lasntgadmin-groups.git"
+		},
+		{
+			"type": "vcs",
+			"url":	"git@github.com:fioru-software/lasntgadmin-attendees.git"
+		},
+		{
+			"type": "vcs",
+			"url":	"git@github.com:fioru-software/lasntgadmin-products.git"
+		},
+		{
+			"type": "vcs",
+			"url":	"git@github.com:fioru-software/lasntgadmin-users.git"
+		},
+		{
+			"type": "vcs",
+			"url":	"git@github.com:fioru-software/lasntgadmin-orders.git"
+		},
+		{
+			"type": "vcs",
+			"url":	"git@github.com:fioru-software/lasntgadmin-subscriptions.git"
+		},
+		{
+			"type": "vcs",
+			"url":	"git@github.com:fioru-software/lasntgadmin-translate.git"
+		},
+		{
+			"type": "vcs",
+			"url":	"git@github.com:fioru-software/lasntgadmin-theme.git"
+		}
+	],
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true
+		}
+	},
+	"require": {
+		"fioru/lasntgadmin-grant-funded-payment-gateway": "^1.6.2@stable",
+		"fioru/lasntgadmin-purchase-order-payment-gateway": "^1.2.13@stable",
+		"fioru/lasntgadmin-attendees": "^3.8.2@stable",
+		"fioru/lasntgadmin-groups": "^1.5.9@stable",
+		"fioru/lasntgadmin-products": "^5.12.7@stable",
+		"fioru/lasntgadmin-users": "^3.3.8@stable",
+		"fioru/lasntgadmin-orders": "^1.7.37@stable",
+		"fioru/lasntgadmin-subscriptions": "^2.1.17@stable",
+		"fioru/lasntgadmin-translate": "^1.2.8@stable",
+		"fioru/lasntgadmin-dashboard": "^1.1.0@stable",
+		"fioru/lasntgadmin-theme": "^1.0.3@stable"
+	}
 }

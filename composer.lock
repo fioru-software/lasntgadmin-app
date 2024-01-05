@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "771515302ddedeeeaddade3857f3e8ac",
+    "content-hash": "3d692751199d1a16c05d6705cbb7a649",
     "packages": [
         {
             "name": "composer/installers",
@@ -153,20 +153,20 @@
         },
         {
             "name": "ezyang/htmlpurifier",
-            "version": "v4.16.0",
+            "version": "v4.17.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezyang/htmlpurifier.git",
-                "reference": "523407fb06eb9e5f3d59889b3978d5bfe94299c8"
+                "reference": "bbc513d79acf6691fa9cf10f192c90dd2957f18c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/523407fb06eb9e5f3d59889b3978d5bfe94299c8",
-                "reference": "523407fb06eb9e5f3d59889b3978d5bfe94299c8",
+                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/bbc513d79acf6691fa9cf10f192c90dd2957f18c",
+                "reference": "bbc513d79acf6691fa9cf10f192c90dd2957f18c",
                 "shasum": ""
             },
             "require": {
-                "php": "~5.6.0 || ~7.0.0 || ~7.1.0 || ~7.2.0 || ~7.3.0 || ~7.4.0 || ~8.0.0 || ~8.1.0 || ~8.2.0"
+                "php": "~5.6.0 || ~7.0.0 || ~7.1.0 || ~7.2.0 || ~7.3.0 || ~7.4.0 || ~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0"
             },
             "require-dev": {
                 "cerdic/css-tidy": "^1.7 || ^2.0",
@@ -208,9 +208,9 @@
             ],
             "support": {
                 "issues": "https://github.com/ezyang/htmlpurifier/issues",
-                "source": "https://github.com/ezyang/htmlpurifier/tree/v4.16.0"
+                "source": "https://github.com/ezyang/htmlpurifier/tree/v4.17.0"
             },
-            "time": "2022-09-18T07:06:19+00:00"
+            "time": "2023-11-17T15:01:25+00:00"
         },
         {
             "name": "fioru/lasntgadmin-attendees",
@@ -370,23 +370,24 @@
         },
         {
             "name": "fioru/lasntgadmin-grant-funded-payment-gateway",
-            "version": "1.6.0",
+            "version": "1.6.2",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-grant-funded-payment-gateway.git",
-                "reference": "adfe0f28e2618ec19bf0179db36ab2542877a00a"
+                "reference": "04ce8cfc85eabadc32cfe195b34de52b046f4f9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-grant-funded-payment-gateway/zipball/adfe0f28e2618ec19bf0179db36ab2542877a00a",
-                "reference": "adfe0f28e2618ec19bf0179db36ab2542877a00a",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-grant-funded-payment-gateway/zipball/04ce8cfc85eabadc32cfe195b34de52b046f4f9c",
+                "reference": "04ce8cfc85eabadc32cfe195b34de52b046f4f9c",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "~2.0",
                 "fioru/lasntgadmin-attendees": "^3.8.0",
                 "fioru/lasntgadmin-groups": "^1.4",
-                "fioru/lasntgadmin-products": "^5.12.0"
+                "fioru/lasntgadmin-products": "^5.12.0",
+                "malkusch/lock": "^2.2.1"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
@@ -438,10 +439,10 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-grant-funded-payment-gateway/tree/1.6.0",
+                "source": "https://github.com/fioru-software/lasntgadmin-grant-funded-payment-gateway/tree/1.6.2",
                 "issues": "https://github.com/fioru-software/lasntgadmin-grant-funded-payment-gateway/issues"
             },
-            "time": "2023-11-02T11:48:41+00:00"
+            "time": "2024-01-04T14:56:42+00:00"
         },
         {
             "name": "fioru/lasntgadmin-groups",
@@ -516,17 +517,43 @@
             "time": "2023-09-04T13:44:59+00:00"
         },
         {
-            "name": "fioru/lasntgadmin-orders",
-            "version": "1.7.34",
+            "name": "fioru/lasntgadmin-itthinx-groups",
+            "version": "2.19.0",
             "source": {
                 "type": "git",
-                "url": "git@github.com:fioru-software/lasntgadmin-orders.git",
-                "reference": "2ccfa7d92c3a9dd323bfbf8f2aee1f16afef7c65"
+                "url": "https://github.com/fioru-software/lasntgadmin-itthinx-groups.git",
+                "reference": "72b305a55eb240028f599295699845eaa4fe34ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-orders/zipball/2ccfa7d92c3a9dd323bfbf8f2aee1f16afef7c65",
-                "reference": "2ccfa7d92c3a9dd323bfbf8f2aee1f16afef7c65",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-itthinx-groups/zipball/72b305a55eb240028f599295699845eaa4fe34ce",
+                "reference": "72b305a55eb240028f599295699845eaa4fe34ce",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~2.0"
+            },
+            "type": "wordpress-plugin",
+            "extra": {
+                "installer-name": "groups"
+            },
+            "support": {
+                "source": "https://github.com/fioru-software/lasntgadmin-itthinx-groups/tree/2.19.0"
+            },
+            "time": "2023-12-08T13:21:14+00:00"
+        },
+        {
+            "name": "fioru/lasntgadmin-orders",
+            "version": "1.7.37",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:fioru-software/lasntgadmin-orders.git",
+                "reference": "facfe7301f5e121ac61c4744c6114d0dbbb48914"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-orders/zipball/facfe7301f5e121ac61c4744c6114d0dbbb48914",
+                "reference": "facfe7301f5e121ac61c4744c6114d0dbbb48914",
                 "shasum": ""
             },
             "require": {
@@ -534,11 +561,12 @@
                 "fioru/lasntgadmin-attendees": "^3.8.0",
                 "fioru/lasntgadmin-grant-funded-payment-gateway": "^1.5.0",
                 "fioru/lasntgadmin-groups": "^1.5.5",
-                "fioru/lasntgadmin-products": "^5.12.0",
+                "fioru/lasntgadmin-products": "^5.12.1",
                 "fioru/lasntgadmin-subscriptions": "^2.1.11",
                 "fioru/lasntgadmin-theme": "^1.0.0",
                 "fioru/lasntgadmin-translate": "^1.2.6",
-                "fioru/lasntgadmin-users": "^3.3.7"
+                "fioru/lasntgadmin-users": "^3.3.7",
+                "malkusch/lock": "^2.2.1"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
@@ -590,23 +618,23 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-orders/tree/1.7.34",
+                "source": "https://github.com/fioru-software/lasntgadmin-orders/tree/1.7.37",
                 "issues": "https://github.com/fioru-software/lasntgadmin-orders/issues"
             },
-            "time": "2023-10-26T13:57:39+00:00"
+            "time": "2024-01-04T15:01:05+00:00"
         },
         {
             "name": "fioru/lasntgadmin-products",
-            "version": "5.12.3",
+            "version": "5.12.7",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-products.git",
-                "reference": "9b4cde966e3cf4950990cf6490be3a5fd94c2936"
+                "reference": "dfd7f4bad3d7846c190055a2a6f8b6a0e48a14fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-products/zipball/9b4cde966e3cf4950990cf6490be3a5fd94c2936",
-                "reference": "9b4cde966e3cf4950990cf6490be3a5fd94c2936",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-products/zipball/dfd7f4bad3d7846c190055a2a6f8b6a0e48a14fa",
+                "reference": "dfd7f4bad3d7846c190055a2a6f8b6a0e48a14fa",
                 "shasum": ""
             },
             "require": {
@@ -614,12 +642,13 @@
                 "fioru/lasntgadmin-attendees": "^3.7.11",
                 "fioru/lasntgadmin-grant-funded-payment-gateway": "^1.0.8",
                 "fioru/lasntgadmin-groups": "^1.5.6",
+                "fioru/lasntgadmin-itthinx-groups": "^2.19.0",
                 "fioru/lasntgadmin-orders": "^1.7.29",
                 "fioru/lasntgadmin-users": "^3.0.2"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
-                "enlightn/security-checker": "dev-main",
+                "enlightn/security-checker": "^1.11.0",
                 "fakerphp/faker": "^1.19",
                 "mockery/mockery": "^1.5",
                 "overtrue/phplint": "^3.0",
@@ -667,23 +696,50 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-products/tree/5.12.3",
+                "source": "https://github.com/fioru-software/lasntgadmin-products/tree/5.12.7",
                 "issues": "https://github.com/fioru-software/lasntgadmin-products/issues"
             },
-            "time": "2023-11-03T10:51:08+00:00"
+            "time": "2024-01-04T15:03:31+00:00"
         },
         {
-            "name": "fioru/lasntgadmin-subscriptions",
-            "version": "2.1.16",
+            "name": "fioru/lasntgadmin-purchase-order-payment-gateway",
+            "version": "1.2.13",
             "source": {
                 "type": "git",
-                "url": "git@github.com:fioru-software/lasntgadmin-subscriptions.git",
-                "reference": "b2d6e8c1556c66752eaf2362e182031bc837deea"
+                "url": "git@github.com:fioru-software/lasntgadmin-purchase-order-payment-gateway.git",
+                "reference": "470ba3774b9b854fc94b3014bb73e475aa224c07"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-subscriptions/zipball/b2d6e8c1556c66752eaf2362e182031bc837deea",
-                "reference": "b2d6e8c1556c66752eaf2362e182031bc837deea",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-purchase-order-payment-gateway/zipball/470ba3774b9b854fc94b3014bb73e475aa224c07",
+                "reference": "470ba3774b9b854fc94b3014bb73e475aa224c07",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~2.0"
+            },
+            "type": "wordpress-plugin",
+            "extra": {
+                "installer-name": "woocommerce-gateway-purchase-order"
+            },
+            "support": {
+                "source": "https://github.com/fioru-software/lasntgadmin-purchase-order-payment-gateway/tree/1.2.13",
+                "issues": "https://github.com/fioru-software/lasntgadmin-purchase-order-payment-gateway/issues"
+            },
+            "time": "2024-01-02T12:22:51+00:00"
+        },
+        {
+            "name": "fioru/lasntgadmin-subscriptions",
+            "version": "2.1.17",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:fioru-software/lasntgadmin-subscriptions.git",
+                "reference": "e11c5443f95d130e6b5de406756e117dc2b8f683"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-subscriptions/zipball/e11c5443f95d130e6b5de406756e117dc2b8f683",
+                "reference": "e11c5443f95d130e6b5de406756e117dc2b8f683",
                 "shasum": ""
             },
             "require": {
@@ -745,10 +801,10 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-subscriptions/tree/2.1.16",
+                "source": "https://github.com/fioru-software/lasntgadmin-subscriptions/tree/2.1.17",
                 "issues": "https://github.com/fioru-software/lasntgadmin-subscriptions/issues"
             },
-            "time": "2023-11-02T06:56:42+00:00"
+            "time": "2024-01-05T01:28:32+00:00"
         },
         {
             "name": "fioru/lasntgadmin-theme",
@@ -1053,6 +1109,95 @@
                 }
             ],
             "time": "2022-11-25T18:57:19+00:00"
+        },
+        {
+            "name": "malkusch/lock",
+            "version": "v2.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-lock/lock.git",
+                "reference": "63c1b268f521a702cb8755ed92631c1fac1775e6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-lock/lock/zipball/63c1b268f521a702cb8755ed92631c1fac1775e6",
+                "reference": "63c1b268f521a702cb8755ed92631c1fac1775e6",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0",
+                "psr/log": "^1|^2|^3"
+            },
+            "require-dev": {
+                "eloquent/liberator": "^2.0",
+                "ext-memcached": "*",
+                "ext-pcntl": "*",
+                "ext-pdo": "*",
+                "ext-pdo_mysql": "*",
+                "ext-pdo_sqlite": "*",
+                "ext-sysvsem": "*",
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "johnkary/phpunit-speedtrap": "^3.0",
+                "mikey179/vfsstream": "^1.6.7",
+                "php-mock/php-mock-phpunit": "^2.1",
+                "phpstan/phpstan": "^0.12.58",
+                "phpunit/phpunit": "^9.4",
+                "predis/predis": "^1.1",
+                "spatie/async": "^1.5",
+                "squizlabs/php_codesniffer": "^3.3"
+            },
+            "suggest": {
+                "ext-igbinary": "To use this library with PHP Redis igbinary serializer enabled.",
+                "ext-lzf": "To use this library with PHP Redis lzf compression enabled.",
+                "ext-pnctl": "Enables locking with flock without busy waiting in CLI scripts.",
+                "ext-redis": "To use this library with the PHP Redis extension.",
+                "ext-sysvsem": "Enables locking using semaphores.",
+                "predis/predis": "To use this library with predis."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "malkusch\\lock\\": "classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "WTFPL"
+            ],
+            "authors": [
+                {
+                    "name": "Markus Malkusch",
+                    "email": "markus@malkusch.de",
+                    "homepage": "http://markus.malkusch.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Willem Stuursma-Ruwen",
+                    "email": "willem@stuursma.name",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Mutex library for exclusive code execution.",
+            "homepage": "https://github.com/malkusch/lock",
+            "keywords": [
+                "advisory-locks",
+                "cas",
+                "flock",
+                "lock",
+                "locking",
+                "memcache",
+                "mutex",
+                "mysql",
+                "postgresql",
+                "redis",
+                "redlock",
+                "semaphore"
+            ],
+            "support": {
+                "issues": "https://github.com/php-lock/lock/issues",
+                "source": "https://github.com/php-lock/lock/tree/v2.2.1"
+            },
+            "time": "2022-04-26T09:25:15+00:00"
         },
         {
             "name": "markbaker/complex",
@@ -1490,6 +1635,56 @@
             "time": "2023-04-04T09:50:52+00:00"
         },
         {
+            "name": "psr/log",
+            "version": "1.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "d49695b909c3b7628b6289db5479a1c204601f11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/d49695b909c3b7628b6289db5479a1c204601f11",
+                "reference": "d49695b909c3b7628b6289db5479a1c204601f11",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/log/tree/1.1.4"
+            },
+            "time": "2021-05-03T11:20:27+00:00"
+        },
+        {
             "name": "psr/simple-cache",
             "version": "1.0.1",
             "source": {
@@ -1707,16 +1902,16 @@
         },
         {
             "name": "symfony/uid",
-            "version": "v5.4.21",
+            "version": "v5.4.31",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/uid.git",
-                "reference": "a30744506976aafc807ccb0d4f95865c0a690d02"
+                "reference": "d76766c457aacff7acea4482c207231aea93362c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/uid/zipball/a30744506976aafc807ccb0d4f95865c0a690d02",
-                "reference": "a30744506976aafc807ccb0d4f95865c0a690d02",
+                "url": "https://api.github.com/repos/symfony/uid/zipball/d76766c457aacff7acea4482c207231aea93362c",
+                "reference": "d76766c457aacff7acea4482c207231aea93362c",
                 "shasum": ""
             },
             "require": {
@@ -1761,7 +1956,7 @@
                 "uuid"
             ],
             "support": {
-                "source": "https://github.com/symfony/uid/tree/v5.4.21"
+                "source": "https://github.com/symfony/uid/tree/v5.4.31"
             },
             "funding": [
                 {
@@ -1777,7 +1972,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-02-14T08:03:56+00:00"
+            "time": "2023-10-31T07:58:33+00:00"
         }
     ],
     "packages-dev": [],
@@ -1785,6 +1980,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "fioru/lasntgadmin-grant-funded-payment-gateway": 0,
+        "fioru/lasntgadmin-purchase-order-payment-gateway": 0,
         "fioru/lasntgadmin-attendees": 0,
         "fioru/lasntgadmin-groups": 0,
         "fioru/lasntgadmin-products": 0,
