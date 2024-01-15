@@ -7,6 +7,9 @@ configMapGenerator:
 - name: lasntgadmin-php-config
   files:
     - php.ini
+- name: lasntgadmin-htaccess-config
+  files:
+    - .htaccess
 - name: lasntgadmin-apache-config
   files:
     - 000-default.conf

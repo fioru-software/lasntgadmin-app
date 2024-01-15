@@ -91,6 +91,10 @@ spec:
           mountPath: /etc/apache2/sites-available/000-default.conf
           subPath: 000-default.conf
           readOnly: true
+        - name: htaccess-config
+          mountPath: /var/www/html/.htaccess
+          subPath: .htaccess
+          readOnly: true
       volumes:
         - name: wp-content
           persistentVolumeClaim:
@@ -107,4 +111,7 @@ spec:
         - name: apache-config
           configMap:
             name: lasntgadmin-apache-config
+        - name: htaccess-config
+          configMap:
+            name: lasntgadmin-htaccess-config
 
