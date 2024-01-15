@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3d692751199d1a16c05d6705cbb7a649",
+    "content-hash": "b732d0ce099fe0c6f055c2d671a65a1f",
     "packages": [
         {
             "name": "composer/installers",
@@ -808,16 +808,16 @@
         },
         {
             "name": "fioru/lasntgadmin-theme",
-            "version": "1.0.4",
+            "version": "1.0.5-rc3",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-theme.git",
-                "reference": "113f450b4f59169b99ead8d13851a54e04c9fa4d"
+                "reference": "8dd57ca1b78eab4befb3ab1620b9125010767100"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-theme/zipball/113f450b4f59169b99ead8d13851a54e04c9fa4d",
-                "reference": "113f450b4f59169b99ead8d13851a54e04c9fa4d",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-theme/zipball/8dd57ca1b78eab4befb3ab1620b9125010767100",
+                "reference": "8dd57ca1b78eab4befb3ab1620b9125010767100",
                 "shasum": ""
             },
             "require": {
@@ -825,7 +825,7 @@
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
-                "enlightn/security-checker": "dev-main",
+                "enlightn/security-checker": "^1.11.0",
                 "fakerphp/faker": "^1.19",
                 "mockery/mockery": "^1.5",
                 "overtrue/phplint": "^3.0",
@@ -873,10 +873,10 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-theme/tree/1.0.4",
+                "source": "https://github.com/fioru-software/lasntgadmin-theme/tree/1.0.5-rc3",
                 "issues": "https://github.com/fioru-software/lasntgadmin-theme/issues"
             },
-            "time": "2024-01-16T14:47:37+00:00"
+            "time": "2024-01-18T15:48:32+00:00"
         },
         {
             "name": "fioru/lasntgadmin-translate",
@@ -1979,17 +1979,17 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "fioru/lasntgadmin-grant-funded-payment-gateway": 0,
-        "fioru/lasntgadmin-purchase-order-payment-gateway": 0,
-        "fioru/lasntgadmin-attendees": 0,
-        "fioru/lasntgadmin-groups": 0,
-        "fioru/lasntgadmin-products": 0,
-        "fioru/lasntgadmin-users": 0,
-        "fioru/lasntgadmin-orders": 0,
-        "fioru/lasntgadmin-subscriptions": 0,
-        "fioru/lasntgadmin-translate": 0,
-        "fioru/lasntgadmin-dashboard": 0,
-        "fioru/lasntgadmin-theme": 0
+        "fioru/lasntgadmin-grant-funded-payment-gateway": 5,
+        "fioru/lasntgadmin-purchase-order-payment-gateway": 5,
+        "fioru/lasntgadmin-attendees": 5,
+        "fioru/lasntgadmin-groups": 5,
+        "fioru/lasntgadmin-products": 5,
+        "fioru/lasntgadmin-users": 5,
+        "fioru/lasntgadmin-orders": 5,
+        "fioru/lasntgadmin-subscriptions": 5,
+        "fioru/lasntgadmin-translate": 5,
+        "fioru/lasntgadmin-dashboard": 5,
+        "fioru/lasntgadmin-theme": 5
     },
     "prefer-stable": false,
     "prefer-lowest": false,

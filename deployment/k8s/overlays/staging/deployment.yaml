@@ -40,6 +40,12 @@
 - op: replace
   path: /spec/template/spec/volumes/4/configMap/name
   value: staging-lasntgadmin-apache-config
+- op: replace
+  path: /spec/template/spec/volumes/5/configMap/name
+  value: staging-lasntgadmin-htaccess-config
+- op: replace
+  path: /spec/template/spec/volumes/6/configMap/name
+  value: staging-lasntgadmin-wordfence-waf
 - op: add
   path: /spec/template/spec/containers/0/readinessProbe/httpGet/httpHeaders
   value:

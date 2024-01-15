@@ -13,3 +13,8 @@ RewriteRule . /index.php [L]
 </IfModule>
 # END WordPress
 
+# Block Attempts to Enumerate WordPress Users
+RewriteCond %{REQUEST_URI} !^/wp-admin [NC]
+RewriteCond %{QUERY_STRING} author=\d
+RewriteRule .* - [R=403,L]
+
