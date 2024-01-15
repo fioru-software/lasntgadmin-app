@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3d692751199d1a16c05d6705cbb7a649",
+    "content-hash": "b732d0ce099fe0c6f055c2d671a65a1f",
     "packages": [
         {
             "name": "composer/installers",
@@ -1979,17 +1979,17 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "fioru/lasntgadmin-grant-funded-payment-gateway": 0,
-        "fioru/lasntgadmin-purchase-order-payment-gateway": 0,
-        "fioru/lasntgadmin-attendees": 0,
-        "fioru/lasntgadmin-groups": 0,
-        "fioru/lasntgadmin-products": 0,
-        "fioru/lasntgadmin-users": 0,
-        "fioru/lasntgadmin-orders": 0,
-        "fioru/lasntgadmin-subscriptions": 0,
-        "fioru/lasntgadmin-translate": 0,
-        "fioru/lasntgadmin-dashboard": 0,
-        "fioru/lasntgadmin-theme": 0
+        "fioru/lasntgadmin-grant-funded-payment-gateway": 5,
+        "fioru/lasntgadmin-purchase-order-payment-gateway": 5,
+        "fioru/lasntgadmin-attendees": 5,
+        "fioru/lasntgadmin-groups": 5,
+        "fioru/lasntgadmin-products": 5,
+        "fioru/lasntgadmin-users": 5,
+        "fioru/lasntgadmin-orders": 5,
+        "fioru/lasntgadmin-subscriptions": 5,
+        "fioru/lasntgadmin-translate": 5,
+        "fioru/lasntgadmin-dashboard": 5,
+        "fioru/lasntgadmin-theme": 5
     },
     "prefer-stable": false,
     "prefer-lowest": false,
