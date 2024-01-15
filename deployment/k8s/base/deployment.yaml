@@ -95,6 +95,10 @@ spec:
           mountPath: /var/www/html/.htaccess
           subPath: .htaccess
           readOnly: true
+        - name: wordfence-waf
+          mountPath: /var/www/html/wordfence-waf.php
+          subPath: wordfence-waf.php
+          readOnly: true
       volumes:
         - name: wp-content
           persistentVolumeClaim:
@@ -114,4 +118,7 @@ spec:
         - name: htaccess-config
           configMap:
             name: lasntgadmin-htaccess-config
+        - name: wordfence-waf
+          configMap:
+            name: lasntgadmin-wordfence-waf
 

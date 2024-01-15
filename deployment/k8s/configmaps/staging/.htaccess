@@ -18,5 +18,3 @@ RewriteCond %{REQUEST_URI} !^/wp-admin [NC]
 RewriteCond %{QUERY_STRING} author=\d
 RewriteRule .* - [R=403,L]
 
-# WordFence
-php_value auto_prepend_file = "/var/www/html/wordfence-waf.php"

@@ -10,6 +10,9 @@ configMapGenerator:
 - name: lasntgadmin-htaccess-config
   files:
     - .htaccess
+- name: lasntgadmin-wordfence-waf
+  files:
+    - wordfence-waf.php
 - name: lasntgadmin-apache-config
   files:
     - 000-default.conf
