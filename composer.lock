@@ -808,16 +808,16 @@
         },
         {
             "name": "fioru/lasntgadmin-theme",
-            "version": "1.0.5-rc1",
+            "version": "1.0.5-rc2",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-theme.git",
-                "reference": "e713409385343f9623112617afeec8ce0c88acbb"
+                "reference": "3539167378b27fd5220a08aa73c325b4adb02d2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-theme/zipball/e713409385343f9623112617afeec8ce0c88acbb",
-                "reference": "e713409385343f9623112617afeec8ce0c88acbb",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-theme/zipball/3539167378b27fd5220a08aa73c325b4adb02d2e",
+                "reference": "3539167378b27fd5220a08aa73c325b4adb02d2e",
                 "shasum": ""
             },
             "require": {
@@ -825,7 +825,7 @@
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
-                "enlightn/security-checker": "dev-main",
+                "enlightn/security-checker": "^1.11.0",
                 "fakerphp/faker": "^1.19",
                 "mockery/mockery": "^1.5",
                 "overtrue/phplint": "^3.0",
@@ -873,10 +873,10 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-theme/tree/1.0.5-rc1",
+                "source": "https://github.com/fioru-software/lasntgadmin-theme/tree/1.0.5-rc2",
                 "issues": "https://github.com/fioru-software/lasntgadmin-theme/issues"
             },
-            "time": "2024-01-16T16:56:41+00:00"
+            "time": "2024-01-18T12:30:03+00:00"
         },
         {
             "name": "fioru/lasntgadmin-translate",
