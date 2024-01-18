@@ -808,16 +808,16 @@
         },
         {
             "name": "fioru/lasntgadmin-theme",
-            "version": "1.0.5-rc2",
+            "version": "1.0.5-rc3",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-theme.git",
-                "reference": "3539167378b27fd5220a08aa73c325b4adb02d2e"
+                "reference": "8dd57ca1b78eab4befb3ab1620b9125010767100"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-theme/zipball/3539167378b27fd5220a08aa73c325b4adb02d2e",
-                "reference": "3539167378b27fd5220a08aa73c325b4adb02d2e",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-theme/zipball/8dd57ca1b78eab4befb3ab1620b9125010767100",
+                "reference": "8dd57ca1b78eab4befb3ab1620b9125010767100",
                 "shasum": ""
             },
             "require": {
@@ -873,10 +873,10 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-theme/tree/1.0.5-rc2",
+                "source": "https://github.com/fioru-software/lasntgadmin-theme/tree/1.0.5-rc3",
                 "issues": "https://github.com/fioru-software/lasntgadmin-theme/issues"
             },
-            "time": "2024-01-18T12:30:03+00:00"
+            "time": "2024-01-18T15:48:32+00:00"
         },
         {
             "name": "fioru/lasntgadmin-translate",
