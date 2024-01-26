@@ -370,22 +370,23 @@
         },
         {
             "name": "fioru/lasntgadmin-grant-funded-payment-gateway",
-            "version": "1.6.4",
+            "version": "1.6.5",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-grant-funded-payment-gateway.git",
-                "reference": "93c8c3bd3c00c0549438145a735333c856aa4ae6"
+                "reference": "cd540f3b672dfd6646c2879020b723086a0ead14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-grant-funded-payment-gateway/zipball/93c8c3bd3c00c0549438145a735333c856aa4ae6",
-                "reference": "93c8c3bd3c00c0549438145a735333c856aa4ae6",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-grant-funded-payment-gateway/zipball/cd540f3b672dfd6646c2879020b723086a0ead14",
+                "reference": "cd540f3b672dfd6646c2879020b723086a0ead14",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "~2.0",
                 "fioru/lasntgadmin-attendees": "^3.8.0",
                 "fioru/lasntgadmin-groups": "^1.4",
+                "fioru/lasntgadmin-itthinx-groups": "2.19.0",
                 "fioru/lasntgadmin-products": "^5.12.0",
                 "malkusch/lock": "^2.2.1"
             },
@@ -439,10 +440,10 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-grant-funded-payment-gateway/tree/1.6.4",
+                "source": "https://github.com/fioru-software/lasntgadmin-grant-funded-payment-gateway/tree/1.6.5",
                 "issues": "https://github.com/fioru-software/lasntgadmin-grant-funded-payment-gateway/issues"
             },
-            "time": "2024-01-25T12:34:03+00:00"
+            "time": "2024-01-26T12:03:19+00:00"
         },
         {
             "name": "fioru/lasntgadmin-groups",
