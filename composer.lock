@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3d692751199d1a16c05d6705cbb7a649",
+    "content-hash": "b732d0ce099fe0c6f055c2d671a65a1f",
     "packages": [
         {
             "name": "composer/installers",
@@ -626,16 +626,16 @@
         },
         {
             "name": "fioru/lasntgadmin-products",
-            "version": "5.12.10",
+            "version": "5.12.11-rc1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-products.git",
-                "reference": "820bbf31e475b877c4b2e2cda2b54c7dde77b99d"
+                "reference": "0f0c39aae322df20b2d23e25dcdba8c4c542ed1a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-products/zipball/820bbf31e475b877c4b2e2cda2b54c7dde77b99d",
-                "reference": "820bbf31e475b877c4b2e2cda2b54c7dde77b99d",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-products/zipball/0f0c39aae322df20b2d23e25dcdba8c4c542ed1a",
+                "reference": "0f0c39aae322df20b2d23e25dcdba8c4c542ed1a",
                 "shasum": ""
             },
             "require": {
@@ -697,10 +697,10 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-products/tree/5.12.10",
+                "source": "https://github.com/fioru-software/lasntgadmin-products/tree/5.12.11-rc1",
                 "issues": "https://github.com/fioru-software/lasntgadmin-products/issues"
             },
-            "time": "2024-01-17T06:04:07+00:00"
+            "time": "2024-01-30T10:25:46+00:00"
         },
         {
             "name": "fioru/lasntgadmin-purchase-order-payment-gateway",
@@ -1980,17 +1980,17 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "fioru/lasntgadmin-grant-funded-payment-gateway": 0,
-        "fioru/lasntgadmin-purchase-order-payment-gateway": 0,
-        "fioru/lasntgadmin-attendees": 0,
-        "fioru/lasntgadmin-groups": 0,
-        "fioru/lasntgadmin-products": 0,
-        "fioru/lasntgadmin-users": 0,
-        "fioru/lasntgadmin-orders": 0,
-        "fioru/lasntgadmin-subscriptions": 0,
-        "fioru/lasntgadmin-translate": 0,
-        "fioru/lasntgadmin-dashboard": 0,
-        "fioru/lasntgadmin-theme": 0
+        "fioru/lasntgadmin-grant-funded-payment-gateway": 5,
+        "fioru/lasntgadmin-purchase-order-payment-gateway": 5,
+        "fioru/lasntgadmin-attendees": 5,
+        "fioru/lasntgadmin-groups": 5,
+        "fioru/lasntgadmin-products": 5,
+        "fioru/lasntgadmin-users": 5,
+        "fioru/lasntgadmin-orders": 5,
+        "fioru/lasntgadmin-subscriptions": 5,
+        "fioru/lasntgadmin-translate": 5,
+        "fioru/lasntgadmin-dashboard": 5,
+        "fioru/lasntgadmin-theme": 5
     },
     "prefer-stable": false,
     "prefer-lowest": false,
