@@ -291,16 +291,16 @@
         },
         {
             "name": "fioru/lasntgadmin-dashboard",
-            "version": "1.1.3",
+            "version": "1.1.4",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-dashboard.git",
-                "reference": "2fcd9e0613aae60a1ad0ff3a80e099e79e0396fe"
+                "reference": "908a73bfb54c31f6d15f64e5ea8ee41bba83f077"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-dashboard/zipball/2fcd9e0613aae60a1ad0ff3a80e099e79e0396fe",
-                "reference": "2fcd9e0613aae60a1ad0ff3a80e099e79e0396fe",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-dashboard/zipball/908a73bfb54c31f6d15f64e5ea8ee41bba83f077",
+                "reference": "908a73bfb54c31f6d15f64e5ea8ee41bba83f077",
                 "shasum": ""
             },
             "require": {
@@ -315,7 +315,7 @@
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
-                "enlightn/security-checker": "dev-main",
+                "enlightn/security-checker": "^1.11.0",
                 "fakerphp/faker": "^1.19",
                 "mockery/mockery": "^1.5",
                 "overtrue/phplint": "^3.0",
@@ -363,10 +363,10 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-dashboard/tree/1.1.3",
+                "source": "https://github.com/fioru-software/lasntgadmin-dashboard/tree/1.1.4",
                 "issues": "https://github.com/fioru-software/lasntgadmin-dashboard/issues"
             },
-            "time": "2024-01-10T05:53:30+00:00"
+            "time": "2024-01-30T15:30:02+00:00"
         },
         {
             "name": "fioru/lasntgadmin-grant-funded-payment-gateway",
