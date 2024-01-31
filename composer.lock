@@ -545,16 +545,16 @@
         },
         {
             "name": "fioru/lasntgadmin-orders",
-            "version": "1.7.40",
+            "version": "1.7.41",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-orders.git",
-                "reference": "079e0a31f46d90830190db4bce29b0e81229b317"
+                "reference": "b91122565f70d08aa03cf0b8542c7fa010c24e8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-orders/zipball/079e0a31f46d90830190db4bce29b0e81229b317",
-                "reference": "079e0a31f46d90830190db4bce29b0e81229b317",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-orders/zipball/b91122565f70d08aa03cf0b8542c7fa010c24e8d",
+                "reference": "b91122565f70d08aa03cf0b8542c7fa010c24e8d",
                 "shasum": ""
             },
             "require": {
@@ -619,23 +619,23 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-orders/tree/1.7.40",
+                "source": "https://github.com/fioru-software/lasntgadmin-orders/tree/1.7.41",
                 "issues": "https://github.com/fioru-software/lasntgadmin-orders/issues"
             },
-            "time": "2024-01-25T15:17:08+00:00"
+            "time": "2024-01-31T14:01:34+00:00"
         },
         {
             "name": "fioru/lasntgadmin-products",
-            "version": "5.12.11-rc1",
+            "version": "5.12.11",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-products.git",
-                "reference": "0f0c39aae322df20b2d23e25dcdba8c4c542ed1a"
+                "reference": "c74a6530bba2a6e018ec0e01f2b446d6936e3fd5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-products/zipball/0f0c39aae322df20b2d23e25dcdba8c4c542ed1a",
-                "reference": "0f0c39aae322df20b2d23e25dcdba8c4c542ed1a",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-products/zipball/c74a6530bba2a6e018ec0e01f2b446d6936e3fd5",
+                "reference": "c74a6530bba2a6e018ec0e01f2b446d6936e3fd5",
                 "shasum": ""
             },
             "require": {
@@ -697,10 +697,10 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-products/tree/5.12.11-rc1",
+                "source": "https://github.com/fioru-software/lasntgadmin-products/tree/5.12.11",
                 "issues": "https://github.com/fioru-software/lasntgadmin-products/issues"
             },
-            "time": "2024-01-30T10:25:46+00:00"
+            "time": "2024-01-31T11:51:17+00:00"
         },
         {
             "name": "fioru/lasntgadmin-purchase-order-payment-gateway",
@@ -1903,16 +1903,16 @@
         },
         {
             "name": "symfony/uid",
-            "version": "v5.4.31",
+            "version": "v5.4.35",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/uid.git",
-                "reference": "d76766c457aacff7acea4482c207231aea93362c"
+                "reference": "c280434b875236cd2b1bed1505aecc6141db73e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/uid/zipball/d76766c457aacff7acea4482c207231aea93362c",
-                "reference": "d76766c457aacff7acea4482c207231aea93362c",
+                "url": "https://api.github.com/repos/symfony/uid/zipball/c280434b875236cd2b1bed1505aecc6141db73e8",
+                "reference": "c280434b875236cd2b1bed1505aecc6141db73e8",
                 "shasum": ""
             },
             "require": {
@@ -1957,7 +1957,7 @@
                 "uuid"
             ],
             "support": {
-                "source": "https://github.com/symfony/uid/tree/v5.4.31"
+                "source": "https://github.com/symfony/uid/tree/v5.4.35"
             },
             "funding": [
                 {
@@ -1973,7 +1973,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-10-31T07:58:33+00:00"
+            "time": "2024-01-23T13:51:25+00:00"
         }
     ],
     "packages-dev": [],
