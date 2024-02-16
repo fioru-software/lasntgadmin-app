@@ -214,16 +214,16 @@
         },
         {
             "name": "fioru/lasntgadmin-attendees",
-            "version": "3.8.4",
+            "version": "3.8.5-rc1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-attendees.git",
-                "reference": "d9e85acb2752bfdbbc0786a94bd9d368dbaa3fd2"
+                "reference": "e9d0a55803ef86dddb37b91c47f283e2b031e7a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-attendees/zipball/d9e85acb2752bfdbbc0786a94bd9d368dbaa3fd2",
-                "reference": "d9e85acb2752bfdbbc0786a94bd9d368dbaa3fd2",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-attendees/zipball/e9d0a55803ef86dddb37b91c47f283e2b031e7a6",
+                "reference": "e9d0a55803ef86dddb37b91c47f283e2b031e7a6",
                 "shasum": ""
             },
             "require": {
@@ -231,12 +231,13 @@
                 "fioru/lasntgadmin-groups": "^1.2.0",
                 "fioru/lasntgadmin-orders": "^1.7.17",
                 "fioru/lasntgadmin-products": "^5.12.0",
+                "fioru/lasntgadmin-purchase-order-payment-gateway": "^1.2.13",
                 "phpoffice/phpspreadsheet": "^1.28",
                 "symfony/uid": "^5.4"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
-                "enlightn/security-checker": "dev-main",
+                "enlightn/security-checker": "1.11.0",
                 "fakerphp/faker": "^1.19",
                 "mockery/mockery": "^1.5",
                 "overtrue/phplint": "^3.0",
@@ -284,10 +285,10 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-attendees/tree/3.8.4",
+                "source": "https://github.com/fioru-software/lasntgadmin-attendees/tree/3.8.5-rc1",
                 "issues": "https://github.com/fioru-software/lasntgadmin-attendees/issues"
             },
-            "time": "2024-01-08T19:24:15+00:00"
+            "time": "2024-02-16T14:36:08+00:00"
         },
         {
             "name": "fioru/lasntgadmin-dashboard",
