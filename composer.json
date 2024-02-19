@@ -6,10 +6,6 @@
 	"repositories": [
 		{
 			"type": "vcs",
-			"url":	"git@github.com:fioru-software/lasntgadmin-itthinx-groups.git"
-		},
-		{
-			"type": "vcs",
 			"url":	"git@github.com:fioru-software/lasntgadmin-purchase-order-payment-gateway"
 		},
 		{
@@ -51,6 +47,10 @@
 		{
 			"type": "vcs",
 			"url":	"git@github.com:fioru-software/lasntgadmin-theme.git"
+		},
+		{
+			"type": "vcs",
+			"url":	"git@github.com:fioru-software/lasntgadmin-itthinx-groups.git"
 		}
 	],
 	"config": {
@@ -69,6 +69,7 @@
 		"fioru/lasntgadmin-subscriptions": "^2.1.17@rc",
 		"fioru/lasntgadmin-translate": "^1.2.8@rc",
 		"fioru/lasntgadmin-dashboard": "^1.1.0@rc",
-		"fioru/lasntgadmin-theme": "^1.0.3@rc"
+		"fioru/lasntgadmin-theme": "^1.0.3@rc",
+		"fioru/lasntgadmin-itthinx-groups": "^2.20.1@rc"
 	}
 }
