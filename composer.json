@@ -69,6 +69,7 @@
 		"fioru/lasntgadmin-subscriptions": "^2.1.17@stable",
 		"fioru/lasntgadmin-translate": "^1.2.8@stable",
 		"fioru/lasntgadmin-dashboard": "^1.1.0@stable",
-		"fioru/lasntgadmin-theme": "^1.0.3@stable"
+		"fioru/lasntgadmin-theme": "^1.0.3@stable",
+		"fioru/lasntgadmin-itthinx-groups": "^2.20.1@stable"
 	}
 }
