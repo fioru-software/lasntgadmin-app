@@ -285,8 +285,7 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-attendees/tree/3.8.8",
-                "issues": "https://github.com/fioru-software/lasntgadmin-attendees/issues"
+                "source": "https://github.com/fioru-software/lasntgadmin-attendees/tree/3.8.8"
             },
             "time": "2024-02-23T11:32:15+00:00"
         },
@@ -364,8 +363,7 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-dashboard/tree/1.1.4",
-                "issues": "https://github.com/fioru-software/lasntgadmin-dashboard/issues"
+                "source": "https://github.com/fioru-software/lasntgadmin-dashboard/tree/1.1.4"
             },
             "time": "2024-01-30T15:30:02+00:00"
         },
@@ -441,8 +439,7 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-grant-funded-payment-gateway/tree/1.6.7",
-                "issues": "https://github.com/fioru-software/lasntgadmin-grant-funded-payment-gateway/issues"
+                "source": "https://github.com/fioru-software/lasntgadmin-grant-funded-payment-gateway/tree/1.6.7"
             },
             "time": "2024-02-22T09:19:01+00:00"
         },
@@ -513,8 +510,7 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-groups/tree/1.5.10",
-                "issues": "https://github.com/fioru-software/lasntgadmin-groups/issues"
+                "source": "https://github.com/fioru-software/lasntgadmin-groups/tree/1.5.10"
             },
             "time": "2024-01-29T14:08:56+00:00"
         },
@@ -621,23 +617,22 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-orders/tree/1.7.46",
-                "issues": "https://github.com/fioru-software/lasntgadmin-orders/issues"
+                "source": "https://github.com/fioru-software/lasntgadmin-orders/tree/1.7.46"
             },
             "time": "2024-02-23T11:29:36+00:00"
         },
         {
             "name": "fioru/lasntgadmin-products",
-            "version": "5.12.13",
+            "version": "5.12.14-rc1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-products.git",
-                "reference": "1bba0b041631f1d65a30e69265682283b90d6213"
+                "reference": "d2ab093964cd75e3a2b407742617f079f7dd9ef6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-products/zipball/1bba0b041631f1d65a30e69265682283b90d6213",
-                "reference": "1bba0b041631f1d65a30e69265682283b90d6213",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-products/zipball/d2ab093964cd75e3a2b407742617f079f7dd9ef6",
+                "reference": "d2ab093964cd75e3a2b407742617f079f7dd9ef6",
                 "shasum": ""
             },
             "require": {
@@ -699,10 +694,9 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-products/tree/5.12.13",
-                "issues": "https://github.com/fioru-software/lasntgadmin-products/issues"
+                "source": "https://github.com/fioru-software/lasntgadmin-products/tree/5.12.14-rc1"
             },
-            "time": "2024-02-22T10:05:53+00:00"
+            "time": "2024-02-26T12:22:24+00:00"
         },
         {
             "name": "fioru/lasntgadmin-purchase-order-payment-gateway",
@@ -804,8 +798,7 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-subscriptions/tree/2.1.18",
-                "issues": "https://github.com/fioru-software/lasntgadmin-subscriptions/issues"
+                "source": "https://github.com/fioru-software/lasntgadmin-subscriptions/tree/2.1.18"
             },
             "time": "2024-01-09T04:30:27+00:00"
         },
@@ -956,8 +949,7 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-translate/tree/1.2.8",
-                "issues": "https://github.com/fioru-software/lasntgadmin-translate/issues"
+                "source": "https://github.com/fioru-software/lasntgadmin-translate/tree/1.2.8"
             },
             "time": "2023-09-20T08:23:46+00:00"
         },
@@ -1032,8 +1024,7 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-users/tree/3.3.9",
-                "issues": "https://github.com/fioru-software/lasntgadmin-users/issues"
+                "source": "https://github.com/fioru-software/lasntgadmin-users/tree/3.3.9"
             },
             "time": "2024-02-21T09:19:24+00:00"
         },
