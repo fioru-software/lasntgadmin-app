@@ -214,23 +214,23 @@
         },
         {
             "name": "fioru/lasntgadmin-attendees",
-            "version": "3.8.11",
+            "version": "3.8.12-rc1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-attendees.git",
-                "reference": "6e1792ca0dd4526e3271159f4487f9831902419e"
+                "reference": "883130f93b745442d86ce4ce729147ed41ef4cfe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-attendees/zipball/6e1792ca0dd4526e3271159f4487f9831902419e",
-                "reference": "6e1792ca0dd4526e3271159f4487f9831902419e",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-attendees/zipball/883130f93b745442d86ce4ce729147ed41ef4cfe",
+                "reference": "883130f93b745442d86ce4ce729147ed41ef4cfe",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "~2.0",
-                "fioru/lasntgadmin-groups": "^1.2.0",
-                "fioru/lasntgadmin-orders": "^1.7.17",
-                "fioru/lasntgadmin-products": "^5.12.0",
+                "fioru/lasntgadmin-groups": "^1.5.0",
+                "fioru/lasntgadmin-orders": "^1.7.50",
+                "fioru/lasntgadmin-products": "^5.13.0",
                 "fioru/lasntgadmin-purchase-order-payment-gateway": "^1.2.13",
                 "phpoffice/phpspreadsheet": "^1.28",
                 "symfony/uid": "^5.4"
@@ -285,9 +285,9 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-attendees/tree/3.8.11"
+                "source": "https://github.com/fioru-software/lasntgadmin-attendees/tree/3.8.12-rc1"
             },
-            "time": "2024-03-22T03:53:35+00:00"
+            "time": "2024-04-04T12:11:09+00:00"
         },
         {
             "name": "fioru/lasntgadmin-dashboard",
@@ -1848,5 +1848,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.3.0"
 }
