@@ -52,5 +52,8 @@ USER root
 RUN echo '* * * * * /bin/bash /usr/local/bin/cron.sh > /var/log/apache2/cron.log 2>&1' > /etc/cron.d/wordpress;\
     crontab -u www-data /etc/cron.d/wordpress
 
+RUN echo '0 1 * * * /bin/bash /usr/local/bin/housekeeper.sh > /var/log/apache2/cron.log 2>&1' > /etc/cron.d/housekeeper;\
+    crontab -u www-data /etc/cron.d/housekeeper
+
 CMD ["sh", "/usr/local/bin/run.sh"]
 
