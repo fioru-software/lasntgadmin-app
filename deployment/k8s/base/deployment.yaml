@@ -66,11 +66,11 @@ spec:
               name: lasntgadmin-secret
         resources:
           limits:
+            cpu: 2000m
+            memory: 2048M
+          requests:
             cpu: 1000m
             memory: 1024M
-          requests:
-            cpu: 500m
-            memory: 512M
         volumeMounts: 
         - name: wp-content
           mountPath: /var/www/html/wp-content
