@@ -369,16 +369,16 @@
         },
         {
             "name": "fioru/lasntgadmin-grant-funded-payment-gateway",
-            "version": "1.7.0",
+            "version": "1.7.1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-grant-funded-payment-gateway.git",
-                "reference": "9eff77847e8cd0d674d669b2a9f2e39374454a95"
+                "reference": "300d5683e9750f7289f3c015cef694fdb0c286f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-grant-funded-payment-gateway/zipball/9eff77847e8cd0d674d669b2a9f2e39374454a95",
-                "reference": "9eff77847e8cd0d674d669b2a9f2e39374454a95",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-grant-funded-payment-gateway/zipball/300d5683e9750f7289f3c015cef694fdb0c286f2",
+                "reference": "300d5683e9750f7289f3c015cef694fdb0c286f2",
                 "shasum": ""
             },
             "require": {
@@ -440,9 +440,9 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-grant-funded-payment-gateway/tree/1.7.0"
+                "source": "https://github.com/fioru-software/lasntgadmin-grant-funded-payment-gateway/tree/1.7.1"
             },
-            "time": "2024-04-08T09:19:13+00:00"
+            "time": "2024-04-11T15:14:46+00:00"
         },
         {
             "name": "fioru/lasntgadmin-groups",
@@ -624,16 +624,16 @@
         },
         {
             "name": "fioru/lasntgadmin-products",
-            "version": "5.14.0",
+            "version": "5.14.1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-products.git",
-                "reference": "e3276c2da7e0f76dcf752b6970e39900d17cc7bd"
+                "reference": "f7bcb00b0340adea2f91539f7d8a75fe48229576"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-products/zipball/e3276c2da7e0f76dcf752b6970e39900d17cc7bd",
-                "reference": "e3276c2da7e0f76dcf752b6970e39900d17cc7bd",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-products/zipball/f7bcb00b0340adea2f91539f7d8a75fe48229576",
+                "reference": "f7bcb00b0340adea2f91539f7d8a75fe48229576",
                 "shasum": ""
             },
             "require": {
@@ -695,9 +695,9 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-products/tree/5.14.0"
+                "source": "https://github.com/fioru-software/lasntgadmin-products/tree/5.14.1"
             },
-            "time": "2024-04-08T09:15:28+00:00"
+            "time": "2024-04-11T09:10:00+00:00"
         },
         {
             "name": "fioru/lasntgadmin-purchase-order-payment-gateway",
