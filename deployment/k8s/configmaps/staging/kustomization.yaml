@@ -21,7 +21,7 @@ configMapGenerator:
   - ENVIRONMENT=staging
   - SITE_URL=https://lasntgadmin-staging.veri.ie
   - SITE_TITLE=LASNTG
-  - WP_PLUGINS=woocommerce advanced-custom-fields user-role-editor smtp-mailing-queue hyperdb global-payments-woocommerce wordfence
+  - WP_PLUGINS=woocommerce advanced-custom-fields user-role-editor smtp-mailing-queue wordfence
   - WP_THEMES=storefront
   - WP_THEME=lasntgadmin-theme
   - COMPOSER_AUTOLOAD_FILEPATH=/var/www/html/vendor/autoload.php
