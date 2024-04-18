@@ -213,10 +213,14 @@ $wpdb->check_tcp_responsiveness = true;
  * This adds the DB defined in wp-config.php as a read/write server for
  * the 'global' dataset. (Every table is in 'global' by default.)
  */
-$wpdb->add_database(array(
-	'host'     => DB_HOST,     // If port is other than 3306, use host:port.
-	'user'     => DB_USER,
-	'password' => DB_PASSWORD,
-	'name'     => DB_NAME,
-));
+$wpdb->add_database(
+	[
+		'host'     => DB_HOST,     // If port is other than 3306, use host:port.
+		'user'     => DB_USER,
+		'password' => DB_PASSWORD,
+		'name'     => DB_NAME,
+		'write'    => 1,
+		'read'     => 1
+	]
+);
 
