@@ -291,16 +291,16 @@
         },
         {
             "name": "fioru/lasntgadmin-dashboard",
-            "version": "1.1.5-rc1",
+            "version": "1.1.5",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-dashboard.git",
-                "reference": "9c9b914ac827be784319a5cc062703fe54d5cf7f"
+                "reference": "c2014692d65c2afe9123213d7eaa027ab5c7beb9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-dashboard/zipball/9c9b914ac827be784319a5cc062703fe54d5cf7f",
-                "reference": "9c9b914ac827be784319a5cc062703fe54d5cf7f",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-dashboard/zipball/c2014692d65c2afe9123213d7eaa027ab5c7beb9",
+                "reference": "c2014692d65c2afe9123213d7eaa027ab5c7beb9",
                 "shasum": ""
             },
             "require": {
@@ -363,9 +363,9 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-dashboard/tree/1.1.5-rc1"
+                "source": "https://github.com/fioru-software/lasntgadmin-dashboard/tree/1.1.5"
             },
-            "time": "2024-04-26T07:43:30+00:00"
+            "time": "2024-05-09T09:03:14+00:00"
         },
         {
             "name": "fioru/lasntgadmin-grant-funded-payment-gateway",
@@ -624,16 +624,16 @@
         },
         {
             "name": "fioru/lasntgadmin-products",
-            "version": "5.14.6-rc1",
+            "version": "5.14.6-rc2",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-products.git",
-                "reference": "e230b1bf6f3c550b922246005362b91c5a7601c6"
+                "reference": "8b6de3386c8d69d31b626e81bd36750ab4c23388"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-products/zipball/e230b1bf6f3c550b922246005362b91c5a7601c6",
-                "reference": "e230b1bf6f3c550b922246005362b91c5a7601c6",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-products/zipball/8b6de3386c8d69d31b626e81bd36750ab4c23388",
+                "reference": "8b6de3386c8d69d31b626e81bd36750ab4c23388",
                 "shasum": ""
             },
             "require": {
@@ -695,9 +695,9 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-products/tree/5.14.6-rc1"
+                "source": "https://github.com/fioru-software/lasntgadmin-products/tree/5.14.6-rc2"
             },
-            "time": "2024-05-08T15:46:11+00:00"
+            "time": "2024-05-10T09:22:25+00:00"
         },
         {
             "name": "fioru/lasntgadmin-purchase-order-payment-gateway",
@@ -1436,20 +1436,20 @@
         },
         {
             "name": "psr/http-factory",
-            "version": "1.0.2",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-factory.git",
-                "reference": "e616d01114759c4c489f93b099585439f795fe35"
+                "reference": "2b4765fddfe3b508ac62f829e852b1501d3f6e8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-factory/zipball/e616d01114759c4c489f93b099585439f795fe35",
-                "reference": "e616d01114759c4c489f93b099585439f795fe35",
+                "url": "https://api.github.com/repos/php-fig/http-factory/zipball/2b4765fddfe3b508ac62f829e852b1501d3f6e8a",
+                "reference": "2b4765fddfe3b508ac62f829e852b1501d3f6e8a",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.0.0",
+                "php": ">=7.1",
                 "psr/http-message": "^1.0 || ^2.0"
             },
             "type": "library",
@@ -1473,7 +1473,7 @@
                     "homepage": "https://www.php-fig.org/"
                 }
             ],
-            "description": "Common interfaces for PSR-7 HTTP message factories",
+            "description": "PSR-17: Common interfaces for PSR-7 HTTP message factories",
             "keywords": [
                 "factory",
                 "http",
@@ -1485,9 +1485,9 @@
                 "response"
             ],
             "support": {
-                "source": "https://github.com/php-fig/http-factory/tree/1.0.2"
+                "source": "https://github.com/php-fig/http-factory"
             },
-            "time": "2023-04-10T20:10:41+00:00"
+            "time": "2024-04-15T12:06:14+00:00"
         },
         {
             "name": "psr/http-message",
