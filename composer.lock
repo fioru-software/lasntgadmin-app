@@ -543,16 +543,16 @@
         },
         {
             "name": "fioru/lasntgadmin-orders",
-            "version": "1.8.0",
+            "version": "1.8.1-rc1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-orders.git",
-                "reference": "685f93db3c57fe06d28e15b93a95bec0c2f009b4"
+                "reference": "9b9486a52f7398d05501d6b474b737e5a2cbddd3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-orders/zipball/685f93db3c57fe06d28e15b93a95bec0c2f009b4",
-                "reference": "685f93db3c57fe06d28e15b93a95bec0c2f009b4",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-orders/zipball/9b9486a52f7398d05501d6b474b737e5a2cbddd3",
+                "reference": "9b9486a52f7398d05501d6b474b737e5a2cbddd3",
                 "shasum": ""
             },
             "require": {
@@ -618,9 +618,9 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-orders/tree/1.8.0"
+                "source": "https://github.com/fioru-software/lasntgadmin-orders/tree/1.8.1-rc1"
             },
-            "time": "2024-05-10T15:42:17+00:00"
+            "time": "2024-06-05T14:05:41+00:00"
         },
         {
             "name": "fioru/lasntgadmin-products",
