@@ -291,16 +291,16 @@
         },
         {
             "name": "fioru/lasntgadmin-dashboard",
-            "version": "1.1.5",
+            "version": "1.1.6-rc1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-dashboard.git",
-                "reference": "c2014692d65c2afe9123213d7eaa027ab5c7beb9"
+                "reference": "e25d9135c79f2345657b600de8c302d426215ed8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-dashboard/zipball/c2014692d65c2afe9123213d7eaa027ab5c7beb9",
-                "reference": "c2014692d65c2afe9123213d7eaa027ab5c7beb9",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-dashboard/zipball/e25d9135c79f2345657b600de8c302d426215ed8",
+                "reference": "e25d9135c79f2345657b600de8c302d426215ed8",
                 "shasum": ""
             },
             "require": {
@@ -363,22 +363,22 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-dashboard/tree/1.1.5"
+                "source": "https://github.com/fioru-software/lasntgadmin-dashboard/tree/1.1.6-rc1"
             },
-            "time": "2024-05-09T09:03:14+00:00"
+            "time": "2024-06-19T09:52:35+00:00"
         },
         {
             "name": "fioru/lasntgadmin-grant-funded-payment-gateway",
-            "version": "1.9.0-rc5",
+            "version": "1.10.0-rc1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-grant-funded-payment-gateway.git",
-                "reference": "76f3299408db791f68febd3bc2d817c732dec946"
+                "reference": "baced15d8b5e12a6c868b77d5ac716515d613bfe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-grant-funded-payment-gateway/zipball/76f3299408db791f68febd3bc2d817c732dec946",
-                "reference": "76f3299408db791f68febd3bc2d817c732dec946",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-grant-funded-payment-gateway/zipball/baced15d8b5e12a6c868b77d5ac716515d613bfe",
+                "reference": "baced15d8b5e12a6c868b77d5ac716515d613bfe",
                 "shasum": ""
             },
             "require": {
@@ -440,9 +440,9 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-grant-funded-payment-gateway/tree/1.9.0-rc5"
+                "source": "https://github.com/fioru-software/lasntgadmin-grant-funded-payment-gateway/tree/1.10.0-rc1"
             },
-            "time": "2024-06-11T11:55:48+00:00"
+            "time": "2024-06-20T13:37:47+00:00"
         },
         {
             "name": "fioru/lasntgadmin-groups",
@@ -543,16 +543,16 @@
         },
         {
             "name": "fioru/lasntgadmin-orders",
-            "version": "1.8.1-rc1",
+            "version": "1.8.1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-orders.git",
-                "reference": "9b9486a52f7398d05501d6b474b737e5a2cbddd3"
+                "reference": "92c27ebe7ca5075ccb5be0fd2fcff97d2153a948"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-orders/zipball/9b9486a52f7398d05501d6b474b737e5a2cbddd3",
-                "reference": "9b9486a52f7398d05501d6b474b737e5a2cbddd3",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-orders/zipball/92c27ebe7ca5075ccb5be0fd2fcff97d2153a948",
+                "reference": "92c27ebe7ca5075ccb5be0fd2fcff97d2153a948",
                 "shasum": ""
             },
             "require": {
@@ -618,22 +618,22 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-orders/tree/1.8.1-rc1"
+                "source": "https://github.com/fioru-software/lasntgadmin-orders/tree/1.8.1"
             },
-            "time": "2024-06-05T14:05:41+00:00"
+            "time": "2024-06-11T13:33:19+00:00"
         },
         {
             "name": "fioru/lasntgadmin-products",
-            "version": "5.14.7-rc1",
+            "version": "5.14.9-rc2",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-products.git",
-                "reference": "71e2154e900d442704408313563a1f80e194df38"
+                "reference": "d5ae2982ac4ee5d18e8ba3907dcf83f3ea61361b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-products/zipball/71e2154e900d442704408313563a1f80e194df38",
-                "reference": "71e2154e900d442704408313563a1f80e194df38",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-products/zipball/d5ae2982ac4ee5d18e8ba3907dcf83f3ea61361b",
+                "reference": "d5ae2982ac4ee5d18e8ba3907dcf83f3ea61361b",
                 "shasum": ""
             },
             "require": {
@@ -695,9 +695,9 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-products/tree/5.14.7-rc1"
+                "source": "https://github.com/fioru-software/lasntgadmin-products/tree/5.14.9-rc2"
             },
-            "time": "2024-06-10T11:55:50+00:00"
+            "time": "2024-06-20T09:57:10+00:00"
         },
         {
             "name": "fioru/lasntgadmin-purchase-order-payment-gateway",
@@ -1595,16 +1595,16 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.29.0",
+            "version": "v1.30.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "9773676c8a1bb1f8d4340a62efe641cf76eda7ec"
+                "reference": "fd22ab50000ef01661e2a31d850ebaa297f8e03c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/9773676c8a1bb1f8d4340a62efe641cf76eda7ec",
-                "reference": "9773676c8a1bb1f8d4340a62efe641cf76eda7ec",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/fd22ab50000ef01661e2a31d850ebaa297f8e03c",
+                "reference": "fd22ab50000ef01661e2a31d850ebaa297f8e03c",
                 "shasum": ""
             },
             "require": {
@@ -1655,7 +1655,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.29.0"
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.30.0"
             },
             "funding": [
                 {
@@ -1671,20 +1671,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-01-29T20:11:03+00:00"
+            "time": "2024-06-19T12:30:46+00:00"
         },
         {
             "name": "symfony/polyfill-uuid",
-            "version": "v1.29.0",
+            "version": "v1.30.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-uuid.git",
-                "reference": "3abdd21b0ceaa3000ee950097bc3cf9efc137853"
+                "reference": "2ba1f33797470debcda07fe9dce20a0003df18e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-uuid/zipball/3abdd21b0ceaa3000ee950097bc3cf9efc137853",
-                "reference": "3abdd21b0ceaa3000ee950097bc3cf9efc137853",
+                "url": "https://api.github.com/repos/symfony/polyfill-uuid/zipball/2ba1f33797470debcda07fe9dce20a0003df18e9",
+                "reference": "2ba1f33797470debcda07fe9dce20a0003df18e9",
                 "shasum": ""
             },
             "require": {
@@ -1734,7 +1734,7 @@
                 "uuid"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-uuid/tree/v1.29.0"
+                "source": "https://github.com/symfony/polyfill-uuid/tree/v1.30.0"
             },
             "funding": [
                 {
@@ -1750,7 +1750,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-01-29T20:11:03+00:00"
+            "time": "2024-05-31T15:07:36+00:00"
         },
         {
             "name": "symfony/uid",
