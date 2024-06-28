@@ -9,7 +9,8 @@ RUN a2enmod rewrite headers
 RUN apt update; \
     apt install -y default-mysql-client vim libzip-dev unzip libpng-dev libmagickwand-dev libicu-dev cron
 
-RUN pecl install --configureoptions='with-imagick="autodetect"' imagick; \
+RUN pecl channel-update pecl.php.net; \
+	pecl install --configureoptions='with-imagick="autodetect"' imagick; \
     docker-php-ext-enable imagick
 
 RUN docker-php-ext-install mysqli zip gd intl exif opcache soap

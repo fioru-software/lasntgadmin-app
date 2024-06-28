@@ -11,7 +11,7 @@ void setBuildStatus(String message, String state, String repo ) {
 pipeline {
 
     parameters {
-        string(name: 'WP_VERSION', defaultValue: '6.5.3', description: 'WordPress version')
+        string(name: 'WP_VERSION', defaultValue: '6.5.5', description: 'WordPress version')
         string(name: 'WP_LOCALE', defaultValue: 'en_GB', description: 'WordPress locale')
         gitParameter(name: "BRANCH_NAME", type: "PT_BRANCH", defaultValue: "staging", branchFilter: "origin/(master|staging)")
         booleanParam(name: 'DEPLOY', defaultValue: false, description: "Deploy To Kubernetes")
