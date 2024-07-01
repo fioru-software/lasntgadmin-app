@@ -19,19 +19,20 @@
 - op: replace
   path: /spec/template/spec/containers/0/envFrom/1/secretRef/name
   value: production-lasntgadmin-secret
+- op: remove
+  path: /spec/template/spec/containers/0/resources/limits/cpu
+- op: remove
+  path: /spec/template/spec/containers/0/resources/limits/memory
+- op: remove
+  path: /spec/template/spec/containers/0/resources/requests/cpu
+- op: remove
+  path: /spec/template/spec/containers/0/resources/requests/memory
 - op: replace
   path: /metadata/name
   value: production-lasntgadmin
 - op: replace
   path: /spec/template/spec/affinity/nodeAffinity/requiredDuringSchedulingIgnoredDuringExecution/nodeSelectorTerms/0/matchExpressions/1/values/0
-  value: public-pool
-- op: add 
-  path: /spec/template/spec/affinity/nodeAffinity/requiredDuringSchedulingIgnoredDuringExecution/nodeSelectorTerms/0/matchExpressions/2
-  value: 
-    key: topology.kubernetes.io/zone
-    operator: In
-    values: 
-      -  europe-west1-d
+  value: lasntg-pool
 - op: replace
   path: /spec/template/spec/volumes/0/persistentVolumeClaim/claimName
   value: production-lasntgadmin-pvc
