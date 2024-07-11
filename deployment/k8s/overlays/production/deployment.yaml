@@ -29,7 +29,7 @@
   path: /spec/template/spec/containers/0/resources/requests/memory
 - op: replace
   path: /metadata/name
-  value: production-lasntgadmin
+  value: lasntgadmin
 - op: replace
   path: /spec/template/spec/affinity/nodeAffinity/requiredDuringSchedulingIgnoredDuringExecution/nodeSelectorTerms/0/matchExpressions/1/values/0
   value: lasntg-pool
