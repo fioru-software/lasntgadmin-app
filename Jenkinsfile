@@ -10,13 +10,6 @@ void setBuildStatus(String message, String state, String repo ) {
 
 pipeline {
 
-    parameters {
-        string(name: 'WP_VERSION', defaultValue: '6.5.5', description: 'WordPress version')
-        string(name: 'WP_LOCALE', defaultValue: 'en_GB', description: 'WordPress locale')
-        gitParameter(name: "BRANCH_NAME", type: "PT_BRANCH", defaultValue: "staging", branchFilter: "origin/(master|staging)")
-        booleanParam(name: 'DEPLOY', defaultValue: false, description: "Deploy To Kubernetes")
-    }
-
     agent {
         kubernetes {
             inheritFrom 'jenkins-agent'
@@ -24,11 +17,16 @@ pipeline {
         }
     }
 
+    parameters {
+        string(name: 'WP_VERSION', defaultValue: '6.5.5', description: 'WordPress version')
+        string(name: 'WP_LOCALE', defaultValue: 'en_GB', description: 'WordPress locale')
+        booleanParam(name: 'DEPLOY', defaultValue: false, description: "Deploy To Kubernetes")
+    }
+
     environment {
-        COMMIT_SHA = sh(script: "git log -1 --format=%H", returnStdout:true).trim()
         GCLOUD_KEYFILE = credentials('jenkins-gcloud-keyfile');
         GITHUB_TOKEN = credentials('jenkins-github-personal-access-token')
-        ENVIRONMENT = "${env.BRANCH_NAME == "master" ? "production" : env.BRANCH_NAME}"
+        ENVIRONMENT = "${GIT_LOCAL_BRANCH == "master" ? "production" : GIT_LOCAL_BRANCH}"
         USER_ID = 33
     }
 
@@ -55,10 +53,10 @@ pipeline {
                 container('docker') {
                     script {
                         sh 'docker login -u oauth2accesstoken -p $GCLOUD_TOKEN https://eu.gcr.io'
-                        sh 'docker build --no-cache --build-arg GITHUB_TOKEN=${GITHUB_TOKEN} --build-arg USER_ID=${USER_ID} --build-arg WP_VERSION=${WP_VERSION} --build-arg WP_LOCALE=${WP_LOCALE} --tag lasntgadmin:${COMMIT_SHA} .'
-                        sh 'docker tag lasntgadmin:${COMMIT_SHA} eu.gcr.io/veri-cluster/lasntgadmin:${COMMIT_SHA}'
-                        sh 'docker tag lasntgadmin:${COMMIT_SHA} eu.gcr.io/veri-cluster/lasntgadmin:${ENVIRONMENT}'
-                        sh 'docker push eu.gcr.io/veri-cluster/lasntgadmin:${COMMIT_SHA}'
+                        sh 'docker build --no-cache --build-arg GITHUB_TOKEN=${GITHUB_TOKEN} --build-arg USER_ID=${USER_ID} --build-arg WP_VERSION=${WP_VERSION} --build-arg WP_LOCALE=${WP_LOCALE} --tag lasntgadmin:${GIT_COMMIT} .'
+                        sh 'docker tag lasntgadmin:${GIT_COMMIT} eu.gcr.io/veri-cluster/lasntgadmin:${GIT_COMMIT}'
+                        sh 'docker tag lasntgadmin:${GIT_COMMIT} eu.gcr.io/veri-cluster/lasntgadmin:${ENVIRONMENT}'
+                        sh 'docker push eu.gcr.io/veri-cluster/lasntgadmin:${GIT_COMMIT}'
                         sh 'docker push eu.gcr.io/veri-cluster/lasntgadmin:${ENVIRONMENT}'
                     }
                 }
