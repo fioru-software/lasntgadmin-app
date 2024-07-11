@@ -50,22 +50,32 @@ spec:
         ports:
         - containerPort: 8080
         readinessProbe:
+          initialDelaySeconds: 60
           httpGet:    
-            path: /
+            path: /wp-json/wp-site-health/v1/tests/loopback-requests
             port: 80
+            httpHeaders:
+              - name: Authorization
+                value: Basic bGFzbnRnYWRtaW46YXRJTiBGRW02IGVxdXkgV3MzMCBTRTFOIFRMWlk=
           periodSeconds: 60
-          timeoutSeconds: 30
+          timeoutSeconds: 60
         livenessProbe:
           httpGet:
-            path: /
+            path: /wp-json/wp-site-health/v1/tests/loopback-requests
             port: 80
+            httpHeaders:
+              - name: Authorization
+                value: Basic bGFzbnRnYWRtaW46YXRJTiBGRW02IGVxdXkgV3MzMCBTRTFOIFRMWlk=
           periodSeconds: 60
-          timeoutSeconds: 30
+          timeoutSeconds: 60
         startupProbe:
           initialDelaySeconds: 60
           httpGet:
-            path: /
+            path: /wp-json/wp-site-health/v1/tests/loopback-requests
             port: 80
+            httpHeaders:
+              - name: Authorization
+                value: Basic bGFzbnRnYWRtaW46YXRJTiBGRW02IGVxdXkgV3MzMCBTRTFOIFRMWlk=
           periodSeconds: 60
           timeoutSeconds: 30
         envFrom:
