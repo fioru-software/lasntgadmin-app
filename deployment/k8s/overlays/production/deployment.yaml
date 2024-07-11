@@ -63,6 +63,8 @@
       value: lasntgadmin.veri.ie
     - name: Host
       value: lasntgadmin.veri.ie
+    - name: Authorization
+      value: Basic bGFzbnRnYWRtaW46YXRJTiBGRW02IGVxdXkgV3MzMCBTRTFOIFRMWlk=
 - op: add
   path: /spec/template/spec/containers/0/livenessProbe/httpGet/httpHeaders
   value:
@@ -72,6 +74,8 @@
       value: lasntgadmin.veri.ie
     - name: Host
       value: lasntgadmin.veri.ie
+    - name: Authorization
+      value: Basic bGFzbnRnYWRtaW46YXRJTiBGRW02IGVxdXkgV3MzMCBTRTFOIFRMWlk=
 - op: add
   path: /spec/template/spec/containers/0/startupProbe/httpGet/httpHeaders
   value:
@@ -81,4 +85,6 @@
       value: lasntgadmin.veri.ie
     - name: Host
       value: lasntgadmin.veri.ie
+    - name: Authorization
+      value: Basic bGFzbnRnYWRtaW46YXRJTiBGRW02IGVxdXkgV3MzMCBTRTFOIFRMWlk=
 

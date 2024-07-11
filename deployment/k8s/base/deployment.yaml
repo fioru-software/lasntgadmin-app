@@ -54,18 +54,12 @@ spec:
           httpGet:    
             path: /wp-json/wp-site-health/v1/tests/loopback-requests
             port: 80
-            httpHeaders:
-              - name: Authorization
-                value: Basic bGFzbnRnYWRtaW46YXRJTiBGRW02IGVxdXkgV3MzMCBTRTFOIFRMWlk=
           periodSeconds: 60
           timeoutSeconds: 60
         livenessProbe:
           httpGet:
             path: /wp-json/wp-site-health/v1/tests/loopback-requests
             port: 80
-            httpHeaders:
-              - name: Authorization
-                value: Basic bGFzbnRnYWRtaW46YXRJTiBGRW02IGVxdXkgV3MzMCBTRTFOIFRMWlk=
           periodSeconds: 60
           timeoutSeconds: 60
         startupProbe:
@@ -73,9 +67,6 @@ spec:
           httpGet:
             path: /wp-json/wp-site-health/v1/tests/loopback-requests
             port: 80
-            httpHeaders:
-              - name: Authorization
-                value: Basic bGFzbnRnYWRtaW46YXRJTiBGRW02IGVxdXkgV3MzMCBTRTFOIFRMWlk=
           periodSeconds: 60
           timeoutSeconds: 30
         envFrom:
