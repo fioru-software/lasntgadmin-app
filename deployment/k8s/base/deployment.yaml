@@ -21,6 +21,11 @@ spec:
         fsGroup: 33
         #runAsGroup: 33
         #fsGroupChangePolicy: "OnRootMismatch"
+      tolerations:
+        - key: cloud.google.com/gke-nodepool
+          operator: Equal
+          value: lasntg-pool
+          effect: NoSchedule
       affinity:
         nodeAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:
@@ -32,6 +37,10 @@ spec:
                 operator: In
                 values:
                 - spot-pool
+              - key: topology.kubernetes.io/zone
+                operator: In
+                values:
+                - europe-west1-d
       containers:
       - name: lasntgadmin
         image: php:7-apache
@@ -41,22 +50,32 @@ spec:
         ports:
         - containerPort: 8080
         readinessProbe:
+          initialDelaySeconds: 60
           httpGet:    
-            path: /
+            path: /wp-json/wp-site-health/v1/tests/loopback-requests
             port: 80
+            httpHeaders:
+              - name: Authorization
+                value: Basic bGFzbnRnYWRtaW46YXRJTiBGRW02IGVxdXkgV3MzMCBTRTFOIFRMWlk=
           periodSeconds: 60
-          timeoutSeconds: 30
+          timeoutSeconds: 60
         livenessProbe:
           httpGet:
-            path: /
+            path: /wp-json/wp-site-health/v1/tests/loopback-requests
             port: 80
+            httpHeaders:
+              - name: Authorization
+                value: Basic bGFzbnRnYWRtaW46YXRJTiBGRW02IGVxdXkgV3MzMCBTRTFOIFRMWlk=
           periodSeconds: 60
-          timeoutSeconds: 30
+          timeoutSeconds: 60
         startupProbe:
           initialDelaySeconds: 60
           httpGet:
-            path: /
+            path: /wp-json/wp-site-health/v1/tests/loopback-requests
             port: 80
+            httpHeaders:
+              - name: Authorization
+                value: Basic bGFzbnRnYWRtaW46YXRJTiBGRW02IGVxdXkgV3MzMCBTRTFOIFRMWlk=
           periodSeconds: 60
           timeoutSeconds: 30
         envFrom:

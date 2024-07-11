@@ -1,4 +1,4 @@
-FROM php:7-apache
+FROM php:8-apache
 
 ARG USER_ID
 ARG WP_VERSION
@@ -7,13 +7,15 @@ ARG GITHUB_TOKEN
 
 RUN a2enmod rewrite headers
 RUN apt update; \
-    apt install -y default-mysql-client vim libzip-dev unzip libpng-dev libmagickwand-dev libicu-dev cron
-
-RUN pecl channel-update pecl.php.net; \
-	pecl install --configureoptions='with-imagick="autodetect"' imagick; \
-    docker-php-ext-enable imagick
+    apt install -y default-mysql-client vim libzip-dev unzip libpng-dev libmagickwand-dev libicu-dev cron git liblzf1 liblzf-dev
 
 RUN docker-php-ext-install mysqli zip gd intl exif opcache soap
+
+RUN pecl channel-update pecl.php.net; \
+	pecl install --configureoptions='enable-apcu-debug="no"' apcu; \
+	pecl install igbinary; \    
+    pecl install --configureoptions='enable-redis-igbinary="yes" enable-redis-lzf="no" enable-redis-zstd="no" enable-redis-msgpack="no" enable-redis-lz4="no" with-liblz4="/usr"' redis; \
+    docker-php-ext-enable apcu redis igbinary opcache
 
 RUN usermod -u $USER_ID www-data; \
     groupmod -g $USER_ID www-data
