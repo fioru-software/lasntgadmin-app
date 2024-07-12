@@ -1,4 +1,4 @@
-FROM php:8-apache
+FROM php:8.2-apache
 
 ARG USER_ID
 ARG WP_VERSION
@@ -12,10 +12,11 @@ RUN apt update; \
 RUN docker-php-ext-install mysqli zip gd intl exif opcache soap
 
 RUN pecl channel-update pecl.php.net; \
+	pecl install --configureoptions='with-imagick="autodetect"' imagick; \
 	pecl install --configureoptions='enable-apcu-debug="no"' apcu; \
 	pecl install igbinary; \    
     pecl install --configureoptions='enable-redis-igbinary="yes" enable-redis-lzf="no" enable-redis-zstd="no" enable-redis-msgpack="no" enable-redis-lz4="no" with-liblz4="/usr"' redis; \
-    docker-php-ext-enable apcu redis igbinary opcache
+    docker-php-ext-enable apcu redis igbinary opcache imagick
 
 RUN usermod -u $USER_ID www-data; \
     groupmod -g $USER_ID www-data
