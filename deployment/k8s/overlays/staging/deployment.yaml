@@ -41,7 +41,7 @@
   value: staging-lasntgadmin-php-config
 - op: replace
   path: /spec/template/spec/volumes/4/configMap/name
-  value: staging-lasntgadmin-apache-config
+  value: staging-lasntgadmin-apache-sites-available-default
 - op: replace
   path: /spec/template/spec/volumes/5/configMap/name
   value: staging-lasntgadmin-htaccess-config
