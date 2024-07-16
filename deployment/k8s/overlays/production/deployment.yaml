@@ -87,4 +87,29 @@
       value: lasntgadmin.veri.ie
     - name: Authorization
       value: Basic bGFzbnRnYWRtaW46YXRJTiBGRW02IGVxdXkgV3MzMCBTRTFOIFRMWlk=
-
+- op: add
+  path: /spec/template/spec/volumes/-
+  value:
+    name: apache-config
+    configMap:
+      name: lasntgadmin-apache-config
+- op: add
+  path: /spec/template/spec/containers/0/volumeMounts/-
+  value:
+    name: apache-config
+    mountPath: /etc/apache2/apache2.conf
+    subPath: apache2.conf
+    readOnly: true
+- op: add
+  path: /spec/template/spec/volumes/-
+  value:
+    name: apache-config-remoteip
+    configMap:
+      name: lasntgadmin-apache-config-remoteip
+- op: add
+  path: /spec/template/spec/containers/0/volumeMounts/-
+  value:
+    name: apache-config-remoteip
+    mountPath: /etc/apache2/conf-available/remoteip.conf
+    subPath: remoteip.conf
+    readOnly: true

@@ -8,3 +8,4 @@ deployment/**/wp-config.php
 vendor
 wp-content
 loaderio-*
+*.sql

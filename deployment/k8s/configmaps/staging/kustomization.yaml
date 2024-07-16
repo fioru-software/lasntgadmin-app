@@ -13,7 +13,7 @@ configMapGenerator:
 - name: lasntgadmin-wordfence-waf
   files:
     - wordfence-waf.php
-- name: lasntgadmin-apache-config
+- name: lasntgadmin-apache-sites-available-default
   files:
     - 000-default.conf
 - name: lasntgadmin-env

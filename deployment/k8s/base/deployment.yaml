@@ -97,7 +97,7 @@ spec:
           mountPath: /usr/local/etc/php/php.ini
           subPath: php.ini
           readOnly: true
-        - name: apache-config
+        - name: apache-sites-available-default
           mountPath: /etc/apache2/sites-available/000-default.conf
           subPath: 000-default.conf
           readOnly: true
@@ -118,9 +118,9 @@ spec:
         - name: php-config
           configMap:
             name: lasntgadmin-php-config
-        - name: apache-config
+        - name: apache-sites-available-default
           configMap:
-            name: lasntgadmin-apache-config
+            name: lasntgadmin-apache-sites-available-default
         - name: htaccess-config
           configMap:
             name: lasntgadmin-htaccess-config

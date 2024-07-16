@@ -5,9 +5,9 @@ ARG WP_VERSION
 ARG WP_LOCALE
 ARG GITHUB_TOKEN
 
-RUN a2enmod rewrite headers
+RUN a2enmod rewrite headers remoteip
 RUN apt update; \
-    apt install -y default-mysql-client vim libzip-dev unzip libpng-dev libmagickwand-dev libicu-dev cron git liblzf1 liblzf-dev net-tools python3-distro
+    apt install -y default-mysql-client vim libzip-dev unzip libpng-dev libmagickwand-dev libicu-dev cron git liblzf1 liblzf-dev net-tools python3-distro lynx
 
 RUN docker-php-ext-install mysqli zip gd intl exif opcache soap
 

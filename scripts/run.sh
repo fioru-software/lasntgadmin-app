@@ -11,6 +11,12 @@ $dir/composer_install.sh
 #$dir/product_cat.sh #create product categories
 #$dir/themes.sh # install themes
 
+remoteip_conf="/etc/apache2/conf-available/remoteip.conf"
+
+if [ -f "$remoteip_conf" ]; then
+	a2enconf remoteip
+fi
+
 if [ $# -eq 0 ]; then
     service cron start
     apache2-foreground
