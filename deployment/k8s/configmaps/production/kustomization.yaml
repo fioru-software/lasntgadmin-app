@@ -7,9 +7,6 @@ configMapGenerator:
 - name: lasntgadmin-php-config
   files:
     - php.ini
-- name: lasntgadmin-htaccess-config
-  files:
-    - .htaccess
 - name: lasntgadmin-wordfence-waf
   files:
     - wordfence-waf.php

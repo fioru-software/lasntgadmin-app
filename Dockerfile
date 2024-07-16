@@ -7,7 +7,7 @@ ARG GITHUB_TOKEN
 
 RUN a2enmod rewrite headers
 RUN apt update; \
-    apt install -y default-mysql-client vim libzip-dev unzip libpng-dev libmagickwand-dev libicu-dev cron git liblzf1 liblzf-dev
+    apt install -y default-mysql-client vim libzip-dev unzip libpng-dev libmagickwand-dev libicu-dev cron git liblzf1 liblzf-dev net-tools python3-distro
 
 RUN docker-php-ext-install mysqli zip gd intl exif opcache soap
 
@@ -20,6 +20,8 @@ RUN pecl channel-update pecl.php.net; \
 
 RUN usermod -u $USER_ID www-data; \
     groupmod -g $USER_ID www-data
+
+RUN curl -sOL https://raw.githubusercontent.com/richardforth/apache2buddy/master/apache2buddy.pl && chmod + apache2buddy.pl && mv apache2buddy.pl /usr/local/bin/apache2buddy;
 
 RUN chown -R www-data:www-data /var/www; \
     curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar && chmod +x wp-cli.phar && mv wp-cli.phar /usr/local/bin/wp; \
