@@ -47,7 +47,7 @@
   value: production-lasntgadmin-php-config
 - op: replace
   path: /spec/template/spec/volumes/4/configMap/name
-  value: production-lasntgadmin-apache-config
+  value: production-lasntgadmin-apache-sites-available-default
 - op: replace
   path: /spec/template/spec/volumes/5/configMap/name
   value: production-lasntgadmin-htaccess-config
@@ -92,7 +92,7 @@
   value:
     name: apache-config
     configMap:
-      name: lasntgadmin-apache-config
+      name: production-lasntgadmin-apache-config
 - op: add
   path: /spec/template/spec/containers/0/volumeMounts/-
   value:
@@ -105,7 +105,7 @@
   value:
     name: apache-config-remoteip
     configMap:
-      name: lasntgadmin-apache-config-remoteip
+      name: production-lasntgadmin-apache-config-remoteip
 - op: add
   path: /spec/template/spec/containers/0/volumeMounts/-
   value:
