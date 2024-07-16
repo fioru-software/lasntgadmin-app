@@ -18,7 +18,7 @@ configMapGenerator:
     - remoteip.conf
 - name: lasntgadmin-apache-config
   files:
-    - 000-default.conf
+    - apache2.conf
 - name: lasntgadmin-env
   literals:
   - ENVIRONMENT=production
