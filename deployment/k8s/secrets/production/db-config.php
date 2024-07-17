@@ -222,7 +222,7 @@ $wpdb->add_database(array(
 	'write'    => 1,
 	'read'     => 0,
 	'dataset'  => 'global',
-	'timeout'  => 0.2,
+	'timeout'  => 1,
 ));
 
 /**
@@ -237,6 +237,6 @@ $wpdb->add_database(array(
 	'write'    => 0,
 	'read'     => 1,
 	'dataset'  => 'global',
-	'timeout'  => 0.2,
+	'timeout'  => 1,
 ));
 
