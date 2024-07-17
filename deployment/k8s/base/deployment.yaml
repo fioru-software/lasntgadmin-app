@@ -88,23 +88,23 @@ spec:
         - name: wp-config
           mountPath: /var/www/html/wp-config.php
           subPath: wp-config.php
-          readOnly: true
+          readOnly: false
         - name: db-config
           mountPath: /var/www/html/db-config.php
           subPath: db-config.php
-          readOnly: true
+          readOnly: false
         - name: php-config
           mountPath: /usr/local/etc/php/php.ini
           subPath: php.ini
-          readOnly: true
+          readOnly: false
         - name: apache-sites-available-default
           mountPath: /etc/apache2/sites-available/000-default.conf
           subPath: 000-default.conf
-          readOnly: true
+          readOnly: false
         - name: wordfence-waf
           mountPath: /var/www/html/wordfence-waf.php
           subPath: wordfence-waf.php
-          readOnly: true
+          readOnly: false
       volumes:
         - name: wp-content
           persistentVolumeClaim:
