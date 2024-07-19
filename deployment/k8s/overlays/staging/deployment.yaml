@@ -7,8 +7,13 @@
 - op: replace
   path: /spec/selector/matchLabels/app
   value: staging-lasntgadmin
-- op: remove
+- op: replace
   path: /spec/template/spec/tolerations
+  value: 
+  - key: cloud.google.com/gke-nodepool
+    operator: Equal
+    value: spot-pool
+    effect: NoSchedule
 - op: replace
   path: /spec/template/metadata/labels/app
   value: staging-lasntgadmin
