@@ -447,16 +447,16 @@
         },
         {
             "name": "fioru/lasntgadmin-groups",
-            "version": "1.6.0-rc1",
+            "version": "1.6.0-rc2",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-groups.git",
-                "reference": "395985e9b2c542aba0c753e4798a3d9d4547d030"
+                "reference": "01d3c302779709b6497b9c841288a21e3a662aa5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-groups/zipball/395985e9b2c542aba0c753e4798a3d9d4547d030",
-                "reference": "395985e9b2c542aba0c753e4798a3d9d4547d030",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-groups/zipball/01d3c302779709b6497b9c841288a21e3a662aa5",
+                "reference": "01d3c302779709b6497b9c841288a21e3a662aa5",
                 "shasum": ""
             },
             "require": {
@@ -512,9 +512,9 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-groups/tree/1.6.0-rc1"
+                "source": "https://github.com/fioru-software/lasntgadmin-groups/tree/1.6.0-rc2"
             },
-            "time": "2024-07-24T16:46:03+00:00"
+            "time": "2024-07-24T17:23:25+00:00"
         },
         {
             "name": "fioru/lasntgadmin-itthinx-groups",
