@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0b79fb4ea94f9906d077b2b6cfd709d5",
+    "content-hash": "3b6ea69df2c93ec32eb1158b5d9f6640",
     "packages": [
         {
             "name": "composer/installers",
@@ -446,16 +446,16 @@
         },
         {
             "name": "fioru/lasntgadmin-groups",
-            "version": "1.6.0",
+            "version": "1.6.1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-groups.git",
-                "reference": "97824de3791474bda119b1bebd9e9c266a53cba2"
+                "reference": "c4c6a17f938a9044780a07e2b7d517565054d17d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-groups/zipball/97824de3791474bda119b1bebd9e9c266a53cba2",
-                "reference": "97824de3791474bda119b1bebd9e9c266a53cba2",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-groups/zipball/c4c6a17f938a9044780a07e2b7d517565054d17d",
+                "reference": "c4c6a17f938a9044780a07e2b7d517565054d17d",
                 "shasum": ""
             },
             "require": {
@@ -511,9 +511,9 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-groups/tree/1.6.0"
+                "source": "https://github.com/fioru-software/lasntgadmin-groups/tree/1.6.1"
             },
-            "time": "2024-07-25T15:35:22+00:00"
+            "time": "2024-08-01T15:47:10+00:00"
         },
         {
             "name": "fioru/lasntgadmin-orders",
