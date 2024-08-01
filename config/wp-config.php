@@ -42,18 +42,19 @@ define( 'DB_CHARSET', 'utf8' );
 /** The database collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
 
-/** SMTP settings */
-define( 'WPMS_ON', true );
+// adjust Redis host and port if necessary 
+define( 'WP_REDIS_HOST', 'production-lasntgadmin-redis-service.default.svc.cluster.local' );
+define( 'WP_REDIS_PORT', 6379 );
+define( 'WP_REDIS_DISABLE_BANNERS', true );
 
-// specific configuration settings
-define( 'WPMS_SMTP_HOST', 'smtp.mailtrap.io' );
-define( 'WPMS_SMTP_PORT', 587 );
-define( 'WPMS_SSL', 'tls' );
-define( 'WPMS_SMTP_AUTH', true );
-define( 'WPMS_SMTP_USER', '88041be34d1a29' );
-define( 'WPMS_SMTP_PASS', '63b436fd784ab0' );
-define( 'WPMS_SMTP_AUTOTLS', true );
-define( 'WPMS_MAILER', 'smtp' );
+// change the prefix and database for each site to avoid cache data collisions
+define( 'WP_REDIS_PREFIX', 'lasntgadmin' );
+define( 'WP_REDIS_DATABASE', 0 ); // 0-15
+
+// reasonable connection and read+write timeouts
+define( 'WP_REDIS_TIMEOUT', 1 );
+define( 'WP_REDIS_READ_TIMEOUT', 1 );
+define( 'WP_REDIS_IGBINARY	', true );
 
 /**#@+
  * Authentication unique keys and salts.
