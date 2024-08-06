@@ -1,4 +1,5 @@
 *.swp
+debug/
 auth.json
 secrets.txt
 deployment/**/wp-config.php
