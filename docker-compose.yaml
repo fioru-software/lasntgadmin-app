@@ -2,10 +2,7 @@ version: "3.7"
 
 services:
 
-  apache:
-    image: httpd:2.4
-
-  php:
+  wordpress:
     build: 
       context: .
       args: 
