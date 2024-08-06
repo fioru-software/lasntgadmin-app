@@ -77,10 +77,10 @@ spec:
         resources:
           limits:
             cpu: 2000m
-            memory: 2048M
+            memory: 4096M
           requests:
             cpu: 1000m
-            memory: 1024M
+            memory: 2048M
         volumeMounts: 
         - name: wp-content
           mountPath: /var/www/html/wp-content
