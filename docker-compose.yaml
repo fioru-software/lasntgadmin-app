@@ -16,11 +16,19 @@ services:
       - COMPOSER_AUTOLOAD_FILEPATH=/var/www/html/vendor/autoload.php
     depends_on:
       - db
+      - redis
     ports:
       - "8080:80"
     volumes:
       - .:/usr/local/src
       - /var/www/html
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - ./etc/redis:/usr/local/etc/redis
 
   db:
     image: mysql:8.4

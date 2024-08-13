@@ -56,7 +56,7 @@
 	},
 	"require": {
 		"fioru/lasntgadmin-grant-funded-payment-gateway": "^1.10.5@rc",
-		"fioru/lasntgadmin-purchase-order-payment-gateway": "^1.2.13@rc",
+		"fioru/lasntgadmin-purchase-order-payment-gateway": "^1.2.15@rc",
 		"fioru/lasntgadmin-attendees": "^3.8.16@rc",
 		"fioru/lasntgadmin-groups": "^1.5.11@rc",
 		"fioru/lasntgadmin-products": "^5.14.11@rc",

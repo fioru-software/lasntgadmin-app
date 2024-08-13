@@ -19,14 +19,6 @@
 - op: replace
   path: /spec/template/spec/containers/0/envFrom/1/secretRef/name
   value: production-lasntgadmin-secret
-- op: remove
-  path: /spec/template/spec/containers/0/resources/limits/cpu
-- op: remove
-  path: /spec/template/spec/containers/0/resources/limits/memory
-- op: remove
-  path: /spec/template/spec/containers/0/resources/requests/cpu
-- op: remove
-  path: /spec/template/spec/containers/0/resources/requests/memory
 - op: replace
   path: /metadata/name
   value: lasntgadmin

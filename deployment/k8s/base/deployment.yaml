@@ -50,7 +50,7 @@ spec:
         ports:
         - containerPort: 8080
         readinessProbe:
-          initialDelaySeconds: 60
+          initialDelaySeconds: 5
           httpGet:    
             path: /wp-json/wp-site-health/v1/tests/loopback-requests
             port: 80
@@ -63,7 +63,7 @@ spec:
           periodSeconds: 60
           timeoutSeconds: 60
         startupProbe:
-          initialDelaySeconds: 60
+          initialDelaySeconds: 5
           httpGet:
             path: /wp-json/wp-site-health/v1/tests/loopback-requests
             port: 80
@@ -76,11 +76,11 @@ spec:
               name: lasntgadmin-secret
         resources:
           limits:
-            cpu: 2000m
-            memory: 2048M
+            cpu: 3000m
+            memory: 6144M
           requests:
             cpu: 1000m
-            memory: 1024M
+            memory: 4096M
         volumeMounts: 
         - name: wp-content
           mountPath: /var/www/html/wp-content
