@@ -215,16 +215,16 @@
         },
         {
             "name": "fioru/lasntgadmin-attendees",
-            "version": "3.8.18-rc1",
+            "version": "3.8.18",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-attendees.git",
-                "reference": "adc46a557e5f7ec115c6ecff8a87c33d3dfab72d"
+                "reference": "90c947349c84516c9f3daa4fcd26c678acaf91e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-attendees/zipball/adc46a557e5f7ec115c6ecff8a87c33d3dfab72d",
-                "reference": "adc46a557e5f7ec115c6ecff8a87c33d3dfab72d",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-attendees/zipball/90c947349c84516c9f3daa4fcd26c678acaf91e7",
+                "reference": "90c947349c84516c9f3daa4fcd26c678acaf91e7",
                 "shasum": ""
             },
             "require": {
@@ -286,22 +286,22 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-attendees/tree/3.8.18-rc1"
+                "source": "https://github.com/fioru-software/lasntgadmin-attendees/tree/3.8.18"
             },
-            "time": "2024-08-08T14:03:43+00:00"
+            "time": "2024-08-15T14:01:50+00:00"
         },
         {
             "name": "fioru/lasntgadmin-dashboard",
-            "version": "1.1.7-rc4",
+            "version": "1.1.7",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-dashboard.git",
-                "reference": "d29151e1d503ee0ce9b400d4f08bc2a7efdb84e9"
+                "reference": "f1c87ad4f33eb44836f1e1155045b5ddf1db7709"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-dashboard/zipball/d29151e1d503ee0ce9b400d4f08bc2a7efdb84e9",
-                "reference": "d29151e1d503ee0ce9b400d4f08bc2a7efdb84e9",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-dashboard/zipball/f1c87ad4f33eb44836f1e1155045b5ddf1db7709",
+                "reference": "f1c87ad4f33eb44836f1e1155045b5ddf1db7709",
                 "shasum": ""
             },
             "require": {
@@ -364,9 +364,9 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-dashboard/tree/1.1.7-rc4"
+                "source": "https://github.com/fioru-software/lasntgadmin-dashboard/tree/1.1.7"
             },
-            "time": "2024-08-15T13:03:03+00:00"
+            "time": "2024-08-15T13:37:40+00:00"
         },
         {
             "name": "fioru/lasntgadmin-grant-funded-payment-gateway",
@@ -700,16 +700,16 @@
         },
         {
             "name": "fioru/lasntgadmin-subscriptions",
-            "version": "2.1.22-rc1",
+            "version": "2.1.23-rc1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-subscriptions.git",
-                "reference": "8c5f82e4d53426ae3e4524f9438aeee9183e4225"
+                "reference": "5bf687ab1d7a8c79349a35394c5f529676b2f0ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-subscriptions/zipball/8c5f82e4d53426ae3e4524f9438aeee9183e4225",
-                "reference": "8c5f82e4d53426ae3e4524f9438aeee9183e4225",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-subscriptions/zipball/5bf687ab1d7a8c79349a35394c5f529676b2f0ee",
+                "reference": "5bf687ab1d7a8c79349a35394c5f529676b2f0ee",
                 "shasum": ""
             },
             "require": {
@@ -771,9 +771,9 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-subscriptions/tree/2.1.22-rc1"
+                "source": "https://github.com/fioru-software/lasntgadmin-subscriptions/tree/2.1.23-rc1"
             },
-            "time": "2024-08-08T13:34:01+00:00"
+            "time": "2024-08-16T08:10:57+00:00"
         },
         {
             "name": "fioru/lasntgadmin-theme",
