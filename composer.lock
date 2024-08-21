@@ -700,16 +700,16 @@
         },
         {
             "name": "fioru/lasntgadmin-subscriptions",
-            "version": "2.1.23-rc1",
+            "version": "2.1.23",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-subscriptions.git",
-                "reference": "5bf687ab1d7a8c79349a35394c5f529676b2f0ee"
+                "reference": "1d779d573a40aace479fd7ed4400a19b45d6b3fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-subscriptions/zipball/5bf687ab1d7a8c79349a35394c5f529676b2f0ee",
-                "reference": "5bf687ab1d7a8c79349a35394c5f529676b2f0ee",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-subscriptions/zipball/1d779d573a40aace479fd7ed4400a19b45d6b3fc",
+                "reference": "1d779d573a40aace479fd7ed4400a19b45d6b3fc",
                 "shasum": ""
             },
             "require": {
@@ -771,9 +771,9 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-subscriptions/tree/2.1.23-rc1"
+                "source": "https://github.com/fioru-software/lasntgadmin-subscriptions/tree/2.1.23"
             },
-            "time": "2024-08-16T08:10:57+00:00"
+            "time": "2024-08-16T08:41:57+00:00"
         },
         {
             "name": "fioru/lasntgadmin-theme",
@@ -935,16 +935,16 @@
         },
         {
             "name": "fioru/lasntgadmin-users",
-            "version": "3.4.0",
+            "version": "3.4.1-rc1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-users.git",
-                "reference": "24367c72060e04bc8668ce4c7f5d8e1b47d4cf92"
+                "reference": "d88611e970fcf3bb899941666f8347052f329209"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-users/zipball/24367c72060e04bc8668ce4c7f5d8e1b47d4cf92",
-                "reference": "24367c72060e04bc8668ce4c7f5d8e1b47d4cf92",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-users/zipball/d88611e970fcf3bb899941666f8347052f329209",
+                "reference": "d88611e970fcf3bb899941666f8347052f329209",
                 "shasum": ""
             },
             "require": {
@@ -1004,9 +1004,9 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-users/tree/3.4.0"
+                "source": "https://github.com/fioru-software/lasntgadmin-users/tree/3.4.1-rc1"
             },
-            "time": "2024-07-25T15:33:28+00:00"
+            "time": "2024-08-21T12:32:45+00:00"
         },
         {
             "name": "maennchen/zipstream-php",
@@ -1686,5 +1686,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }
