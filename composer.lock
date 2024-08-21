@@ -215,21 +215,21 @@
         },
         {
             "name": "fioru/lasntgadmin-attendees",
-            "version": "3.8.18",
+            "version": "3.8.19-rc1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-attendees.git",
-                "reference": "90c947349c84516c9f3daa4fcd26c678acaf91e7"
+                "reference": "10c838235b094456eac48f2545626711249478c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-attendees/zipball/90c947349c84516c9f3daa4fcd26c678acaf91e7",
-                "reference": "90c947349c84516c9f3daa4fcd26c678acaf91e7",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-attendees/zipball/10c838235b094456eac48f2545626711249478c3",
+                "reference": "10c838235b094456eac48f2545626711249478c3",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "~2.0",
-                "fioru/lasntgadmin-groups": "^1.5.10",
+                "fioru/lasntgadmin-groups": "1.6.2",
                 "fioru/lasntgadmin-orders": "^1.7.52",
                 "fioru/lasntgadmin-products": "^5.14.3",
                 "fioru/lasntgadmin-purchase-order-payment-gateway": "^1.2.14",
@@ -286,9 +286,9 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-attendees/tree/3.8.18"
+                "source": "https://github.com/fioru-software/lasntgadmin-attendees/tree/3.8.19-rc1"
             },
-            "time": "2024-08-15T14:01:50+00:00"
+            "time": "2024-08-21T14:07:31+00:00"
         },
         {
             "name": "fioru/lasntgadmin-dashboard",
@@ -1686,5 +1686,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.3.0"
 }
