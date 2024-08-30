@@ -153,95 +153,32 @@
             "time": "2024-06-24T20:46:46+00:00"
         },
         {
-            "name": "ezyang/htmlpurifier",
-            "version": "v4.17.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ezyang/htmlpurifier.git",
-                "reference": "bbc513d79acf6691fa9cf10f192c90dd2957f18c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/bbc513d79acf6691fa9cf10f192c90dd2957f18c",
-                "reference": "bbc513d79acf6691fa9cf10f192c90dd2957f18c",
-                "shasum": ""
-            },
-            "require": {
-                "php": "~5.6.0 || ~7.0.0 || ~7.1.0 || ~7.2.0 || ~7.3.0 || ~7.4.0 || ~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0"
-            },
-            "require-dev": {
-                "cerdic/css-tidy": "^1.7 || ^2.0",
-                "simpletest/simpletest": "dev-master"
-            },
-            "suggest": {
-                "cerdic/css-tidy": "If you want to use the filter 'Filter.ExtractStyleBlocks'.",
-                "ext-bcmath": "Used for unit conversion and imagecrash protection",
-                "ext-iconv": "Converts text to and from non-UTF-8 encodings",
-                "ext-tidy": "Used for pretty-printing HTML"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "library/HTMLPurifier.composer.php"
-                ],
-                "psr-0": {
-                    "HTMLPurifier": "library/"
-                },
-                "exclude-from-classmap": [
-                    "/library/HTMLPurifier/Language/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL-2.1-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Edward Z. Yang",
-                    "email": "admin@htmlpurifier.org",
-                    "homepage": "http://ezyang.com"
-                }
-            ],
-            "description": "Standards compliant HTML filter written in PHP",
-            "homepage": "http://htmlpurifier.org/",
-            "keywords": [
-                "html"
-            ],
-            "support": {
-                "issues": "https://github.com/ezyang/htmlpurifier/issues",
-                "source": "https://github.com/ezyang/htmlpurifier/tree/v4.17.0"
-            },
-            "time": "2023-11-17T15:01:25+00:00"
-        },
-        {
             "name": "fioru/lasntgadmin-attendees",
-            "version": "3.8.19-rc1",
+            "version": "3.8.20-rc1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-attendees.git",
-                "reference": "10c838235b094456eac48f2545626711249478c3"
+                "reference": "cb11cf8c803d605954262eb183e49180380fa056"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-attendees/zipball/10c838235b094456eac48f2545626711249478c3",
-                "reference": "10c838235b094456eac48f2545626711249478c3",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-attendees/zipball/cb11cf8c803d605954262eb183e49180380fa056",
+                "reference": "cb11cf8c803d605954262eb183e49180380fa056",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "~2.0",
-                "fioru/lasntgadmin-groups": "1.6.2",
+                "fioru/lasntgadmin-groups": "^1.5.10",
                 "fioru/lasntgadmin-orders": "^1.7.52",
                 "fioru/lasntgadmin-products": "^5.14.3",
-                "fioru/lasntgadmin-purchase-order-payment-gateway": "^1.2.14",
-                "phpoffice/phpspreadsheet": "^1.28",
-                "symfony/uid": "^5.4"
+                "phpoffice/phpspreadsheet": "^2.2.1"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
-                "enlightn/security-checker": "1.11.0",
+                "enlightn/security-checker": "^2.0.0",
                 "fakerphp/faker": "^1.19",
                 "mockery/mockery": "^1.5",
-                "overtrue/phplint": "^3.0",
+                "overtrue/phplint": "^9.4.1",
                 "phpcompatibility/php-compatibility": "^9.3",
                 "phpcompatibility/phpcompatibility-wp": "*",
                 "squizlabs/php_codesniffer": "^3.7",
@@ -286,9 +223,9 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-attendees/tree/3.8.19-rc1"
+                "source": "https://github.com/fioru-software/lasntgadmin-attendees/tree/3.8.20-rc1"
             },
-            "time": "2024-08-21T14:07:31+00:00"
+            "time": "2024-08-30T14:16:28+00:00"
         },
         {
             "name": "fioru/lasntgadmin-dashboard",
@@ -370,16 +307,16 @@
         },
         {
             "name": "fioru/lasntgadmin-grant-funded-payment-gateway",
-            "version": "1.10.7",
+            "version": "1.10.8-rc1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-grant-funded-payment-gateway.git",
-                "reference": "24c832ca265001fbd93d5606134e42224671a263"
+                "reference": "638669bd50f5eb16d068c499b0c92a9208de2981"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-grant-funded-payment-gateway/zipball/24c832ca265001fbd93d5606134e42224671a263",
-                "reference": "24c832ca265001fbd93d5606134e42224671a263",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-grant-funded-payment-gateway/zipball/638669bd50f5eb16d068c499b0c92a9208de2981",
+                "reference": "638669bd50f5eb16d068c499b0c92a9208de2981",
                 "shasum": ""
             },
             "require": {
@@ -388,7 +325,7 @@
                 "fioru/lasntgadmin-groups": "^1.4",
                 "fioru/lasntgadmin-orders": "^1.7.48",
                 "fioru/lasntgadmin-products": "^5.12.0",
-                "phpoffice/phpspreadsheet": "^1.29"
+                "phpoffice/phpspreadsheet": "^2.2.1"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
@@ -440,9 +377,9 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-grant-funded-payment-gateway/tree/1.10.7"
+                "source": "https://github.com/fioru-software/lasntgadmin-grant-funded-payment-gateway/tree/1.10.8-rc1"
             },
-            "time": "2024-08-01T08:35:03+00:00"
+            "time": "2024-08-30T16:02:58+00:00"
         },
         {
             "name": "fioru/lasntgadmin-groups",
@@ -517,16 +454,16 @@
         },
         {
             "name": "fioru/lasntgadmin-orders",
-            "version": "1.8.4",
+            "version": "1.8.5-rc1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-orders.git",
-                "reference": "94696a5d60b96a71f574e21ca36fa66b3af3604e"
+                "reference": "93575d9ac98ed6b8ec63ecd1439c1983d171c7db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-orders/zipball/94696a5d60b96a71f574e21ca36fa66b3af3604e",
-                "reference": "94696a5d60b96a71f574e21ca36fa66b3af3604e",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-orders/zipball/93575d9ac98ed6b8ec63ecd1439c1983d171c7db",
+                "reference": "93575d9ac98ed6b8ec63ecd1439c1983d171c7db",
                 "shasum": ""
             },
             "require": {
@@ -591,22 +528,22 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-orders/tree/1.8.4"
+                "source": "https://github.com/fioru-software/lasntgadmin-orders/tree/1.8.5-rc1"
             },
-            "time": "2024-07-26T10:59:25+00:00"
+            "time": "2024-08-29T15:27:12+00:00"
         },
         {
             "name": "fioru/lasntgadmin-products",
-            "version": "5.14.13",
+            "version": "5.14.14-rc1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-products.git",
-                "reference": "18b1ec184f510a208ba588bab0993379ecc4f5b2"
+                "reference": "a4e29b6e7557fed9e9b9b7873bb271d955081ff2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-products/zipball/18b1ec184f510a208ba588bab0993379ecc4f5b2",
-                "reference": "18b1ec184f510a208ba588bab0993379ecc4f5b2",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-products/zipball/a4e29b6e7557fed9e9b9b7873bb271d955081ff2",
+                "reference": "a4e29b6e7557fed9e9b9b7873bb271d955081ff2",
                 "shasum": ""
             },
             "require": {
@@ -667,9 +604,9 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-products/tree/5.14.13"
+                "source": "https://github.com/fioru-software/lasntgadmin-products/tree/5.14.14-rc1"
             },
-            "time": "2024-08-15T09:46:01+00:00"
+            "time": "2024-08-29T15:59:08+00:00"
         },
         {
             "name": "fioru/lasntgadmin-purchase-order-payment-gateway",
@@ -700,16 +637,16 @@
         },
         {
             "name": "fioru/lasntgadmin-subscriptions",
-            "version": "2.1.23",
+            "version": "2.1.24-rc3",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-subscriptions.git",
-                "reference": "1d779d573a40aace479fd7ed4400a19b45d6b3fc"
+                "reference": "48e3d05fa8e395d85bea2f761a7917ca11a6b341"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-subscriptions/zipball/1d779d573a40aace479fd7ed4400a19b45d6b3fc",
-                "reference": "1d779d573a40aace479fd7ed4400a19b45d6b3fc",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-subscriptions/zipball/48e3d05fa8e395d85bea2f761a7917ca11a6b341",
+                "reference": "48e3d05fa8e395d85bea2f761a7917ca11a6b341",
                 "shasum": ""
             },
             "require": {
@@ -771,9 +708,9 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-subscriptions/tree/2.1.23"
+                "source": "https://github.com/fioru-software/lasntgadmin-subscriptions/tree/2.1.24-rc3"
             },
-            "time": "2024-08-16T08:41:57+00:00"
+            "time": "2024-08-30T09:47:24+00:00"
         },
         {
             "name": "fioru/lasntgadmin-theme",
@@ -935,16 +872,16 @@
         },
         {
             "name": "fioru/lasntgadmin-users",
-            "version": "3.4.1-rc1",
+            "version": "3.4.1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-users.git",
-                "reference": "d88611e970fcf3bb899941666f8347052f329209"
+                "reference": "1760185945bc235ca15bedb8d46b80f482bf615e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-users/zipball/d88611e970fcf3bb899941666f8347052f329209",
-                "reference": "d88611e970fcf3bb899941666f8347052f329209",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-users/zipball/1760185945bc235ca15bedb8d46b80f482bf615e",
+                "reference": "1760185945bc235ca15bedb8d46b80f482bf615e",
                 "shasum": ""
             },
             "require": {
@@ -1004,9 +941,9 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-users/tree/3.4.1-rc1"
+                "source": "https://github.com/fioru-software/lasntgadmin-users/tree/3.4.1"
             },
-            "time": "2024-08-21T12:32:45+00:00"
+            "time": "2024-08-22T09:14:50+00:00"
         },
         {
             "name": "maennchen/zipstream-php",
@@ -1198,16 +1135,16 @@
         },
         {
             "name": "phpoffice/phpspreadsheet",
-            "version": "1.29.0",
+            "version": "2.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPOffice/PhpSpreadsheet.git",
-                "reference": "fde2ccf55eaef7e86021ff1acce26479160a0fa0"
+                "reference": "ffbcee68069b073bff07a71eb321dcd9f2763513"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/fde2ccf55eaef7e86021ff1acce26479160a0fa0",
-                "reference": "fde2ccf55eaef7e86021ff1acce26479160a0fa0",
+                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/ffbcee68069b073bff07a71eb321dcd9f2763513",
+                "reference": "ffbcee68069b073bff07a71eb321dcd9f2763513",
                 "shasum": ""
             },
             "require": {
@@ -1224,25 +1161,24 @@
                 "ext-xmlwriter": "*",
                 "ext-zip": "*",
                 "ext-zlib": "*",
-                "ezyang/htmlpurifier": "^4.15",
                 "maennchen/zipstream-php": "^2.1 || ^3.0",
                 "markbaker/complex": "^3.0",
                 "markbaker/matrix": "^3.0",
-                "php": "^7.4 || ^8.0",
+                "php": "^8.1",
                 "psr/http-client": "^1.0",
                 "psr/http-factory": "^1.0",
                 "psr/simple-cache": "^1.0 || ^2.0 || ^3.0"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "dev-main",
-                "dompdf/dompdf": "^1.0 || ^2.0",
+                "dompdf/dompdf": "^2.0 || ^3.0",
                 "friendsofphp/php-cs-fixer": "^3.2",
                 "mitoteam/jpgraph": "^10.3",
                 "mpdf/mpdf": "^8.1.1",
                 "phpcompatibility/php-compatibility": "^9.3",
                 "phpstan/phpstan": "^1.1",
                 "phpstan/phpstan-phpunit": "^1.0",
-                "phpunit/phpunit": "^8.5 || ^9.0 || ^10.0",
+                "phpunit/phpunit": "^9.6 || ^10.5",
                 "squizlabs/php_codesniffer": "^3.7",
                 "tecnickcom/tcpdf": "^6.5"
             },
@@ -1297,9 +1233,9 @@
             ],
             "support": {
                 "issues": "https://github.com/PHPOffice/PhpSpreadsheet/issues",
-                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/1.29.0"
+                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/2.2.2"
             },
-            "time": "2023-06-14T22:48:31+00:00"
+            "time": "2024-08-08T02:31:26+00:00"
         },
         {
             "name": "psr/http-client",
@@ -1511,159 +1447,6 @@
                 "source": "https://github.com/php-fig/simple-cache/tree/3.0.0"
             },
             "time": "2021-10-29T13:26:27+00:00"
-        },
-        {
-            "name": "symfony/polyfill-uuid",
-            "version": "v1.30.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/polyfill-uuid.git",
-                "reference": "2ba1f33797470debcda07fe9dce20a0003df18e9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-uuid/zipball/2ba1f33797470debcda07fe9dce20a0003df18e9",
-                "reference": "2ba1f33797470debcda07fe9dce20a0003df18e9",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1"
-            },
-            "provide": {
-                "ext-uuid": "*"
-            },
-            "suggest": {
-                "ext-uuid": "For best performance"
-            },
-            "type": "library",
-            "extra": {
-                "thanks": {
-                    "name": "symfony/polyfill",
-                    "url": "https://github.com/symfony/polyfill"
-                }
-            },
-            "autoload": {
-                "files": [
-                    "bootstrap.php"
-                ],
-                "psr-4": {
-                    "Symfony\\Polyfill\\Uuid\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Grégoire Pineau",
-                    "email": "lyrixx@lyrixx.info"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony polyfill for uuid functions",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "compatibility",
-                "polyfill",
-                "portable",
-                "uuid"
-            ],
-            "support": {
-                "source": "https://github.com/symfony/polyfill-uuid/tree/v1.30.0"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2024-05-31T15:07:36+00:00"
-        },
-        {
-            "name": "symfony/uid",
-            "version": "v5.4.40",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/uid.git",
-                "reference": "3e85f7b4d7e04313b88232cd5c27e5ff2ae93218"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/uid/zipball/3e85f7b4d7e04313b88232cd5c27e5ff2ae93218",
-                "reference": "3e85f7b4d7e04313b88232cd5c27e5ff2ae93218",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.2.5",
-                "symfony/polyfill-uuid": "^1.15"
-            },
-            "require-dev": {
-                "symfony/console": "^4.4|^5.0|^6.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Uid\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Grégoire Pineau",
-                    "email": "lyrixx@lyrixx.info"
-                },
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Provides an object-oriented API to generate and represent UIDs",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "UID",
-                "ulid",
-                "uuid"
-            ],
-            "support": {
-                "source": "https://github.com/symfony/uid/tree/v5.4.40"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2024-05-31T14:33:22+00:00"
         }
     ],
     "packages-dev": [],
@@ -1686,5 +1469,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }
