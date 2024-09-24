@@ -3,10 +3,10 @@ namePrefix: staging-
 generatorOptions:
   disableNameSuffixHash: true
 
-bases:
+resources:
   - ../../base
 
-patchesJson6902:
+patches:
   - path: service.yaml
     target:
       version: v1
