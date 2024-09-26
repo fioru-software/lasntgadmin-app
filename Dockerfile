@@ -7,7 +7,7 @@ ARG GITHUB_TOKEN
 
 RUN a2enmod rewrite headers remoteip
 RUN apt update; \
-    apt install -y default-mysql-client vim libzip-dev unzip libpng-dev libmagickwand-dev libicu-dev cron git liblzf1 liblzf-dev net-tools python3-distro lynx
+    apt install -y default-mysql-client vim libzip-dev unzip libpng-dev libmagickwand-dev libicu-dev cron git liblzf1 liblzf-dev net-tools python3-distro lynx logrotate
 
 RUN docker-php-ext-install mysqli zip gd intl exif opcache soap
 
@@ -53,6 +53,8 @@ COPY --chown=www-data:www-data plugins/* /tmp/plugins/
 RUN for plugin in /tmp/plugins/*.zip; do unzip -uq $plugin -d /var/www/html/wp-content/plugins/; done;
 
 USER root
+
+COPY etc/logrotate.d/wordpress /etc/logrotate.d/wordpress
 
 # cron
 RUN echo '* * * * * /bin/bash /usr/local/bin/cron.sh > /var/log/apache2/cron.log 2>&1' > /etc/cron.d/wordpress;\

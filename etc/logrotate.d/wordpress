@@ -1,0 +1,11 @@
+/var/www/html/wp-content/debug.log {
+	daily
+	missingok
+	rotate 3
+	compress
+	delaycompress
+	notifempty
+	nocreate
+	maxsize 10M
+	su www-data www-data
+}
