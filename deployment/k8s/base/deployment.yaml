@@ -31,8 +31,6 @@ spec:
           requiredDuringSchedulingIgnoredDuringExecution:
             nodeSelectorTerms:
             - matchExpressions:
-              - key: cloud.google.com/gke-preemptible
-                operator: DoesNotExist
               - key: cloud.google.com/gke-nodepool
                 operator: In
                 values:
