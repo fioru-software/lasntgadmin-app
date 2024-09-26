@@ -22,10 +22,10 @@
   value: 2048M
 - op: replace
   path: /spec/template/spec/containers/0/resources/requests/cpu
-  value: 2000m
+  value: 1000m
 - op: replace
   path: /spec/template/spec/containers/0/resources/requests/memory
-  value: 2048M
+  value: 1024M
 - op: replace
   path: /spec/template/metadata/labels/app
   value: staging-lasntgadmin
