@@ -14,18 +14,8 @@
     operator: Equal
     value: spot-pool
     effect: NoSchedule
-- op: replace
-  path: /spec/template/spec/containers/0/resources/limits/cpu
-  value: 2000m
-- op: replace
-  path: /spec/template/spec/containers/0/resources/limits/memory
-  value: 2048M
-- op: replace
-  path: /spec/template/spec/containers/0/resources/requests/cpu
-  value: 1000m
-- op: replace
-  path: /spec/template/spec/containers/0/resources/requests/memory
-  value: 1024M
+- op: remove
+  path: /spec/template/spec/containers/0/resources
 - op: replace
   path: /spec/template/metadata/labels/app
   value: staging-lasntgadmin
@@ -41,9 +31,6 @@
 - op: replace
   path: /spec/template/spec/containers/0/envFrom/1/secretRef/name
   value: staging-lasntgadmin-secret
-- op: replace
-  path: /metadata/name
-  value: staging-lasntgadmin
 - op: replace
   path: /spec/template/spec/volumes/0/persistentVolumeClaim/claimName
   value: staging-lasntgadmin-pvc
