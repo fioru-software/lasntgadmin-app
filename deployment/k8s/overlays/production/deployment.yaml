@@ -23,7 +23,7 @@
   path: /metadata/name
   value: lasntgadmin
 - op: replace
-  path: /spec/template/spec/affinity/nodeAffinity/requiredDuringSchedulingIgnoredDuringExecution/nodeSelectorTerms/0/matchExpressions/1/values/0
+  path: /spec/template/spec/affinity/nodeAffinity/requiredDuringSchedulingIgnoredDuringExecution/nodeSelectorTerms/0/matchExpressions/0/values/0
   value: lasntg-pool
 - op: replace
   path: /spec/template/spec/volumes/0/persistentVolumeClaim/claimName
