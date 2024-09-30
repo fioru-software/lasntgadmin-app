@@ -154,16 +154,16 @@
         },
         {
             "name": "fioru/lasntgadmin-attendees",
-            "version": "3.8.21-rc4",
+            "version": "3.8.21",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-attendees.git",
-                "reference": "ad33caafa02842eb3267913c098ccb1e498c261d"
+                "reference": "deaf9010c705f6c2862900128e32a80bf6729065"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-attendees/zipball/ad33caafa02842eb3267913c098ccb1e498c261d",
-                "reference": "ad33caafa02842eb3267913c098ccb1e498c261d",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-attendees/zipball/deaf9010c705f6c2862900128e32a80bf6729065",
+                "reference": "deaf9010c705f6c2862900128e32a80bf6729065",
                 "shasum": ""
             },
             "require": {
@@ -223,22 +223,22 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-attendees/tree/3.8.21-rc4"
+                "source": "https://github.com/fioru-software/lasntgadmin-attendees/tree/3.8.21"
             },
-            "time": "2024-09-27T11:14:01+00:00"
+            "time": "2024-09-27T15:06:01+00:00"
         },
         {
             "name": "fioru/lasntgadmin-dashboard",
-            "version": "1.1.8-rc1",
+            "version": "1.1.8",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-dashboard.git",
-                "reference": "0b1c0c5c3c322228968f053888eeee30ae18cbd4"
+                "reference": "16c0a6c12f09355f8350f4840af128199bd7f8e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-dashboard/zipball/0b1c0c5c3c322228968f053888eeee30ae18cbd4",
-                "reference": "0b1c0c5c3c322228968f053888eeee30ae18cbd4",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-dashboard/zipball/16c0a6c12f09355f8350f4840af128199bd7f8e6",
+                "reference": "16c0a6c12f09355f8350f4840af128199bd7f8e6",
                 "shasum": ""
             },
             "require": {
@@ -301,9 +301,9 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-dashboard/tree/1.1.8-rc1"
+                "source": "https://github.com/fioru-software/lasntgadmin-dashboard/tree/1.1.8"
             },
-            "time": "2024-09-12T08:59:36+00:00"
+            "time": "2024-09-27T15:44:08+00:00"
         },
         {
             "name": "fioru/lasntgadmin-grant-funded-payment-gateway",
@@ -454,16 +454,16 @@
         },
         {
             "name": "fioru/lasntgadmin-orders",
-            "version": "1.8.7",
+            "version": "1.8.8",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-orders.git",
-                "reference": "2b7cf177544c3bb32f43378b65cb2fe7d0f2907c"
+                "reference": "2f0faebbfd72666d2dbce6e1c7e01c4c76c52e3c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-orders/zipball/2b7cf177544c3bb32f43378b65cb2fe7d0f2907c",
-                "reference": "2b7cf177544c3bb32f43378b65cb2fe7d0f2907c",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-orders/zipball/2f0faebbfd72666d2dbce6e1c7e01c4c76c52e3c",
+                "reference": "2f0faebbfd72666d2dbce6e1c7e01c4c76c52e3c",
                 "shasum": ""
             },
             "require": {
@@ -528,22 +528,22 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-orders/tree/1.8.7"
+                "source": "https://github.com/fioru-software/lasntgadmin-orders/tree/1.8.8"
             },
-            "time": "2024-09-27T11:54:08+00:00"
+            "time": "2024-09-30T13:03:48+00:00"
         },
         {
             "name": "fioru/lasntgadmin-products",
-            "version": "5.14.17-rc1",
+            "version": "5.14.18-rc1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-products.git",
-                "reference": "631428f67bd0a98d3e9b36acf84fb724f91d5b14"
+                "reference": "a5085e8e5d13212cbd873d6e8ee829de23637d7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-products/zipball/631428f67bd0a98d3e9b36acf84fb724f91d5b14",
-                "reference": "631428f67bd0a98d3e9b36acf84fb724f91d5b14",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-products/zipball/a5085e8e5d13212cbd873d6e8ee829de23637d7a",
+                "reference": "a5085e8e5d13212cbd873d6e8ee829de23637d7a",
                 "shasum": ""
             },
             "require": {
@@ -604,9 +604,9 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-products/tree/5.14.17-rc1"
+                "source": "https://github.com/fioru-software/lasntgadmin-products/tree/5.14.18-rc1"
             },
-            "time": "2024-09-20T11:25:55+00:00"
+            "time": "2024-09-30T09:35:40+00:00"
         },
         {
             "name": "fioru/lasntgadmin-purchase-order-payment-gateway",
@@ -1135,16 +1135,16 @@
         },
         {
             "name": "phpoffice/phpspreadsheet",
-            "version": "2.2.2",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPOffice/PhpSpreadsheet.git",
-                "reference": "ffbcee68069b073bff07a71eb321dcd9f2763513"
+                "reference": "c972c146ddd5e8350ea839355b9bb0ce6a8fa33e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/ffbcee68069b073bff07a71eb321dcd9f2763513",
-                "reference": "ffbcee68069b073bff07a71eb321dcd9f2763513",
+                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/c972c146ddd5e8350ea839355b9bb0ce6a8fa33e",
+                "reference": "c972c146ddd5e8350ea839355b9bb0ce6a8fa33e",
                 "shasum": ""
             },
             "require": {
@@ -1233,9 +1233,9 @@
             ],
             "support": {
                 "issues": "https://github.com/PHPOffice/PhpSpreadsheet/issues",
-                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/2.2.2"
+                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/2.3.0"
             },
-            "time": "2024-08-08T02:31:26+00:00"
+            "time": "2024-09-29T07:06:02+00:00"
         },
         {
             "name": "psr/http-client",
@@ -1469,5 +1469,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }
