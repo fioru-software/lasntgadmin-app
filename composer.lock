@@ -637,16 +637,16 @@
         },
         {
             "name": "fioru/lasntgadmin-subscriptions",
-            "version": "2.1.26",
+            "version": "2.1.27-rc1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-subscriptions.git",
-                "reference": "3659c9254631a9a624e7fcb1cb0dd6dc30081c1f"
+                "reference": "9702d03f80d7441ae0ff228abe1f6e3a8b83c248"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-subscriptions/zipball/3659c9254631a9a624e7fcb1cb0dd6dc30081c1f",
-                "reference": "3659c9254631a9a624e7fcb1cb0dd6dc30081c1f",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-subscriptions/zipball/9702d03f80d7441ae0ff228abe1f6e3a8b83c248",
+                "reference": "9702d03f80d7441ae0ff228abe1f6e3a8b83c248",
                 "shasum": ""
             },
             "require": {
@@ -708,9 +708,9 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-subscriptions/tree/2.1.26"
+                "source": "https://github.com/fioru-software/lasntgadmin-subscriptions/tree/2.1.27-rc1"
             },
-            "time": "2024-09-27T11:53:53+00:00"
+            "time": "2024-09-30T09:48:17+00:00"
         },
         {
             "name": "fioru/lasntgadmin-theme",
@@ -1469,5 +1469,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.3.0"
 }
