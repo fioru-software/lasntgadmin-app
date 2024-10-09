@@ -454,16 +454,16 @@
         },
         {
             "name": "fioru/lasntgadmin-orders",
-            "version": "1.8.9-rc1",
+            "version": "1.9.0-rc1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-orders.git",
-                "reference": "6def381bcfe460c615bd1e48c2be595cfb10d4fa"
+                "reference": "a0d012ab6ee42cee6cfc2f487264b3c9952385c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-orders/zipball/6def381bcfe460c615bd1e48c2be595cfb10d4fa",
-                "reference": "6def381bcfe460c615bd1e48c2be595cfb10d4fa",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-orders/zipball/a0d012ab6ee42cee6cfc2f487264b3c9952385c4",
+                "reference": "a0d012ab6ee42cee6cfc2f487264b3c9952385c4",
                 "shasum": ""
             },
             "require": {
@@ -528,9 +528,9 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-orders/tree/1.8.9-rc1"
+                "source": "https://github.com/fioru-software/lasntgadmin-orders/tree/1.9.0-rc1"
             },
-            "time": "2024-10-07T13:54:27+00:00"
+            "time": "2024-10-09T13:01:11+00:00"
         },
         {
             "name": "fioru/lasntgadmin-products",
@@ -610,30 +610,75 @@
         },
         {
             "name": "fioru/lasntgadmin-purchase-order-payment-gateway",
-            "version": "1.2.15",
+            "version": "1.2.16-rc2",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-purchase-order-payment-gateway.git",
-                "reference": "c8fca7c038a1a64f914beac2f4e1ad7c20e82671"
+                "reference": "8c10495c7da057fc0e67b238f776bfd77cb5193a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-purchase-order-payment-gateway/zipball/c8fca7c038a1a64f914beac2f4e1ad7c20e82671",
-                "reference": "c8fca7c038a1a64f914beac2f4e1ad7c20e82671",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-purchase-order-payment-gateway/zipball/8c10495c7da057fc0e67b238f776bfd77cb5193a",
+                "reference": "8c10495c7da057fc0e67b238f776bfd77cb5193a",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "~2.0"
             },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
+                "enlightn/security-checker": "^1.11.0",
+                "fakerphp/faker": "^1.19",
+                "mockery/mockery": "^1.5",
+                "overtrue/phplint": "^3.0",
+                "phpcompatibility/php-compatibility": "^9.3",
+                "phpcompatibility/phpcompatibility-wp": "*",
+                "squizlabs/php_codesniffer": "^3.7",
+                "wp-coding-standards/wpcs": "dev-develop",
+                "yoast/phpunit-polyfills": "^1.0"
+            },
             "type": "wordpress-plugin",
             "extra": {
                 "installer-name": "woocommerce-gateway-purchase-order"
             },
+            "autoload": {
+                "psr-4": {
+                    "Lasntg\\Admin\\PaymentGateway\\PurchaseOrder\\": "lib"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Lasntg\\Admin\\Test\\": "tests/"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "phpunit --verbose --configuration phpunit.xml.dist --prepend vendor/autoload.php --testdox --colors=always"
+                ],
+                "lint": [
+                    "phplint ./ --exclude=vendor"
+                ],
+                "check": [
+                    "phpcs -ns"
+                ],
+                "fix": [
+                    "phpcbf"
+                ],
+                "secure": [
+                    "security-checker security:check composer.lock"
+                ],
+                "all": [
+                    "@lint",
+                    "@check",
+                    "@test",
+                    "@secure"
+                ]
+            },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-purchase-order-payment-gateway/tree/1.2.15",
+                "source": "https://github.com/fioru-software/lasntgadmin-purchase-order-payment-gateway/tree/1.2.16-rc2",
                 "issues": "https://github.com/fioru-software/lasntgadmin-purchase-order-payment-gateway/issues"
             },
-            "time": "2024-07-12T19:44:29+00:00"
+            "time": "2024-10-09T13:03:45+00:00"
         },
         {
             "name": "fioru/lasntgadmin-subscriptions",
