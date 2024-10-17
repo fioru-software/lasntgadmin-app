@@ -154,16 +154,16 @@
         },
         {
             "name": "fioru/lasntgadmin-attendees",
-            "version": "3.8.23-rc1",
+            "version": "3.8.24-rc1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-attendees.git",
-                "reference": "761d088ca03989cba0f5238fe5e1f99232f03f1d"
+                "reference": "efbe57b41ea1256641b5f82cd396be25e426d4a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-attendees/zipball/761d088ca03989cba0f5238fe5e1f99232f03f1d",
-                "reference": "761d088ca03989cba0f5238fe5e1f99232f03f1d",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-attendees/zipball/efbe57b41ea1256641b5f82cd396be25e426d4a1",
+                "reference": "efbe57b41ea1256641b5f82cd396be25e426d4a1",
                 "shasum": ""
             },
             "require": {
@@ -223,9 +223,9 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-attendees/tree/3.8.23-rc1"
+                "source": "https://github.com/fioru-software/lasntgadmin-attendees/tree/3.8.24-rc1"
             },
-            "time": "2024-10-11T08:40:17+00:00"
+            "time": "2024-10-17T12:40:35+00:00"
         },
         {
             "name": "fioru/lasntgadmin-dashboard",
