@@ -6,10 +6,6 @@
 	"repositories": [
 		{
 			"type": "vcs",
-			"url":	"git@github.com:fioru-software/lasntgadmin-enrolment-log"
-		},
-		{
-			"type": "vcs",
 			"url":	"git@github.com:fioru-software/lasntgadmin-purchase-order-payment-gateway"
 		},
 		{
@@ -59,7 +55,6 @@
 		}
 	},
 	"require": {
-		"fioru/lasntgadmin-enrolment-log": "^1.0.0@rc",
 		"fioru/lasntgadmin-grant-funded-payment-gateway": "^1.10.5@rc",
 		"fioru/lasntgadmin-purchase-order-payment-gateway": "^1.2.15@rc",
 		"fioru/lasntgadmin-attendees": "^3.8.25@rc",
