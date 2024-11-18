@@ -307,16 +307,16 @@
         },
         {
             "name": "fioru/lasntgadmin-enrolment-log",
-            "version": "1.0.0-rc2",
+            "version": "1.0.0-rc3",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-enrolment-log.git",
-                "reference": "68a0977b6bcaebb7b7f5e6897bff7ba55099ecaf"
+                "reference": "fca4306701a534185b413ede1fdddfc51c672bb0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-enrolment-log/zipball/68a0977b6bcaebb7b7f5e6897bff7ba55099ecaf",
-                "reference": "68a0977b6bcaebb7b7f5e6897bff7ba55099ecaf",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-enrolment-log/zipball/fca4306701a534185b413ede1fdddfc51c672bb0",
+                "reference": "fca4306701a534185b413ede1fdddfc51c672bb0",
                 "shasum": ""
             },
             "require": {
@@ -378,10 +378,10 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-enrolment-log/tree/1.0.0-rc2",
+                "source": "https://github.com/fioru-software/lasntgadmin-enrolment-log/tree/1.0.0-rc3",
                 "issues": "https://github.com/fioru-software/lasntgadmin-enrolment-log/issues"
             },
-            "time": "2024-11-08T11:57:37+00:00"
+            "time": "2024-11-18T13:45:26+00:00"
         },
         {
             "name": "fioru/lasntgadmin-grant-funded-payment-gateway",
@@ -532,16 +532,16 @@
         },
         {
             "name": "fioru/lasntgadmin-orders",
-            "version": "1.10.1-rc1",
+            "version": "1.11.0-rc1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-orders.git",
-                "reference": "5fad9db9c978568aa5882123f4c1b1f3767618eb"
+                "reference": "9a7f86c7bacfdb5bbf18f38981ded2db59738308"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-orders/zipball/5fad9db9c978568aa5882123f4c1b1f3767618eb",
-                "reference": "5fad9db9c978568aa5882123f4c1b1f3767618eb",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-orders/zipball/9a7f86c7bacfdb5bbf18f38981ded2db59738308",
+                "reference": "9a7f86c7bacfdb5bbf18f38981ded2db59738308",
                 "shasum": ""
             },
             "require": {
@@ -606,9 +606,9 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-orders/tree/1.10.1-rc1"
+                "source": "https://github.com/fioru-software/lasntgadmin-orders/tree/1.11.0-rc1"
             },
-            "time": "2024-11-15T15:47:07+00:00"
+            "time": "2024-11-18T14:59:31+00:00"
         },
         {
             "name": "fioru/lasntgadmin-products",
@@ -1572,22 +1572,22 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "fioru/lasntgadmin-attendees": 5,
-        "fioru/lasntgadmin-dashboard": 5,
         "fioru/lasntgadmin-enrolment-log": 5,
         "fioru/lasntgadmin-grant-funded-payment-gateway": 5,
-        "fioru/lasntgadmin-groups": 5,
-        "fioru/lasntgadmin-orders": 5,
-        "fioru/lasntgadmin-products": 5,
         "fioru/lasntgadmin-purchase-order-payment-gateway": 5,
+        "fioru/lasntgadmin-attendees": 5,
+        "fioru/lasntgadmin-groups": 5,
+        "fioru/lasntgadmin-products": 5,
+        "fioru/lasntgadmin-users": 5,
+        "fioru/lasntgadmin-orders": 5,
         "fioru/lasntgadmin-subscriptions": 5,
-        "fioru/lasntgadmin-theme": 5,
         "fioru/lasntgadmin-translate": 5,
-        "fioru/lasntgadmin-users": 5
+        "fioru/lasntgadmin-dashboard": 5,
+        "fioru/lasntgadmin-theme": 5
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": {},
-    "platform-dev": {},
+    "platform": [],
+    "platform-dev": [],
     "plugin-api-version": "2.6.0"
 }
