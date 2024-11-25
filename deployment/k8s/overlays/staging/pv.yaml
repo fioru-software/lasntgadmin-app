@@ -5,7 +5,7 @@ metadata:
 spec:
   storageClassName: "standard"
   capacity:
-    storage: 10Gi
+    storage: 20Gi
   accessModes:
     - ReadWriteOnce
   claimRef:
