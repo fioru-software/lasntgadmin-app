@@ -154,16 +154,16 @@
         },
         {
             "name": "fioru/lasntgadmin-attendees",
-            "version": "3.9.0-rc1",
+            "version": "3.9.0-rc2",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-attendees.git",
-                "reference": "39d627f3d73f96ab641acbb03010d3e15894f7dd"
+                "reference": "6d28b84602509bcd2b4d87b05b22e8a62f3d37d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-attendees/zipball/39d627f3d73f96ab641acbb03010d3e15894f7dd",
-                "reference": "39d627f3d73f96ab641acbb03010d3e15894f7dd",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-attendees/zipball/6d28b84602509bcd2b4d87b05b22e8a62f3d37d4",
+                "reference": "6d28b84602509bcd2b4d87b05b22e8a62f3d37d4",
                 "shasum": ""
             },
             "require": {
@@ -223,9 +223,9 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-attendees/tree/3.9.0-rc1"
+                "source": "https://github.com/fioru-software/lasntgadmin-attendees/tree/3.9.0-rc2"
             },
-            "time": "2024-12-03T16:38:00+00:00"
+            "time": "2024-12-04T13:03:22+00:00"
         },
         {
             "name": "fioru/lasntgadmin-dashboard",
@@ -307,16 +307,16 @@
         },
         {
             "name": "fioru/lasntgadmin-enrolment-log",
-            "version": "1.0.0-rc9",
+            "version": "1.0.0-rc10",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-enrolment-log.git",
-                "reference": "74c45d88497741b94fd599252d53a8a43563fb4f"
+                "reference": "abdbe89f0a5ec9dfbf2b1cc972fdb96b3caa0b01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-enrolment-log/zipball/74c45d88497741b94fd599252d53a8a43563fb4f",
-                "reference": "74c45d88497741b94fd599252d53a8a43563fb4f",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-enrolment-log/zipball/abdbe89f0a5ec9dfbf2b1cc972fdb96b3caa0b01",
+                "reference": "abdbe89f0a5ec9dfbf2b1cc972fdb96b3caa0b01",
                 "shasum": ""
             },
             "require": {
@@ -378,10 +378,10 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-enrolment-log/tree/1.0.0-rc9",
+                "source": "https://github.com/fioru-software/lasntgadmin-enrolment-log/tree/1.0.0-rc10",
                 "issues": "https://github.com/fioru-software/lasntgadmin-enrolment-log/issues"
             },
-            "time": "2024-12-03T15:54:35+00:00"
+            "time": "2024-12-04T12:57:27+00:00"
         },
         {
             "name": "fioru/lasntgadmin-grant-funded-payment-gateway",
