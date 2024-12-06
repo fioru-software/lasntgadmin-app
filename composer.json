@@ -59,17 +59,17 @@
 		}
 	},
 	"require": {
-		"fioru/lasntgadmin-enrolment-log": "^1.0.0@rc",
-		"fioru/lasntgadmin-grant-funded-payment-gateway": "^1.10.5@rc",
-		"fioru/lasntgadmin-purchase-order-payment-gateway": "^1.2.15@rc",
-		"fioru/lasntgadmin-attendees": "^3.8.25@rc",
-		"fioru/lasntgadmin-groups": "^1.5.11@rc",
-		"fioru/lasntgadmin-products": "^5.14.11@rc",
-		"fioru/lasntgadmin-users": "^3.3.9@rc",
-		"fioru/lasntgadmin-orders": "^1.8.2@rc",
-		"fioru/lasntgadmin-subscriptions": "^2.1.20@rc",
-		"fioru/lasntgadmin-translate": "^1.2.12@rc",
-		"fioru/lasntgadmin-dashboard": "^1.1.8@rc",
-		"fioru/lasntgadmin-theme": "^1.0.7@rc"
+		"fioru/lasntgadmin-enrolment-log": "^1.0.0@stable",
+		"fioru/lasntgadmin-grant-funded-payment-gateway": "^1.10.5@stable",
+		"fioru/lasntgadmin-pustablehase-order-payment-gateway": "^1.2.15@stable",
+		"fioru/lasntgadmin-attendees": "^3.8.25@stable",
+		"fioru/lasntgadmin-groups": "^1.5.11@stable",
+		"fioru/lasntgadmin-products": "^5.14.11@stable",
+		"fioru/lasntgadmin-users": "^3.3.9@stable",
+		"fioru/lasntgadmin-orders": "^1.8.2@stable",
+		"fioru/lasntgadmin-subscriptions": "^2.1.20@stable",
+		"fioru/lasntgadmin-translate": "^1.2.12@stable",
+		"fioru/lasntgadmin-dashboard": "^1.1.8@stable",
+		"fioru/lasntgadmin-theme": "^1.0.7@stable"
 	}
 }
