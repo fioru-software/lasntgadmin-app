@@ -20,6 +20,18 @@
   path: /spec/template/spec/containers/0/envFrom/1/secretRef/name
   value: production-lasntgadmin-secret
 - op: replace
+  path: /spec/template/spec/containers/0/resources/limits/cpu
+  value: 3920m
+- op: replace
+  path: /spec/template/spec/containers/0/resources/limits/memory
+  value: 13920M
+- op: replace
+  path: /spec/template/spec/containers/0/resources/requests/cpu
+  value: 3000m
+- op: replace
+  path: /spec/template/spec/containers/0/resources/requests/memory
+  value: 9000M
+- op: replace
   path: /metadata/name
   value: lasntgadmin
 - op: replace
