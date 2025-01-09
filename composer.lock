@@ -385,16 +385,16 @@
         },
         {
             "name": "fioru/lasntgadmin-grant-funded-payment-gateway",
-            "version": "1.10.9",
+            "version": "1.10.10",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-grant-funded-payment-gateway.git",
-                "reference": "f147682a17bd5a8d363313b70c08f805518f5586"
+                "reference": "69b06139264240f3211823cd2e195d3afa10ea00"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-grant-funded-payment-gateway/zipball/f147682a17bd5a8d363313b70c08f805518f5586",
-                "reference": "f147682a17bd5a8d363313b70c08f805518f5586",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-grant-funded-payment-gateway/zipball/69b06139264240f3211823cd2e195d3afa10ea00",
+                "reference": "69b06139264240f3211823cd2e195d3afa10ea00",
                 "shasum": ""
             },
             "require": {
@@ -455,9 +455,9 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-grant-funded-payment-gateway/tree/1.10.9"
+                "source": "https://github.com/fioru-software/lasntgadmin-grant-funded-payment-gateway/tree/1.10.10"
             },
-            "time": "2024-12-06T16:56:32+00:00"
+            "time": "2025-01-08T12:04:57+00:00"
         },
         {
             "name": "fioru/lasntgadmin-groups",
@@ -1254,16 +1254,16 @@
         },
         {
             "name": "phpoffice/phpspreadsheet",
-            "version": "2.3.4",
+            "version": "2.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPOffice/PhpSpreadsheet.git",
-                "reference": "01c4122a12327378ab5d97a56a4cbab07e7fa70b"
+                "reference": "d836f2d7308a192441ccd1546545890b378af913"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/01c4122a12327378ab5d97a56a4cbab07e7fa70b",
-                "reference": "01c4122a12327378ab5d97a56a4cbab07e7fa70b",
+                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/d836f2d7308a192441ccd1546545890b378af913",
+                "reference": "d836f2d7308a192441ccd1546545890b378af913",
                 "shasum": ""
             },
             "require": {
@@ -1352,9 +1352,9 @@
             ],
             "support": {
                 "issues": "https://github.com/PHPOffice/PhpSpreadsheet/issues",
-                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/2.3.4"
+                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/2.3.5"
             },
-            "time": "2024-12-08T15:43:45+00:00"
+            "time": "2024-12-27T05:17:46+00:00"
         },
         {
             "name": "psr/http-client",
@@ -1572,22 +1572,22 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "fioru/lasntgadmin-attendees": 0,
-        "fioru/lasntgadmin-dashboard": 0,
         "fioru/lasntgadmin-enrolment-log": 0,
         "fioru/lasntgadmin-grant-funded-payment-gateway": 0,
-        "fioru/lasntgadmin-groups": 0,
-        "fioru/lasntgadmin-orders": 0,
-        "fioru/lasntgadmin-products": 0,
         "fioru/lasntgadmin-purchase-order-payment-gateway": 0,
+        "fioru/lasntgadmin-attendees": 0,
+        "fioru/lasntgadmin-groups": 0,
+        "fioru/lasntgadmin-products": 0,
+        "fioru/lasntgadmin-users": 0,
+        "fioru/lasntgadmin-orders": 0,
         "fioru/lasntgadmin-subscriptions": 0,
-        "fioru/lasntgadmin-theme": 0,
         "fioru/lasntgadmin-translate": 0,
-        "fioru/lasntgadmin-users": 0
+        "fioru/lasntgadmin-dashboard": 0,
+        "fioru/lasntgadmin-theme": 0
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": {},
-    "platform-dev": {},
+    "platform": [],
+    "platform-dev": [],
     "plugin-api-version": "2.6.0"
 }
