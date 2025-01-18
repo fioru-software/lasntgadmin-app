@@ -533,16 +533,16 @@
         },
         {
             "name": "fioru/lasntgadmin-orders",
-            "version": "1.11.1-rc1",
+            "version": "1.11.1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-orders.git",
-                "reference": "0a91ad7978ff1e85758e888821f9485bca21847c"
+                "reference": "44e8d673d84106ae8a520bd726e6ab11dc85162f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-orders/zipball/0a91ad7978ff1e85758e888821f9485bca21847c",
-                "reference": "0a91ad7978ff1e85758e888821f9485bca21847c",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-orders/zipball/44e8d673d84106ae8a520bd726e6ab11dc85162f",
+                "reference": "44e8d673d84106ae8a520bd726e6ab11dc85162f",
                 "shasum": ""
             },
             "require": {
@@ -607,9 +607,9 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-orders/tree/1.11.1-rc1"
+                "source": "https://github.com/fioru-software/lasntgadmin-orders/tree/1.11.1"
             },
-            "time": "2025-01-15T11:20:44+00:00"
+            "time": "2025-01-15T13:42:48+00:00"
         },
         {
             "name": "fioru/lasntgadmin-products",
@@ -761,16 +761,16 @@
         },
         {
             "name": "fioru/lasntgadmin-subscriptions",
-            "version": "2.1.27",
+            "version": "2.1.28",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-subscriptions.git",
-                "reference": "d41c2d5e4f7f05899eeca305e682258e44b45fc7"
+                "reference": "cb9400a35b48dc80f1f0384c62fd6c257f9150e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-subscriptions/zipball/d41c2d5e4f7f05899eeca305e682258e44b45fc7",
-                "reference": "d41c2d5e4f7f05899eeca305e682258e44b45fc7",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-subscriptions/zipball/cb9400a35b48dc80f1f0384c62fd6c257f9150e8",
+                "reference": "cb9400a35b48dc80f1f0384c62fd6c257f9150e8",
                 "shasum": ""
             },
             "require": {
@@ -832,9 +832,9 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-subscriptions/tree/2.1.27"
+                "source": "https://github.com/fioru-software/lasntgadmin-subscriptions/tree/2.1.28"
             },
-            "time": "2024-10-03T08:40:45+00:00"
+            "time": "2025-01-18T04:28:47+00:00"
         },
         {
             "name": "fioru/lasntgadmin-theme",
@@ -1573,22 +1573,22 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "fioru/lasntgadmin-attendees": 5,
+        "fioru/lasntgadmin-dashboard": 5,
         "fioru/lasntgadmin-enrolment-log": 5,
         "fioru/lasntgadmin-grant-funded-payment-gateway": 5,
-        "fioru/lasntgadmin-purchase-order-payment-gateway": 5,
-        "fioru/lasntgadmin-attendees": 5,
         "fioru/lasntgadmin-groups": 5,
-        "fioru/lasntgadmin-products": 5,
-        "fioru/lasntgadmin-users": 5,
         "fioru/lasntgadmin-orders": 5,
+        "fioru/lasntgadmin-products": 5,
+        "fioru/lasntgadmin-purchase-order-payment-gateway": 5,
         "fioru/lasntgadmin-subscriptions": 5,
+        "fioru/lasntgadmin-theme": 5,
         "fioru/lasntgadmin-translate": 5,
-        "fioru/lasntgadmin-dashboard": 5,
-        "fioru/lasntgadmin-theme": 5
+        "fioru/lasntgadmin-users": 5
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
+    "platform": {},
+    "platform-dev": {},
     "plugin-api-version": "2.6.0"
 }
