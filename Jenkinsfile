@@ -24,6 +24,7 @@ pipeline {
     }
 
     environment {
+		DOCKER_REGISTRY = 'europe-west1-docker.pkg.dev/veri-cluster/docker-belgium'
         GCLOUD_KEYFILE = credentials('jenkins-gcloud-keyfile');
         GITHUB_TOKEN = credentials('jenkins-github-personal-access-token')
         ENVIRONMENT = "${GIT_LOCAL_BRANCH == "master" ? "production" : GIT_LOCAL_BRANCH}"
@@ -52,12 +53,12 @@ pipeline {
                 }
                 container('docker') {
                     script {
-                        sh 'docker login -u oauth2accesstoken -p $GCLOUD_TOKEN https://eu.gcr.io'
+                        sh 'docker login -u oauth2accesstoken -p $GCLOUD_TOKEN https://$DOCKER_REGISTRY'
                         sh 'docker build --no-cache --build-arg GITHUB_TOKEN=${GITHUB_TOKEN} --build-arg USER_ID=${USER_ID} --build-arg WP_VERSION=${WP_VERSION} --build-arg WP_LOCALE=${WP_LOCALE} --tag lasntgadmin:${GIT_COMMIT} .'
-                        sh 'docker tag lasntgadmin:${GIT_COMMIT} eu.gcr.io/veri-cluster/lasntgadmin:${GIT_COMMIT}'
-                        sh 'docker tag lasntgadmin:${GIT_COMMIT} eu.gcr.io/veri-cluster/lasntgadmin:${ENVIRONMENT}'
-                        sh 'docker push eu.gcr.io/veri-cluster/lasntgadmin:${GIT_COMMIT}'
-                        sh 'docker push eu.gcr.io/veri-cluster/lasntgadmin:${ENVIRONMENT}'
+                        sh 'docker tag lasntgadmin:${GIT_COMMIT} ${DOCKER_REGISTRY}/lasntgadmin:${GIT_COMMIT}'
+                        sh 'docker tag lasntgadmin:${GIT_COMMIT} ${DOCKER_REGISTRY}/lasntgadmin:${ENVIRONMENT}'
+                        sh 'docker push ${DOCKER_REGISTRY}/lasntgadmin:${GIT_COMMIT}'
+                        sh 'docker push ${DOCKER_REGISTRY}/lasntgadmin:${ENVIRONMENT}'
                     }
                 }
             }
