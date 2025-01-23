@@ -7,11 +7,6 @@ resources:
   - ../../base
 
 patches:
-  - path: service.yaml
-    target:
-      version: v1
-      kind: Service
-      name: lasntgadmin-service
   - path: deployment.yaml
     target:
       group: apps

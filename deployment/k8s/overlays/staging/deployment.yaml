@@ -1,27 +1,18 @@
 - op: replace
-  path: /metadata/labels/app
-  value: staging-lasntgadmin
-- op: replace
   path: /spec/revisionHistoryLimit
   value: 1
 - op: replace
-  path: /spec/selector/matchLabels/app
-  value: staging-lasntgadmin
-- op: replace
   path: /spec/template/spec/tolerations
-  value: 
+  value:
   - key: cloud.google.com/gke-nodepool
     operator: Equal
-    value: spot-pool
+    value: staging-pool
     effect: NoSchedule
 - op: remove
   path: /spec/template/spec/containers/0/resources
 - op: replace
-  path: /spec/template/metadata/labels/app
-  value: staging-lasntgadmin
-- op: replace
   path: /spec/template/spec/containers/0/image
-  value: eu.gcr.io/veri-cluster/lasntgadmin:staging
+  value: europe-west1-docker.pkg.dev/veri-cluster/docker-belgium/lasntgadmin:staging
 - op: replace
   path: /spec/template/spec/containers/0/imagePullPolicy
   value: Always
