@@ -1,6 +1,12 @@
 - op: replace
+  path: /metadata/labels/app
+  value: staging-lasntgadmin
+- op: replace
   path: /spec/revisionHistoryLimit
   value: 1
+- op: replace
+  path: /spec/selector/matchLabels/app
+  value: staging-lasntgadmin
 - op: replace
   path: /spec/template/spec/tolerations
   value:
@@ -10,6 +16,9 @@
     effect: NoSchedule
 - op: remove
   path: /spec/template/spec/containers/0/resources
+- op: replace
+  path: /spec/template/metadata/labels/app
+  value: staging-lasntgadmin
 - op: replace
   path: /spec/template/spec/containers/0/image
   value: europe-west1-docker.pkg.dev/veri-cluster/docker-belgium/lasntgadmin:staging
