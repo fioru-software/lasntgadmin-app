@@ -1,3 +1,6 @@
 - op: replace
   path: /spec/resources/requests/storage
   value: 20Gi
+- op: replace
+  path: /spec/storageClassName
+  value: 'hyperdisk-balanced'
