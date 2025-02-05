@@ -24,3 +24,8 @@ patches:
       version: v1
       kind: Ingress
       name: lasntgadmin-ingress
+  - path: pvc.yaml
+    target:
+      version: v1
+      kind: PersistentVolumeClaim
+      name: lasntgadmin-pvc
