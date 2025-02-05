@@ -9,7 +9,7 @@
   value: production-lasntgadmin
 - op: replace
   path: /spec/template/spec/containers/0/image
-  value: eu.gcr.io/veri-cluster/lasntgadmin:production
+  value: europe-west1-docker.pkg.dev/veri-cluster/docker-belgium/lasntgadmin:production
 - op: replace
   path: /spec/template/spec/containers/0/imagePullPolicy
   value: Always
