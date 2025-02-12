@@ -612,16 +612,16 @@
         },
         {
             "name": "fioru/lasntgadmin-orders",
-            "version": "1.11.2-rc1",
+            "version": "1.11.3",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-orders.git",
-                "reference": "7ed31988116cbd784664e44e05f3b2c687fcd9f9"
+                "reference": "da404aee6f4161cd3de44faf18fb3c924bf00133"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-orders/zipball/7ed31988116cbd784664e44e05f3b2c687fcd9f9",
-                "reference": "7ed31988116cbd784664e44e05f3b2c687fcd9f9",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-orders/zipball/da404aee6f4161cd3de44faf18fb3c924bf00133",
+                "reference": "da404aee6f4161cd3de44faf18fb3c924bf00133",
                 "shasum": ""
             },
             "require": {
@@ -686,22 +686,22 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-orders/tree/1.11.2-rc1"
+                "source": "https://github.com/fioru-software/lasntgadmin-orders/tree/1.11.3"
             },
-            "time": "2025-02-07T13:18:00+00:00"
+            "time": "2025-02-11T17:14:21+00:00"
         },
         {
             "name": "fioru/lasntgadmin-products",
-            "version": "5.15.4-rc1",
+            "version": "5.15.4",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-products.git",
-                "reference": "35d9d609b723abbc01b2b7be83133dc8501533a0"
+                "reference": "b5a0dae20ca8c720cb569bd09d51e07c325db684"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-products/zipball/35d9d609b723abbc01b2b7be83133dc8501533a0",
-                "reference": "35d9d609b723abbc01b2b7be83133dc8501533a0",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-products/zipball/b5a0dae20ca8c720cb569bd09d51e07c325db684",
+                "reference": "b5a0dae20ca8c720cb569bd09d51e07c325db684",
                 "shasum": ""
             },
             "require": {
@@ -762,9 +762,9 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-products/tree/5.15.4-rc1"
+                "source": "https://github.com/fioru-software/lasntgadmin-products/tree/5.15.4"
             },
-            "time": "2025-02-07T13:21:27+00:00"
+            "time": "2025-02-11T12:11:37+00:00"
         },
         {
             "name": "fioru/lasntgadmin-purchase-order-payment-gateway",
@@ -1335,20 +1335,20 @@
         },
         {
             "name": "phpoffice/phpspreadsheet",
-            "version": "2.3.7",
+            "version": "2.3.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPOffice/PhpSpreadsheet.git",
-                "reference": "cf357183b1d17a3862e8e4b9b056a556654dcae6"
+                "reference": "7a700683743bf1c4a21837c84b266916f1aa7d25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/cf357183b1d17a3862e8e4b9b056a556654dcae6",
-                "reference": "cf357183b1d17a3862e8e4b9b056a556654dcae6",
+                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/7a700683743bf1c4a21837c84b266916f1aa7d25",
+                "reference": "7a700683743bf1c4a21837c84b266916f1aa7d25",
                 "shasum": ""
             },
             "require": {
-                "composer/pcre": "^3.2",
+                "composer/pcre": "^1 || ^2 || ^3",
                 "ext-ctype": "*",
                 "ext-dom": "*",
                 "ext-fileinfo": "*",
@@ -1434,9 +1434,9 @@
             ],
             "support": {
                 "issues": "https://github.com/PHPOffice/PhpSpreadsheet/issues",
-                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/2.3.7"
+                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/2.3.8"
             },
-            "time": "2025-01-26T04:53:06+00:00"
+            "time": "2025-02-08T03:01:45+00:00"
         },
         {
             "name": "psr/http-client",
