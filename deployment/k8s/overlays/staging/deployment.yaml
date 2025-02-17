@@ -52,6 +52,9 @@
 - op: replace
   path: /spec/template/spec/volumes/6/configMap/name
   value: staging-lasntgadmin-wordfence-waf
+- op: replace
+  path: /spec/template/spec/containers/0/readinessProbe/httpGet/path
+  value: /wp-login.php
 - op: add
   path: /spec/template/spec/containers/0/readinessProbe/httpGet/httpHeaders
   value:
@@ -63,6 +66,9 @@
       value: lasntgadmin-staging.veri.ie
     - name: Authorization
       value: Basic bGFzbnRnYWRtaW46dmV4WXdXeDQ4d0NmeVNwYlNnZnlRV0ta
+- op: replace
+  path: /spec/template/spec/containers/0/livenessProbe/httpGet/path
+  value: /wp-login.php
 - op: add
   path: /spec/template/spec/containers/0/livenessProbe/httpGet/httpHeaders
   value:
@@ -74,6 +80,9 @@
       value: lasntgadmin-staging.veri.ie
     - name: Authorization
       value: Basic bGFzbnRnYWRtaW46dmV4WXdXeDQ4d0NmeVNwYlNnZnlRV0ta
+- op: replace
+  path: /spec/template/spec/containers/0/startupProbe/httpGet/path
+  value: /wp-login.php
 - op: add
   path: /spec/template/spec/containers/0/startupProbe/httpGet/httpHeaders
   value:
