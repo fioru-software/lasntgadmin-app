@@ -18,7 +18,7 @@ pipeline {
 	}
 
 	parameters {
-		string(name: 'WP_VERSION', defaultValue: '6.7.1', description: 'WordPress version')
+		string(name: 'WP_VERSION', defaultValue: '6.7.2', description: 'WordPress version')
 		string(name: 'WP_LOCALE', defaultValue: 'en_GB', description: 'WordPress locale')
 		booleanParam(name: 'DEPLOY', defaultValue: false, description: "Deploy To Kubernetes")
 	}
