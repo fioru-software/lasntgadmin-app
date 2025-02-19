@@ -3,7 +3,7 @@ kind: PersistentVolume
 metadata:
   name: staging-lasntgadmin-pv
 spec:
-  storageClassName: "hyperdisk-balanced"
+  storageClassName: "balanced"
   capacity:
     storage: 20Gi
   accessModes:

@@ -14,8 +14,15 @@
     operator: Equal
     value: staging-pool
     effect: NoSchedule
-- op: remove
+- op: replace 
   path: /spec/template/spec/containers/0/resources
+  value:
+    limits:
+      cpu: 3920m
+      memory: 2940M
+    requests:
+      cpu: 3400m
+      memory: 2100M
 - op: replace
   path: /spec/template/metadata/labels/app
   value: staging-lasntgadmin
