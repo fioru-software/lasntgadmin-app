@@ -1,0 +1,6 @@
+- op: replace
+  path: /spec/selector/app
+  value: production-lasntgadmin-redis
+- op: replace
+  path: /metadata/labels/app
+  value: production-lasntgadmin-redis-service

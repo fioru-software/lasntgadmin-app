@@ -1,0 +1,33 @@
+- op: replace
+  path: /spec/template/metadata/labels/app
+  value: staging-lasntgadmin-redis
+- op: replace
+  path: /metadata/labels/app
+  value: staging-lasntgadmin-redis
+- op: replace
+  path: /spec/selector/matchLabels/app
+  value: staging-lasntgadmin-redis
+- op: replace
+  path: /spec/template/spec/affinity/nodeAffinity/requiredDuringSchedulingIgnoredDuringExecution/nodeSelectorTerms/0/matchExpressions/1/values/0
+  value: staging-pool
+- op: replace
+  path: /spec/template/spec/tolerations
+  value:
+  - key: cloud.google.com/gke-nodepool
+    operator: Equal
+    value: staging-pool
+    effect: NoSchedule
+- op: replace 
+  path: /spec/template/spec/containers/0/resources
+  value:
+    limits:
+      cpu: 500m
+      memory: 256M
+    requests:
+      cpu: 300m
+      memory: 100M
+- op: replace
+  path: /spec/template/metadata/labels/app
+  value: staging-lasntgadmin-redis
+  path: /spec/template/spec/volumes/0/configMap/name
+  value: staging-lasntgadmin-redis-config

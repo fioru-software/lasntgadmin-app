@@ -4,6 +4,9 @@ generatorOptions:
   disableNameSuffixHash: true
 
 configMapGenerator:
+- name: lasntgadmin-redis-config
+  files:
+    - redis.conf
 - name: lasntgadmin-php-config
   files:
     - php.ini

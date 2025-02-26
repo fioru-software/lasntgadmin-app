@@ -1,4 +1,5 @@
 *.swp
+exports/*.csv
 debug/
 auth.json
 secrets.txt
