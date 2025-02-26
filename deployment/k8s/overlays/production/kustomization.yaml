@@ -7,12 +7,12 @@ resources:
   - ../../base
 
 patches:
-  - path: service.yaml
+  - path: service-apache.yaml
     target:
       version: v1
       kind: Service
       name: lasntgadmin-service
-  - path: deployment.yaml
+  - path: deployment-apache.yaml
     target:
       group: apps
       version: v1
@@ -24,3 +24,19 @@ patches:
       version: v1
       kind: Ingress
       name: lasntgadmin-ingress
+  - path: pvc.yaml
+    target:
+      version: v1
+      kind: PersistentVolumeClaim
+      name: lasntgadmin-pvc
+  - path: deployment-redis.yaml
+    target:
+      group: apps
+      version: v1
+      kind: Deployment
+      name: lasntgadmin-redis
+  - path: service-redis.yaml
+    target:
+      version: v1
+      kind: Service
+      name: lasntgadmin-redis-service
