@@ -1,3 +1,6 @@
 - op: replace
   path: /spec/resources/requests/storage
   value: 10G
+- op: replace
+  path: /spec/storageClassName
+  value: 'premium-rwo'
