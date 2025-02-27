@@ -3,7 +3,7 @@ kind: PersistentVolume
 metadata:
   name: lasntgadmin-pv
 spec:
-  storageClassName: "standard"
+  storageClassName: "premium-rwo"
   capacity:
     storage: 10Gi
   accessModes:

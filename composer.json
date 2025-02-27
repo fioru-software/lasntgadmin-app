@@ -60,7 +60,7 @@
 	},
 	"require": {
 		"fioru/lasntgadmin-enrolment-log": "^1.0.0@rc",
-		"fioru/lasntgadmin-grant-funded-payment-gateway": "^1.10.5@rc",
+		"fioru/lasntgadmin-grant-funded-payment-gateway": "^1.11.0@rc",
 		"fioru/lasntgadmin-purchase-order-payment-gateway": "^1.2.15@rc",
 		"fioru/lasntgadmin-attendees": "^3.8.25@rc",
 		"fioru/lasntgadmin-groups": "^1.5.11@rc",
