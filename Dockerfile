@@ -35,7 +35,10 @@ COPY etc/php/php.ini /usr/local/etc/php/php.ini
 COPY --chown=www-data:www-data composer.json composer.lock config/.htaccess config/wp-config.php /var/www/html/
 ADD exports /usr/local/src/exports
 COPY scripts/* /usr/local/bin/
-RUN chmod +x /usr/local/bin/*
+COPY cron/* /usr/local/bin/
+RUN chmod +x /usr/local/bin/*;\
+    mkdir -p /var/log/apache2/cron;\
+    chown -R www-data:www-data /var/log/apache2/cron
 
 USER www-data
 WORKDIR /var/www/html
@@ -57,8 +60,11 @@ USER root
 COPY etc/logrotate.d/wordpress /etc/logrotate.d/wordpress
 
 # cron
-RUN echo '* * * * * /bin/bash /usr/local/bin/cron.sh > /var/log/apache2/cron.log 2>&1' > /etc/cron.d/wordpress;\
-    echo '0 21 * * * /bin/bash /usr/local/bin/housekeeper.sh > /var/log/apache2/cron.log 2>&1' >> /etc/cron.d/wordpress;\
+RUN echo '* * * * * /bin/bash /usr/local/bin/everyminute.sh > /var/log/apache2/cron/everyminute.log 2>&1' >> /etc/cron.d/wordpress;\
+    echo '* * * * 6,0 /bin/bash /usr/local/bin/weekends.sh > /var/log/apache2/cron/weekends.log 2>&1' >> /etc/cron.d/wordpress;\
+    echo '* 8-17 * * 1-5 /bin/bash /usr/local/bin/officehours.sh > /var/log/apache2/cron/officehours.log 2>&1' >> /etc/cron.d/wordpress;\
+    echo '0 1 * * 1 /bin/bash /usr/local/bin/weekly.sh > /var/log/apache2/cron/weekly.log 2>&1' >> /etc/cron.d/wordpress;\
+    echo '* 23-4 * * 1-5 /bin/bash /usr/local/bin/nights.sh > /var/log/apache2/cron/nights.log 2>&1' >> /etc/cron.d/wordpress;\
     crontab -u www-data /etc/cron.d/wordpress
 
 CMD ["sh", "/usr/local/bin/run.sh"]
