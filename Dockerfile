@@ -36,9 +36,9 @@ COPY --chown=www-data:www-data composer.json composer.lock config/.htaccess conf
 ADD exports /usr/local/src/exports
 COPY scripts/* /usr/local/bin/
 COPY cron/* /usr/local/bin/
-RUN chmod +x /usr/local/bin/*
-RUN mkdir -p /var/log/apache2/cron;\
-RUN chown -R www-data:www-data /var/log/apache2/cron
+RUN chmod +x /usr/local/bin/*;\
+    mkdir -p /var/log/apache2/cron;\
+    chown -R www-data:www-data /var/log/apache2/cron
 
 USER www-data
 WORKDIR /var/www/html
