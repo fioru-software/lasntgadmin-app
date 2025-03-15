@@ -693,16 +693,16 @@
         },
         {
             "name": "fioru/lasntgadmin-products",
-            "version": "5.15.10",
+            "version": "5.15.11",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-products.git",
-                "reference": "e64c3e24ff8a91aff58660fc8438d7baa0b5fe72"
+                "reference": "0ef25ab546882debef072933546c7b9b1cc6ec3a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-products/zipball/e64c3e24ff8a91aff58660fc8438d7baa0b5fe72",
-                "reference": "e64c3e24ff8a91aff58660fc8438d7baa0b5fe72",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-products/zipball/0ef25ab546882debef072933546c7b9b1cc6ec3a",
+                "reference": "0ef25ab546882debef072933546c7b9b1cc6ec3a",
                 "shasum": ""
             },
             "require": {
@@ -763,9 +763,9 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-products/tree/5.15.10"
+                "source": "https://github.com/fioru-software/lasntgadmin-products/tree/5.15.11"
             },
-            "time": "2025-03-13T16:56:04+00:00"
+            "time": "2025-03-15T11:28:36+00:00"
         },
         {
             "name": "fioru/lasntgadmin-purchase-order-payment-gateway",
@@ -1655,22 +1655,22 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "fioru/lasntgadmin-attendees": 0,
-        "fioru/lasntgadmin-dashboard": 0,
         "fioru/lasntgadmin-enrolment-log": 0,
         "fioru/lasntgadmin-grant-funded-payment-gateway": 0,
-        "fioru/lasntgadmin-groups": 0,
-        "fioru/lasntgadmin-orders": 0,
-        "fioru/lasntgadmin-products": 0,
         "fioru/lasntgadmin-purchase-order-payment-gateway": 0,
+        "fioru/lasntgadmin-attendees": 0,
+        "fioru/lasntgadmin-groups": 0,
+        "fioru/lasntgadmin-products": 0,
+        "fioru/lasntgadmin-users": 0,
+        "fioru/lasntgadmin-orders": 0,
         "fioru/lasntgadmin-subscriptions": 0,
-        "fioru/lasntgadmin-theme": 0,
         "fioru/lasntgadmin-translate": 0,
-        "fioru/lasntgadmin-users": 0
+        "fioru/lasntgadmin-dashboard": 0,
+        "fioru/lasntgadmin-theme": 0
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": {},
-    "platform-dev": {},
+    "platform": [],
+    "platform-dev": [],
     "plugin-api-version": "2.6.0"
 }
