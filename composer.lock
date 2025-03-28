@@ -693,16 +693,16 @@
         },
         {
             "name": "fioru/lasntgadmin-products",
-            "version": "5.15.14-rc2",
+            "version": "5.15.15",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-products.git",
-                "reference": "a1997118a643c151d637d67270ad9f529f75800b"
+                "reference": "c64b6a9cb44f628ec6d727c16d91b2bb59c928ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-products/zipball/a1997118a643c151d637d67270ad9f529f75800b",
-                "reference": "a1997118a643c151d637d67270ad9f529f75800b",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-products/zipball/c64b6a9cb44f628ec6d727c16d91b2bb59c928ec",
+                "reference": "c64b6a9cb44f628ec6d727c16d91b2bb59c928ec",
                 "shasum": ""
             },
             "require": {
@@ -763,9 +763,9 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-products/tree/5.15.14-rc2"
+                "source": "https://github.com/fioru-software/lasntgadmin-products/tree/5.15.15"
             },
-            "time": "2025-03-27T10:10:50+00:00"
+            "time": "2025-03-28T13:42:41+00:00"
         },
         {
             "name": "fioru/lasntgadmin-purchase-order-payment-gateway",
@@ -997,16 +997,16 @@
         },
         {
             "name": "fioru/lasntgadmin-translate",
-            "version": "1.2.13",
+            "version": "1.2.14-rc1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-translate.git",
-                "reference": "a763217529a90d9a8b16a65e6f6eee9b6523b9d1"
+                "reference": "85863ce1a61d41ca9b755bc18fa0ca474d95099c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-translate/zipball/a763217529a90d9a8b16a65e6f6eee9b6523b9d1",
-                "reference": "a763217529a90d9a8b16a65e6f6eee9b6523b9d1",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-translate/zipball/85863ce1a61d41ca9b755bc18fa0ca474d95099c",
+                "reference": "85863ce1a61d41ca9b755bc18fa0ca474d95099c",
                 "shasum": ""
             },
             "require": {
@@ -1070,9 +1070,9 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-translate/tree/1.2.13"
+                "source": "https://github.com/fioru-software/lasntgadmin-translate/tree/1.2.14-rc1"
             },
-            "time": "2025-02-26T17:16:13+00:00"
+            "time": "2025-03-28T15:03:59+00:00"
         },
         {
             "name": "fioru/lasntgadmin-users",
@@ -1655,22 +1655,22 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "fioru/lasntgadmin-attendees": 5,
-        "fioru/lasntgadmin-dashboard": 5,
         "fioru/lasntgadmin-enrolment-log": 5,
         "fioru/lasntgadmin-grant-funded-payment-gateway": 5,
-        "fioru/lasntgadmin-groups": 5,
-        "fioru/lasntgadmin-orders": 5,
-        "fioru/lasntgadmin-products": 5,
         "fioru/lasntgadmin-purchase-order-payment-gateway": 5,
+        "fioru/lasntgadmin-attendees": 5,
+        "fioru/lasntgadmin-groups": 5,
+        "fioru/lasntgadmin-products": 5,
+        "fioru/lasntgadmin-users": 5,
+        "fioru/lasntgadmin-orders": 5,
         "fioru/lasntgadmin-subscriptions": 5,
-        "fioru/lasntgadmin-theme": 5,
         "fioru/lasntgadmin-translate": 5,
-        "fioru/lasntgadmin-users": 5
+        "fioru/lasntgadmin-dashboard": 5,
+        "fioru/lasntgadmin-theme": 5
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": {},
-    "platform-dev": {},
+    "platform": [],
+    "platform-dev": [],
     "plugin-api-version": "2.6.0"
 }
