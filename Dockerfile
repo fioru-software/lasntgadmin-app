@@ -59,12 +59,12 @@ USER root
 
 COPY etc/logrotate.d/wordpress /etc/logrotate.d/wordpress
 
-# cron
+#  cron
 RUN echo '* * * * * /bin/bash /usr/local/bin/everyminute.sh > /var/log/apache2/cron/everyminute.log 2>&1' >> /etc/cron.d/wordpress;\
     echo '* * * * 6,0 /bin/bash /usr/local/bin/weekends.sh > /var/log/apache2/cron/weekends.log 2>&1' >> /etc/cron.d/wordpress;\
-    echo '* 8-17 * * 1-5 /bin/bash /usr/local/bin/officehours.sh > /var/log/apache2/cron/officehours.log 2>&1' >> /etc/cron.d/wordpress;\
+    echo '* 8-18 * * 1-5 /bin/bash /usr/local/bin/officehours.sh > /var/log/apache2/cron/officehours.log 2>&1' >> /etc/cron.d/wordpress;\
     echo '0 1 * * 1 /bin/bash /usr/local/bin/weekly.sh > /var/log/apache2/cron/weekly.log 2>&1' >> /etc/cron.d/wordpress;\
-    echo '* 23-4 * * 1-5 /bin/bash /usr/local/bin/nights.sh > /var/log/apache2/cron/nights.log 2>&1' >> /etc/cron.d/wordpress;\
+    echo '* 0-6 * * 1-5 /bin/bash /usr/local/bin/weeknights.sh > /var/log/apache2/cron/weeknights.log 2>&1' >> /etc/cron.d/wordpress;\
     crontab -u www-data /etc/cron.d/wordpress
 
 CMD ["sh", "/usr/local/bin/run.sh"]
