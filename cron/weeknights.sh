@@ -1,5 +1,5 @@
+#! /bin/sh
 
-# groups: wc_batch_processes
 export COMPOSER_AUTOLOAD_FILEPATH=/var/www/html/vendor/autoload.php
 
 # process all jobs except subscriptions during week nights
