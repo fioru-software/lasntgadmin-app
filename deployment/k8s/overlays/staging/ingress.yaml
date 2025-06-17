@@ -1,9 +1,6 @@
 - op: replace
   path: /spec/rules/0/host
-  value: lasntgadmin-staging.veri.ie
+  value: obs-staging.lasntg.ie
 - op: replace
   path: /spec/rules/0/http/paths/0/backend/service/name
   value: staging-lasntgadmin-service
-- op: replace
-  path: /spec/tls/0/hosts/0
-  value: lasntgadmin-staging.veri.ie

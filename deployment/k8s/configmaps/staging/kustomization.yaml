@@ -22,7 +22,7 @@ configMapGenerator:
 - name: lasntgadmin-env
   literals:
   - ENVIRONMENT=staging
-  - SITE_URL=https://lasntgadmin-staging.veri.ie
+  - SITE_URL=https://obs-staging.lasntg.ie
   - SITE_TITLE=LASNTG
   - WP_PLUGINS=woocommerce advanced-custom-fields user-role-editor smtp-mailing-queue wordfence
   - WP_THEMES=storefront

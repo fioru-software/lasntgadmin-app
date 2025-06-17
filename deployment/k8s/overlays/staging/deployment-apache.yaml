@@ -18,17 +18,17 @@
   path: /spec/template/spec/containers/0/resources
   value:
     limits:
-      cpu: 3920m
+      cpu: 2000m
       memory: 2940M
     requests:
-      cpu: 3000m
+      cpu: 1000m
       memory: 2000M
 - op: replace
   path: /spec/template/metadata/labels/app
   value: staging-lasntgadmin
 - op: replace
   path: /spec/template/spec/containers/0/image
-  value: europe-west1-docker.pkg.dev/veri-cluster/docker-belgium/lasntgadmin:staging
+  value: europe-west1-docker.pkg.dev/quick-wall-463113-e1/docker-belgium/lasntgadmin:staging
 - op: replace
   path: /spec/template/spec/containers/0/imagePullPolicy
   value: Always

@@ -1,5 +1,46 @@
 # LASNTG Admin 
 
+## Google Cloud & kubectl
+
+### Veri
+
+```sh
+gcloud config configurations activate veri
+gcloud container clusters get-credentials belgium-01
+kubectl config use-context gke_veri-cluster_europe-west1_belgium-01
+kubectl get pods
+```
+
+### LASNTG
+
+```sh
+gcloud config configurations activate lasntg
+gcloud container clusters get-credentials lasntg
+kubectl config use-context gke_quick-wall-463113-e1_europe-west1_lasntg
+kubectl get pods
+```
+
+Docker registry (Google Artificat Registry)
+
+```sh
+DOCKER_REGISTRY=europe-west1-docker.pkg.dev/quick-wall-463113-e1/docker-belgium
+USER_ID=33
+WP_VERSION=6.7.2
+WP_LOCALE=en_GB
+ENVIRONMENT=staging
+
+GITHUB_TOKEN=
+GIT_COMMIT=
+```
+
+```sh
+docker build --no-cache --build-arg GITHUB_TOKEN=${GITHUB_TOKEN} --build-arg USER_ID=${USER_ID} --build-arg WP_VERSION=${WP_VERSION} --build-arg WP_LOCALE=${WP_LOCALE} --tag lasntgadmin:${GIT_COMMIT} .'
+docker tag lasntgadmin:${GIT_COMMIT} ${DOCKER_REGISTRY}/lasntgadmin:${GIT_COMMIT}
+docker tag lasntgadmin:${GIT_COMMIT} ${DOCKER_REGISTRY}/lasntgadmin:${ENVIRONMENT}
+docker push ${DOCKER_REGISTRY}/lasntgadmin:${GIT_COMMIT}
+docker push ${DOCKER_REGISTRY}/lasntgadmin:${ENVIRONMENT}
+```
+
 ## Card Payments
 
 Use [these test card details](https://developer.globalpay.com/resources/test-card-numbers) when paying by card on staging.
