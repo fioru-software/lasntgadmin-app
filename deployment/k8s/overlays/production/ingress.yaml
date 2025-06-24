@@ -1,5 +1,3 @@
-- op: remove
-  path: /metadata/annotations
 - op: replace
   path: /spec/rules/0/host
   value: obs.lasntg.ie

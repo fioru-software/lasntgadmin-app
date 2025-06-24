@@ -25,7 +25,7 @@ configMapGenerator:
 - name: lasntgadmin-env
   literals:
   - ENVIRONMENT=production
-  - SITE_URL=https://lasntgadmin.veri.ie
+  - SITE_URL=https://obs.lasntg.ie
   - SITE_TITLE=LASNTG
   - WP_PLUGINS=woocommerce advanced-custom-fields user-role-editor smtp-mailing-queue wordfence
   - WP_THEMES=storefront

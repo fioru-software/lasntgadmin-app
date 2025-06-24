@@ -68,9 +68,9 @@
     - name: X-Forwarded-Proto
       value: https
     - name: X-Forwarded-Host
-      value: obs-staging.tipperarycoco.ie
+      value: obs-staging.lasntg.ie
     - name: Host
-      value: obs-staging.tipperarycoco.ie
+      value: obs-staging.lasntg.ie
     - name: Authorization
       value: Basic bGFzbnRnYWRtaW46dmV4WXdXeDQ4d0NmeVNwYlNnZnlRV0ta
 - op: replace
@@ -82,9 +82,9 @@
     - name: X-Forwarded-Proto
       value: https
     - name: X-Forwarded-Host
-      value: obs-staging.tipperarycoco.ie
+      value: obs-staging.lasntg.ie
     - name: Host
-      value: obs-staging.tipperarycoco.ie
+      value: obs-staging.lasntg.ie
     - name: Host
     - name: Authorization
       value: Basic bGFzbnRnYWRtaW46dmV4WXdXeDQ4d0NmeVNwYlNnZnlRV0ta
@@ -97,8 +97,8 @@
     - name: X-Forwarded-Proto
       value: https
     - name: X-Forwarded-Host
-      value: obs-staging.tipperarycoco.ie
+      value: obs-staging.lasntg.ie
     - name: Host
-      value: obs-staging.tipperarycoco.ie
+      value: obs-staging.lasntg.ie
     - name: Authorization
       value: Basic bGFzbnRnYWRtaW46dmV4WXdXeDQ4d0NmeVNwYlNnZnlRV0ta

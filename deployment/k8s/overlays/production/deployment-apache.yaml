@@ -9,7 +9,7 @@
   value: production-lasntgadmin
 - op: replace
   path: /spec/template/spec/containers/0/image
-  value: europe-west1-docker.pkg.dev/veri-cluster/docker-belgium/lasntgadmin:production
+  value: europe-west1-docker.pkg.dev/quick-wall-463113-e1/docker-belgium/lasntgadmin:production
 - op: replace
   path: /spec/template/spec/containers/0/imagePullPolicy
   value: Always
@@ -77,6 +77,8 @@
       value: obs.lasntg.ie
     - name: Host
       value: obs.lasntg.ie
+    - name: Authorization
+      value: Basic bGFzbnRnYWRtaW46dmV4WXdXeDQ4d0NmeVNwYlNnZnlRV0ta
 - op: replace
   path: /spec/template/spec/containers/0/livenessProbe/httpGet/path
   value: /wp-login.php
@@ -89,6 +91,8 @@
       value: obs.lasntg.ie
     - name: Host
       value: obs.lasntg.ie
+    - name: Authorization
+      value: Basic bGFzbnRnYWRtaW46dmV4WXdXeDQ4d0NmeVNwYlNnZnlRV0ta
 - op: replace
   path: /spec/template/spec/containers/0/startupProbe/httpGet/path
   value: /wp-login.php
@@ -101,6 +105,8 @@
       value: obs.lasntg.ie
     - name: Host
       value: obs.lasntg.ie
+    - name: Authorization
+      value: Basic bGFzbnRnYWRtaW46dmV4WXdXeDQ4d0NmeVNwYlNnZnlRV0ta
 - op: add
   path: /spec/template/spec/volumes/-
   value:
