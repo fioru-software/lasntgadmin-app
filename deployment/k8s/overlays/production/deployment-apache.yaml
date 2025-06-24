@@ -14,6 +14,13 @@
   path: /spec/template/spec/containers/0/imagePullPolicy
   value: Always
 - op: replace
+  path: /spec/template/spec/tolerations
+  value:
+  - key: cloud.google.com/gke-nodepool
+    operator: Equal
+    value: obs-pool
+    effect: NoSchedule
+- op: replace
   path: /spec/template/spec/containers/0/envFrom/0/configMapRef/name
   value: production-lasntgadmin-env
 - op: replace
@@ -21,22 +28,22 @@
   value: production-lasntgadmin-secret
 - op: replace
   path: /spec/template/spec/containers/0/resources/limits/cpu
-  value: 3920m
-- op: replace
-  path: /spec/template/spec/containers/0/resources/limits/memory
-  value: 13920M
+  value: 3400m
 - op: replace
   path: /spec/template/spec/containers/0/resources/requests/cpu
   value: 3000m
 - op: replace
+  path: /spec/template/spec/containers/0/resources/limits/memory
+  value: 5400M
+- op: replace
   path: /spec/template/spec/containers/0/resources/requests/memory
-  value: 9000M
+  value: 5000M
 - op: replace
   path: /metadata/name
   value: lasntgadmin
 - op: replace
   path: /spec/template/spec/affinity/nodeAffinity/requiredDuringSchedulingIgnoredDuringExecution/nodeSelectorTerms/0/matchExpressions/0/values/0
-  value: lasntg-pool
+  value: obs-pool
 - op: replace
   path: /spec/template/spec/volumes/0/persistentVolumeClaim/claimName
   value: production-lasntgadmin-pvc
@@ -58,39 +65,42 @@
 - op: replace
   path: /spec/template/spec/volumes/6/configMap/name
   value: production-lasntgadmin-wordfence-waf
+- op: replace
+  path: /spec/template/spec/containers/0/readinessProbe/httpGet/path
+  value: /wp-login.php
 - op: add
   path: /spec/template/spec/containers/0/readinessProbe/httpGet/httpHeaders
   value:
     - name: X-Forwarded-Proto
       value: https
     - name: X-Forwarded-Host
-      value: lasntgadmin.veri.ie
+      value: obs.lasntg.ie
     - name: Host
-      value: lasntgadmin.veri.ie
-    - name: Authorization
-      value: Basic bGFzbnRnYWRtaW46YXRJTiBGRW02IGVxdXkgV3MzMCBTRTFOIFRMWlk=
+      value: obs.lasntg.ie
+- op: replace
+  path: /spec/template/spec/containers/0/livenessProbe/httpGet/path
+  value: /wp-login.php
 - op: add
   path: /spec/template/spec/containers/0/livenessProbe/httpGet/httpHeaders
   value:
     - name: X-Forwarded-Proto
       value: https
     - name: X-Forwarded-Host
-      value: lasntgadmin.veri.ie
+      value: obs.lasntg.ie
     - name: Host
-      value: lasntgadmin.veri.ie
-    - name: Authorization
-      value: Basic bGFzbnRnYWRtaW46YXRJTiBGRW02IGVxdXkgV3MzMCBTRTFOIFRMWlk=
+      value: obs.lasntg.ie
+- op: replace
+  path: /spec/template/spec/containers/0/startupProbe/httpGet/path
+  value: /wp-login.php
 - op: add
   path: /spec/template/spec/containers/0/startupProbe/httpGet/httpHeaders
   value:
     - name: X-Forwarded-Proto
       value: https
     - name: X-Forwarded-Host
-      value: lasntgadmin.veri.ie
+      value: obs.lasntg.ie
     - name: Host
-      value: lasntgadmin.veri.ie
-    - name: Authorization
-      value: Basic bGFzbnRnYWRtaW46YXRJTiBGRW02IGVxdXkgV3MzMCBTRTFOIFRMWlk=
+      value: obs.lasntg.ie
 - op: add
   path: /spec/template/spec/volumes/-
   value:

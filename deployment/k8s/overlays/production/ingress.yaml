@@ -2,10 +2,7 @@
   path: /metadata/annotations
 - op: replace
   path: /spec/rules/0/host
-  value: lasntgadmin.veri.ie
+  value: obs.lasntg.ie
 - op: replace
   path: /spec/rules/0/http/paths/0/backend/service/name
   value: production-lasntgadmin-service
-- op: replace
-  path: /spec/tls/0/hosts/0
-  value: lasntgadmin.veri.ie

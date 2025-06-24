@@ -9,13 +9,13 @@
   value: production-lasntgadmin-redis
 - op: replace
   path: /spec/template/spec/affinity/nodeAffinity/requiredDuringSchedulingIgnoredDuringExecution/nodeSelectorTerms/0/matchExpressions/1/values/0
-  value: lasntg-pool
+  value: obs-pool
 - op: replace
   path: /spec/template/spec/tolerations
   value:
   - key: cloud.google.com/gke-nodepool
     operator: Equal
-    value: lasntg-pool
+    value: obs-pool
     effect: NoSchedule
 - op: replace 
   path: /spec/template/spec/containers/0/resources
