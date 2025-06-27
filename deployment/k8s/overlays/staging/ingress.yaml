@@ -4,3 +4,13 @@
 - op: replace
   path: /spec/rules/0/http/paths/0/backend/service/name
   value: staging-lasntgadmin-service
+- op: add
+  path: /metadata/annotations
+  value: 
+    nginx.ingress.kubernetes.io/auth-url: "http://basic-auth-service.default.svc.cluster.local:8080/"
+    nginx.ingress.kubernetes.io/proxy-body-size: "20m"
+    nginx.ingress.kubernetes.io/client-max-body-size: "20m"
+    nginx.ingress.kubernetes.io/proxy-buffer-size: "16k"
+    nginx.ingress.kubernetes.io/proxy-connect-timeout: "60"
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "60"
+    nginx.ingress.kubernetes.io/proxy-send-timeout: "60"

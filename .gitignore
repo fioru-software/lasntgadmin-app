@@ -11,3 +11,4 @@ vendor
 wp-content
 loaderio-*
 *.sql
+*.tar.gz
