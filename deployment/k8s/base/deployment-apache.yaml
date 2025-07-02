@@ -125,4 +125,5 @@ spec:
         - name: wordfence-waf
           configMap:
             name: lasntgadmin-wordfence-waf
+            defaultMode: 0644
 
