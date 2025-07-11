@@ -24,7 +24,7 @@ pipeline {
 	}
 
 	environment {
-		DOCKER_REGISTRY = 'europe-west1-docker.pkg.dev/veri-cluster/docker-belgium'
+		DOCKER_REGISTRY = 'europe-west1-docker.pkg.dev/quick-wall-463113-e1/docker-belgium'
 		GCLOUD_KEYFILE = credentials('jenkins-gcloud-keyfile');
 		GITHUB_TOKEN = credentials('jenkins-github-personal-access-token')
 		ENVIRONMENT = "${GIT_LOCAL_BRANCH == "master" ? "production" : GIT_LOCAL_BRANCH}"
