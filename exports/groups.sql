@@ -90,15 +90,19 @@ INSERT INTO `wp_groups_group` VALUES
 (31,22,38,1,'2022-10-10 14:15:59','Monaghan County Council',NULL),
 (32,25,38,1,'2022-10-10 14:15:59','Sligo County Council',NULL),
 
+-- Uisce Eireann Training Centre
+(40,1000,39,1,'2025-07-29 15:26:40','Uisce Eireann',NULL),
+
 -- Private Client
 (33,999,NULL,1,'2022-10-10 14:15:59','Private Client',NULL),
 
+-- Training Centres
 (34,NULL, NULL,1,'2022-10-14 13:18:36','Ballincollig Training Centre',NULL),
 (35,NULL, NULL,1,'2022-10-14 13:21:39','Ballycoolin Training Centre',NULL),
 (36,NULL, NULL,1,'2022-10-14 13:22:00','Castlebar Training Centre',NULL),
 (37,NULL, NULL,1,'2022-10-14 13:22:23','Roscrea Training Centre',NULL),
 (38,NULL, NULL,1,'2022-10-14 13:22:40','Stranorlar Training Centre',NULL);
-
+(39,NULL, NULL,1,'2025-07-29 15:26:40','Uisce Eireann Training Centre',NULL);
 
 /*!40000 ALTER TABLE `wp_groups_group` ENABLE KEYS */;
 UNLOCK TABLES;
