@@ -102,7 +102,14 @@ INSERT INTO `wp_groups_group` VALUES
 (36,NULL, NULL,1,'2022-10-14 13:22:00','Castlebar Training Centre',NULL),
 (37,NULL, NULL,1,'2022-10-14 13:22:23','Roscrea Training Centre',NULL),
 (38,NULL, NULL,1,'2022-10-14 13:22:40','Stranorlar Training Centre',NULL),
-(39,NULL, NULL,1,'2025-07-29 15:26:40','Uisce Eireann Training Centre',NULL);
+(39,NULL, NULL,1,'2025-07-29 15:26:40','Uisce Eireann Training Centre',NULL),
+
+-- Training Centre Private Clients
+(42,NULL,34,1,'2024-08-01 11:18:22','Ballincollig RTC Private Clients',NULL),
+(44,NULL,35,1,'2024-08-01 11:19:28','Ballycoolin RTC Private Clients',NULL),
+(45,NULL,37,1,'2024-08-01 11:19:48','Roscrea RTC Private Clients',NULL),
+(46,NULL,38,1,'2024-08-01 11:20:05','Stranorlar RTC Private Clients',NULL),
+(47,NULL,36,1,'2024-08-01 11:20:24','Castlebar RTC Private Clients',NULL);
 
 /*!40000 ALTER TABLE `wp_groups_group` ENABLE KEYS */;
 UNLOCK TABLES;
