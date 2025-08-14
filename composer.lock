@@ -693,16 +693,16 @@
         },
         {
             "name": "fioru/lasntgadmin-products",
-            "version": "5.15.20",
+            "version": "5.15.21",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fioru-software/lasntgadmin-products.git",
-                "reference": "27157f67d6307f94424c8dd829afaed45e300126"
+                "reference": "91b9a6f7f7f0fed1ef0fe1c2cc1b6075a4e808a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-products/zipball/27157f67d6307f94424c8dd829afaed45e300126",
-                "reference": "27157f67d6307f94424c8dd829afaed45e300126",
+                "url": "https://api.github.com/repos/fioru-software/lasntgadmin-products/zipball/91b9a6f7f7f0fed1ef0fe1c2cc1b6075a4e808a5",
+                "reference": "91b9a6f7f7f0fed1ef0fe1c2cc1b6075a4e808a5",
                 "shasum": ""
             },
             "require": {
@@ -763,9 +763,9 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/fioru-software/lasntgadmin-products/tree/5.15.20"
+                "source": "https://github.com/fioru-software/lasntgadmin-products/tree/5.15.21"
             },
-            "time": "2025-04-28T14:32:43+00:00"
+            "time": "2025-08-14T12:22:28+00:00"
         },
         {
             "name": "fioru/lasntgadmin-purchase-order-payment-gateway",
@@ -1336,16 +1336,16 @@
         },
         {
             "name": "phpoffice/phpspreadsheet",
-            "version": "2.3.9",
+            "version": "2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPOffice/PhpSpreadsheet.git",
-                "reference": "12e0d9f5ef459bf4d3427ef1bbe256b0d85f1e3a"
+                "reference": "3a3cad86101a77019eb2fc693aab1a8c11b18b94"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/12e0d9f5ef459bf4d3427ef1bbe256b0d85f1e3a",
-                "reference": "12e0d9f5ef459bf4d3427ef1bbe256b0d85f1e3a",
+                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/3a3cad86101a77019eb2fc693aab1a8c11b18b94",
+                "reference": "3a3cad86101a77019eb2fc693aab1a8c11b18b94",
                 "shasum": ""
             },
             "require": {
@@ -1435,9 +1435,9 @@
             ],
             "support": {
                 "issues": "https://github.com/PHPOffice/PhpSpreadsheet/issues",
-                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/2.3.9"
+                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/2.4.0"
             },
-            "time": "2025-06-23T01:20:15+00:00"
+            "time": "2025-08-10T06:45:13+00:00"
         },
         {
             "name": "psr/http-client",
